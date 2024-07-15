@@ -1,0 +1,1424 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Japanese pop-up dictionary browser extension">
+      
+      
+        <meta name="author" content="Yomitan Authors">
+      
+      
+        <link rel="canonical" href="https://cashewnuttynuts.github.io/">
+      
+      
+      
+        <link rel="next" href="dictionaries/">
+      
+      
+      <link rel="icon" href="assets/yomitan-icon64.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+    
+    
+      
+        <title>Yomitan</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.76a95c52.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#yomitan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://cashewnuttynuts.github.io/home/" title="Yomitan" class="md-header__button md-logo" aria-label="Yomitan" data-md-component="logo">
+      
+  <img src="assets/yomitan-icon128.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yomitan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81 1.42-1.42M1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/themoeway/yomitan" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Yomitan
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="dictionaries/" class="md-tabs__link">
+          
+  
+  Dictionaries
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="anki/" class="md-tabs__link">
+          
+  
+  Anki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="advanced/keyboard-shortcuts/" class="md-tabs__link">
+          
+  
+  Advanced Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="other/faq/" class="md-tabs__link">
+          
+  
+  Other
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="contributing/" class="md-tabs__link">
+          
+  
+  Contributing
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://cashewnuttynuts.github.io/home/" title="Yomitan" class="md-nav__button md-logo" aria-label="Yomitan" data-md-component="logo">
+      
+  <img src="assets/yomitan-icon128.png" alt="logo">
+
+    </a>
+    Yomitan
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/themoeway/yomitan" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Yomitan
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-yomitan" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Yomitan?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#helpful-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helpful information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Third-Party Libraries
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dictionaries
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Dictionaries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dictionaries/making-yomitan-dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Making yomitan dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Anki
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Anki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anki integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="anki/templates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/keyboard-shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keyboard shortcuts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/advanced-options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced options, including MeCab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding custom audio sources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Other
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/permissions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser permissions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/supported-languages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supported languages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/yomichan-migration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migrating from Yomichan (legacy)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributing/language-features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="npm-scripts.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NPM Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-yomitan" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Yomitan?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#helpful-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helpful information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Third-Party Libraries
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="yomitan">Yomitan</h1>
+<p><a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn"><img alt="Chrome Release" src="https://img.shields.io/chrome-web-store/v/likgccmbimhjbgkjambclfkhldnlhbnn?logo=Google%20Chrome&amp;logoColor=lightblue&amp;color=lightblue&amp;label=chrome%20release%20(stable)" /></a>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/"><img alt="Firefox Release" src="https://img.shields.io/amo/v/yomitan?logo=Firefox&amp;color=orange&amp;label=firefox%20release%20(stable)" /></a>
+<a href="https://securityscorecards.dev/viewer/?uri=github.com/themoeway/yomitan"><img alt="OpenSSF Scorecard" src="https://api.securityscorecards.dev/projects/github.com/themoeway/yomitan/badge" /></a>
+<a href="https://discord.gg/UGNPMDE7zC"><img alt="Discord" src="https://dcbadge.vercel.app/api/server/UGNPMDE7zC?style=flat" /></a></p>
+<p>👋 <strong>Yomitan is <a href="https://foosoft.net/posts/passing-the-torch-to-yomitan/">the successor</a> to Yomichan</strong> (<a href="./docs/yomichan-migration.md#migrating-from-yomichan">migration guide</a>) which was <a href="https://foosoft.net/posts/sunsetting-the-yomichan-project/">sunset</a> by its owner on Feb 26, 2023. We have made a number of <a href="#changes">foundational changes</a> to ensure <strong>the project stays alive, works on latest browser versions, and is easy to contribute to</strong>.</p>
+<p>📢 <strong>New contributors <a href="#contributing">welcome</a>!</strong></p>
+<p>📢 <strong>Interested in adding a new language to Yomitan? See <a href="./docs/development/language-features.md">here</a> for thorough documentation!</strong></p>
+<h2 id="what-is-yomitan">What is Yomitan?</h2>
+<p>Yomitan turns your web browser into a tool for building language literacy by helping you <strong>read</strong> texts that would otherwise be too difficult to tackle in <a href="./docs/supported-languages.md">a variety of supported languages</a>.</p>
+<p>Yomitan provides powerful features not available in other browser-based dictionaries:</p>
+<ul>
+<li>💬 Interactive popup definition window for displaying search results.</li>
+<li>🔊 Built-in native pronunciation audio with the ability to add your own <a href="./docs/audio.md">custom audio sources</a>.</li>
+<li>✍️ Kanji stroke order diagrams are just a click away.</li>
+<li>📝 <a href="./docs/anki-integration.md#anki-integration">Automatic flashcard creation</a> for the <a href="https://apps.ankiweb.net/">Anki</a> flashcard program via the <a href="https://foosoft.net/projects/anki-connect">AnkiConnect</a> plugin.</li>
+<li>🔍 Custom search page for easily executing custom search queries.</li>
+<li>📖 Support for multiple dictionary formats including <a href="https://ja.wikipedia.org/wiki/EPWING">EPWING</a> via the <a href="https://github.com/themoeway/yomitan-import">Yomitan Import</a> tool.</li>
+<li>✨ Clean, modern code makes it easy for developers to <a href="#contributing">contribute</a> new features and languages.</li>
+</ul>
+<p><a href="img/ss-terms.png"><img alt="Term definitions" src="img/ss-terms-thumb.png" /></a>
+<a href="img/ss-kanji.png"><img alt="Kanji information" src="img/ss-kanji-thumb.png" /></a>
+<a href="img/ss-dictionaries.png"><img alt="Dictionary options" src="img/ss-dictionaries-thumb.png" /></a>
+<a href="img/ss-anki.png"><img alt="Anki options" src="img/ss-anki-thumb.png" /></a></p>
+<h2 id="helpful-information">Helpful information</h2>
+<ul>
+<li>✨ <a href="./docs/yomichan-migration.md">Migrating from Yomichan (legacy)</a></li>
+<li>Dictionaries</li>
+<li>📚 <a href="./docs/dictionaries.md#recommended-dictionaries">Recommended Dictionaries</a></li>
+<li>🗂️ <a href="./docs/dictionaries.md#importing-a-dictionary-collection">Importing and exporting dictionaries</a></li>
+<li>🛠️ <a href="./docs/making-yomitan-dictionaries.md">Making Yomitan Dictionaries</a></li>
+<li>Anki Integration</li>
+<li>📇 <a href="./docs/anki-integration.md">Anki integration and flashcard creation guide</a></li>
+<li>🔧 <a href="./docs/templates.md">Anki handlebar templates</a></li>
+<li>Advanced Features</li>
+<li>⌨️ <a href="./docs/keyboard-shortcuts.md">Keyboard shortcuts</a></li>
+<li>🔍 <a href="./docs/advanced-options.md">Advanced options, including MeCab</a></li>
+<li>🔊 <a href="./docs/audio.md">Adding custom audio sources</a></li>
+<li>Troubleshooting</li>
+<li>🕷️ <a href="./docs/browser-bugs.md">Known browser bugs</a></li>
+<li>❓ <a href="./docs/faq.md">Frequently asked questions</a></li>
+<li>🔒 <a href="./docs/permissions.md">Browser Permissions</a></li>
+<li>🌎 <a href="./docs/supported-languages.md">Supported Languages</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Yomitan comes in two flavors: <em>stable</em> and <em>testing</em>. New changes are initially introduced into the <em>testing</em> version, and after some time spent ensuring that they are relatively bug free, they will be promoted to the <em>stable</em> version. If you are technically savvy and don't mind <a href="https://github.com/themoeway/yomitan/issues/new/choose">submitting issues</a> on GitHub, try the <em>testing</em> version; otherwise, the <em>stable</em> version will be your best bet. Check <a href="#contributing">contributing</a> for more information on how to help.</p>
+<ul>
+<li>
+<p><strong>Google Chrome</strong></p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">stable</a></p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/yomitan-development-build/glnaenfapkkecknnmginabpmgkenenml">testing</a></p>
+</li>
+<li>
+<p><strong>Mozilla Firefox</strong></p>
+</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">stable</a></li>
+<li><a href="https://github.com/themoeway/yomitan/releases">testing</a> ※</li>
+</ul>
+<p>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will have to download the desired version and side-load it yourself. You only need to do this once, and you will get updates automatically.</p>
+<h2 id="basic-usage">Basic Usage</h2>
+<ol>
+<li>
+<p>Click the <img src="ext/images/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> <em>Yomitan</em> button in the browser bar to open the quick-actions popup.</p>
+<p><img src="resources/images/browser-action-popup1.png" alt="yomitan main popup"></p>
+<ul>
+<li>The <img src="ext/images/cog.svg" width="16" height="16" alt="cog"> <em>cog</em> button will open the Settings page.</li>
+<li>The <img src="ext/images/magnifying-glass.svg" width="16" height="16" alt="magnifying glass"> <em>magnifying glass</em> button will open the Search page.</li>
+<li>The <img src="ext/images/question-mark-circle.svg" width="16" height="16" alt="question mark symbol"> <em>question mark</em> button will open the Information page.</li>
+<li>The <img src="ext/images/profile.svg" width="16" height="16" alt="profile icon"> <em>profile</em> button will appear when multiple profiles exist, allowing the current profile to be quickly changed.</li>
+</ul>
+</li>
+<li>
+<p>Import the dictionaries you wish to use for term and kanji searches; head over to the <a href="./docs/dictionaries.md">dictionary docs</a> to get set up! If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.</p>
+<p><img src="resources/images/settings-dictionaries-popup.png" width="300" alt="custom dictionaries list"></p>
+</li>
+<li>
+<p>Webpage text can be scanned by moving the cursor while holding a modifier key, which is <kbd>Shift</kbd> by default. If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.</p>
+<p><img src="resources/images/search-popup-terms.png" width="300" alt="popup with search terms"></p>
+</li>
+<li>
+<p>Click on the <img src="ext/images/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> <em>speaker</em> button to hear the term pronounced by a native speaker. If an audio sample is not available, you will hear a short click instead. For more options, see <a href="./docs/audio.md">Audio Configuration</a>.</p>
+</li>
+<li>
+<p>Click on individual kanji in the term definition results to view additional information about those characters, including stroke order diagrams, readings, meanings, and other useful data.</p>
+<p><img src="resources/images/search-popup-kanji.png" width="300" alt="popup with kanji details"></p>
+</li>
+</ol>
+<p>To further enhance your Yomitan experience, it's worth <a href="./docs/anki-integration.md">integrating with Anki</a>, a spaced-repetition flashcard program to help solidify the words you encounter.</p>
+<h2 id="changes">Changes</h2>
+<blockquote>
+<p>While we have made some substantial changes, the majority of the extension's functionality is thanks to hard work of <a href="https://foosoft.net/">FooSoft</a> and many other incredible open source contributors from 2016-2023.</p>
+</blockquote>
+<p>Major changes:</p>
+<ul>
+<li>🌐 Added multi-language support!</li>
+<li>💪 Completed the Manifest V2 → V3 transition, <a href="https://developer.chrome.com/blog/resuming-the-transition-to-mv3/">read why here</a>.</li>
+<li>⚡ Switched to using ECMAScript modules and npm-sourced dependencies.</li>
+<li>🔧 Implemented an end-to-end CI/CD pipeline.</li>
+<li>🧪 Switched to standard testing frameworks, vitest and playwrights.</li>
+</ul>
+<p>In addition, we have made important bug fixes and minor enhancements:</p>
+<ul>
+<li>⚡ Improved dictionary import speeds by 2x~10x.</li>
+<li>📚 Added functionality to import/export multiple dictionaries, enabling portability across devices.</li>
+<li>✨ And <a href="https://github.com/themoeway/yomitan/pulls?q=is%3Apr+is%3Amerged+-label%3Aarea%2Fdependencies+-label%3Akind%2Fmeta">more</a>.</li>
+</ul>
+<p>Since the owner requested forks be uniquely named, we have chosen a new name, <em>Yomitan</em> (<em>-tan</em> is an honorific used for anthropomorphic moe characters).</p>
+<h2 id="contributing">Contributing</h2>
+<p>🚀 <strong>Dip your toes into contributing by looking at issues with the label <a href="https://github.com/themoeway/yomitan/issues?q=is%3Aopen+is%3Aissue+label%3Agood-first-issue">good-first-issue</a>.</strong></p>
+<p>Since this is a distributed effort, we <strong>highly welcome new contributors</strong>! Feel free to browse the <a href="https://github.com/themoeway/yomitan/issues">issue tracker</a>, and read our <a href="./CONTRIBUTING.md">contributing guidelines</a>.</p>
+<p>Here are some ways anyone can help:</p>
+<ul>
+<li>Try using the Yomitan dev build. Not only do you get cutting edge features, but you can help uncover bugs and give feedback to developers early on.</li>
+<li>Document any UI/UX friction in Github Issues. We're looking to make Yomitan more accessible to non-technical users.</li>
+<li>All the issues in <code>area/bug</code> older than 2 months need help reproducing. If anything interests you, please try to reproduce it and report your results. We can't easily tell if these issues are one-off, have since been resolved, or are no longer relevant.</li>
+</ul>
+<blockquote>
+<p>The current active maintainers of Yomitan spend a lot of their time debugging and triaging issues. When someone files a bug report, we need to assess the frequency and severity of the bug. It is extremely helpful if we get multiple reports of people who experience a bug or people who can contribute additional detail to an existing bug report.</p>
+</blockquote>
+<p>If you're looking to code, please let us know what you plan on working on before submitting a Pull Request. This gives the core maintainers an opportunity to provide feedback early on before you dive too deep. You can do this by opening a Github Issue with the proposal.</p>
+<p>Some contributions we always appreciate:</p>
+<ul>
+<li>Well-written tests covering different functionalities. This includes <a href="https://github.com/themoeway/yomitan/tree/master/test/playwright">playwright tests</a>, <a href="https://github.com/themoeway/yomitan/tree/master/benches">benchmark tests</a>, and unit tests.</li>
+<li>Increasing our type coverage.</li>
+<li>More and better documentation!</li>
+</ul>
+<p>Information on how to setup and build the codebase can be found <a href="./CONTRIBUTING.md#setup">here</a>.</p>
+<p>If you want to add or improve support for a language, read the documentation on <a href="./docs/development/language-features.md">language features</a>.</p>
+<p>Feel free to join us on <a href="https://discord.gg/UGNPMDE7zC">TheMoeWay Discord 🐇</a> at <a href="https://discord.com/channels/617136488840429598/1081538711742844980">#yomitan-development</a>.</p>
+<h2 id="third-party-libraries">Third-Party Libraries</h2>
+<p>Yomitan uses several third-party libraries to function.</p>
+<!-- The following table is generated using the command `npm run license-report:markdown`. -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Installed version</th>
+<th style="text-align: left;">License type</th>
+<th style="text-align: left;">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">@zip.js/zip.js</td>
+<td style="text-align: left;">2.7.32</td>
+<td style="text-align: left;">BSD-3-Clause</td>
+<td style="text-align: left;">git+https://github.com/gildas-lormeau/zip.js.git</td>
+</tr>
+<tr>
+<td style="text-align: left;">dexie</td>
+<td style="text-align: left;">3.2.4</td>
+<td style="text-align: left;">Apache-2.0</td>
+<td style="text-align: left;">git+https://github.com/dfahlander/Dexie.js.git</td>
+</tr>
+<tr>
+<td style="text-align: left;">dexie-export-import</td>
+<td style="text-align: left;">4.0.7</td>
+<td style="text-align: left;">Apache-2.0</td>
+<td style="text-align: left;">git+https://github.com/dexie/Dexie.js.git</td>
+</tr>
+<tr>
+<td style="text-align: left;">yomitan-handlebars</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr>
+<td style="text-align: left;">parse5</td>
+<td style="text-align: left;">7.1.2</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">git://github.com/inikulin/parse5.git</td>
+</tr>
+<tr>
+<td style="text-align: left;">wanakana</td>
+<td style="text-align: left;">5.3.1</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">git+ssh://git@github.com/WaniKani/WanaKana.git</td>
+</tr>
+<tr>
+<td style="text-align: left;">hangul.js</td>
+<td style="text-align: left;">0.2.6</td>
+<td style="text-align: left;">MIT</td>
+<td style="text-align: left;">git+https://github.com/e-/Hangul.js.git</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 15, 2024</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="dictionaries/" class="md-footer__link md-footer__link--next" aria-label="Next: Using dictionaries">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Using dictionaries
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Yomitan Authors
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
