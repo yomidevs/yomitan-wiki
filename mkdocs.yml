@@ -1,0 +1,73 @@
+site_name: Yomitan
+site_url: https://cashewnuttynuts.github.io/
+site_description: Japanese pop-up dictionary browser extension
+site_author: Yomitan Authors
+repo_url: https://github.com/themoeway/yomitan
+repo_name: Yomitan
+nav:
+  - Home: 'index.md'
+  - Dictionaries:
+    - Using dictionaries: 'dictionaries/index.md'
+    - Making yomitan dictionaries: 'dictionaries/making-yomitan-dictionaries.md'
+  - Anki:
+    - Anki integration: 'anki/index.md'
+    - Templates: 'anki/templates.md'
+  - Advanced Features:
+    - Keyboard shortcuts: 'advanced/keyboard-shortcuts.md'
+    - Advanced options, including MeCab: 'advanced/advanced-options.md'
+    - Adding custom audio sources: 'advanced/audio.md'
+  - Other:
+    - FAQ: 'other/faq.md'
+    - Browser permissions: 'other/permissions.md'
+    - Supported languages: 'other/supported-languages.md'
+    - Migrating from Yomichan (legacy): 'other/yomichan-migration.md'
+  - Contributing:
+    - Contributing: 'contributing/index.md'
+    - Language Features: 'contributing/language-features.md'
+    - NPM Scripts: 'npm-scripts.md'
+theme:
+  name: material
+  favicon: assets/yomitan-icon64.png
+  logo: assets/yomitan-icon128.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode    
+      primary: indigo
+      accent: indigo
+
+extra:
+  homepage: https://cashewnuttynuts.github.io/home/
+  generator: false
+
+plugins:
+  - git-revision-date-localized
+  - search:
+      lang:
+        - en
+        - ja
+
+copyright: Copyright &copy; 2024 Yomitan Authors
