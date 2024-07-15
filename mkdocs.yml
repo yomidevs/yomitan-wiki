@@ -56,8 +56,8 @@ theme:
       toggle:
         icon: material/white-balance-sunny
         name: Switch to light mode    
-      primary: purple
-      accent: pink
+      primary: deep purple
+      accent: indigo
 
 extra:
   homepage: https://cashewnuttynuts.github.io/home/
