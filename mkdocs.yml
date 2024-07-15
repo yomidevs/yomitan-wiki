@@ -49,15 +49,15 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-      primary: indigo
-      accent: indigo
+      primary: purple
+      accent: pink
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/white-balance-sunny
         name: Switch to light mode    
-      primary: indigo
-      accent: indigo
+      primary: purple
+      accent: pink
 
 extra:
   homepage: https://cashewnuttynuts.github.io/home/
