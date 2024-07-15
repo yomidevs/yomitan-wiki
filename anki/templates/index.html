@@ -1523,27 +1523,24 @@ The object to convert.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  <pre>{{dumpObject .}}</pre>
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">&lt;pre&gt;</span><span class="cp">{{</span><span class="nv">dumpObject</span> <span class="err">.</span><span class="cp">}}</span><span class="x">&lt;/pre&gt;</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  <pre>{
-      "key": "value"
-  }</pre>
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>{
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;key&quot;: &quot;value&quot;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}<span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 Preview:
 
 <!-- prettier-ignore -->
-  ```html
-  {
-      "key": "value"
-  }
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    &quot;key&quot;: &quot;value&quot;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>}
+</span></code></pre></div>
 
 </details>
 
@@ -1566,17 +1563,15 @@ The reading to convert.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{furigana .}}
-  {{furigana "読む" "よむ"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">{{</span><span class="nv">furigana</span> <span class="err">.</span><span class="cp">}}</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="cp">{{</span><span class="nv">furigana</span> <span class="s2">&quot;読む&quot;</span> <span class="s2">&quot;よむ&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  <ruby>読<rt>よ</rt></ruby>む
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">ruby</span><span class="p">&gt;</span>読<span class="p">&lt;</span><span class="nt">rt</span><span class="p">&gt;</span>よ<span class="p">&lt;/</span><span class="nt">rt</span><span class="p">&gt;&lt;/</span><span class="nt">ruby</span><span class="p">&gt;</span>む
+</span></code></pre></div>
 
 Preview
 
@@ -1602,17 +1597,15 @@ The reading to convert.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{~furiganaPlain .~}}
-  {{furiganaPlain "読む" "よむ"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">{{</span><span class="m m-Attribute">~furiganaPlain</span> <span class="err">.</span><span class="m">~</span><span class="cp">}}</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="cp">{{</span><span class="nv">furiganaPlain</span> <span class="s2">&quot;読む&quot;</span> <span class="s2">&quot;よむ&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  読[よ]む
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>読[よ]む
+</span></code></pre></div>
 
 </details>
 
@@ -1628,20 +1621,18 @@ Output:
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#multiLine~}}
-  some
-  multiline
-  text
-  {{~/multiLine}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cp">{{</span><span class="m m-Attribute">#multiLine~</span><span class="cp">}}</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="x">some</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="x">multiline</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="x">text</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="cp">{{</span><span class="m m-Attribute">~/multiLine</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  some<br>multiline<br>text
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>some<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>multiline<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>text
+</span></code></pre></div>
 
 Preview:
 
@@ -1670,16 +1661,14 @@ If multiple arguments are present, they are all concatenated.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#regexReplace "\(([^)]*)\)" "$1" "g"~}}Here is (some) (text) (in) (parentheses){{~/regexReplace}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">{{</span><span class="m m-Attribute">#regexReplace</span> <span class="s2">&quot;\(([^)]*)\)&quot;</span> <span class="s2">&quot;$1&quot;</span> <span class="s2">&quot;g&quot;</span><span class="m">~</span><span class="cp">}}</span><span class="x">Here is (some) (text) (in) (parentheses)</span><span class="cp">{{</span><span class="m m-Attribute">~/regexReplace</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  Here is some text in parentheses
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Here is some text in parentheses
+</span></code></pre></div>
 
 </details>
 
@@ -1703,16 +1692,14 @@ If multiple arguments are present, they are all concatenated.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#regexMatch "\(([^)]*)\)" "g"~}}Here is (some) (text) (in) (parentheses){{~/regexMatch}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">{{</span><span class="m m-Attribute">#regexMatch</span> <span class="s2">&quot;\(([^)]*)\)&quot;</span> <span class="s2">&quot;g&quot;</span><span class="m">~</span><span class="cp">}}</span><span class="x">Here is (some) (text) (in) (parentheses)</span><span class="cp">{{</span><span class="m m-Attribute">~/regexMatch</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  (some)(text)(in)(parentheses)
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>(some)(text)(in)(parentheses)
+</span></code></pre></div>
 
 </details>
 
@@ -1734,16 +1721,14 @@ Whether or not the display mode is the 'merge' mode.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{~mergeTags definition group merge~}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">{{</span><span class="m m-Attribute">~mergeTags</span> <span class="nv">definition</span> <span class="nv">group</span> <span class="nv">merge</span><span class="m">~</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  v5m, vt, JMdict (English)
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>v5m, vt, JMdict (English)
+</span></code></pre></div>
 
 </details>
 
@@ -1768,16 +1753,14 @@ The template used in case the iterable is falsy or empty. The context is unchang
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{~#eachUpTo someArray 5}}{{{.}}}<br>{{else}}Empty{{/mergeTags~}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="cp">{{</span><span class="m m-Attribute">~#eachUpTo</span> <span class="nv">someArray</span> <span class="m">5</span><span class="cp">}}</span><span class="cs">{{{</span><span class="err">.</span><span class="cs">}}}</span><span class="x">&lt;br&gt;</span><span class="cp">{{</span><span class="nv">else</span><span class="cp">}}</span><span class="x">Empty</span><span class="cp">{{</span><span class="m m-Attribute">/mergeTags~</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  someArray[0]<br>someArray[1]<br>someArray[2]<br>someArray[3]<br>someArray[4]<br>
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>someArray[0]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>someArray[1]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>someArray[2]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>someArray[3]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>someArray[4]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 Preview:
 
@@ -1799,16 +1782,14 @@ A variable amount of iterable objects to combine into a single array.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#each (spread array1 array2)}}{{{.}}}<br>{{/each}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="cp">{{</span><span class="m m-Attribute">#each</span> <span class="nv">(spread</span> <span class="nv">array1</span> <span class="nv">array2)</span><span class="cp">}}</span><span class="cs">{{{</span><span class="err">.</span><span class="cs">}}}</span><span class="x">&lt;br&gt;</span><span class="cp">{{</span><span class="m m-Attribute">/each</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  array1[0]<br>array1[1]<br>array2[0]<br>array2[1]<br>
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>array1[0]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>array1[1]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>array2[0]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>array2[1]<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 Preview:
 
@@ -1841,18 +1822,16 @@ The third operand of the operation.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#if (op "===" value1 value2)}}Values are equal{{/if~}}<br>
-  {{~#op "-" value1}}{{/op~}}<br>
-  {{~op "?:" value1 "a" "b"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(op</span> <span class="na">&quot;==</span><span class="o">=</span><span class="s2">&quot; value1 value2)}}Values are equal{{/if~}}&lt;br&gt;</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="s2">{{~#op &quot;</span><span class="err">-</span><span class="s2">&quot; value1}}{{/op~}}&lt;br&gt;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="s2">{{~op &quot;</span><span class="err">?</span><span class="s2">:&quot; value1 &quot;</span><span class="nv">a</span><span class="s2">&quot; &quot;</span><span class="nv">b</span><span class="err">&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  Values are equal<br>-32<br>a
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Values are equal<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>-32<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>a
+</span></code></pre></div>
 
 Preview:
 
@@ -1873,16 +1852,14 @@ The name of the variable to get.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{get "some-text"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">{{</span><span class="nv">get</span> <span class="s2">&quot;some-text&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  This is the value of some-text!
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>This is the value of some-text!
+</span></code></pre></div>
 
 </details>
 
@@ -1903,16 +1880,15 @@ The value of the variable.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#set "some-text"}}This is the value of some-text!{{/set~}}
-  {{~set "some-number" 32}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="cp">{{</span><span class="m m-Attribute">#set</span> <span class="s2">&quot;some-text&quot;</span><span class="cp">}}</span><span class="x">This is the value of some-text!</span><span class="cp">{{</span><span class="m m-Attribute">/set~</span><span class="cp">}}</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="cp">{{</span><span class="m m-Attribute">~set</span> <span class="s2">&quot;some-number&quot;</span> <span class="m">32</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>
+</span></code></pre></div>
 
 </details>
 
@@ -1934,23 +1910,21 @@ The value of the variable.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{~set "key" 32~}}
-  {{~get "key"~}},
-  {{~#scope~}}
-    {{~#get "key"~}},
-    {{~#set "key" 64~}}
-    {{~#get "key"~}},
-  {{~/scope~}}
-  {{~get "key"~}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="cp">{{</span><span class="m m-Attribute">~set</span> <span class="s2">&quot;key&quot;</span> <span class="m">32~</span><span class="cp">}}</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="cp">{{</span><span class="m m-Attribute">~get</span> <span class="s2">&quot;key&quot;</span><span class="m">~</span><span class="cp">}}</span><span class="x">,</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="cp">{{</span><span class="m m-Attribute">~#scope~</span><span class="cp">}}</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="x">  </span><span class="cp">{{</span><span class="m m-Attribute">~#get</span> <span class="s2">&quot;key&quot;</span><span class="m">~</span><span class="cp">}}</span><span class="x">,</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="x">  </span><span class="cp">{{</span><span class="m m-Attribute">~#set</span> <span class="s2">&quot;key&quot;</span> <span class="m">64~</span><span class="cp">}}</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="x">  </span><span class="cp">{{</span><span class="m m-Attribute">~#get</span> <span class="s2">&quot;key&quot;</span><span class="m">~</span><span class="cp">}}</span><span class="x">,</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="cp">{{</span><span class="m m-Attribute">~/scope~</span><span class="cp">}}</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="cp">{{</span><span class="m m-Attribute">~get</span> <span class="s2">&quot;key&quot;</span><span class="m">~</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  32,32,64,32
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>32,32,64,32
+</span></code></pre></div>
 
 </details>
 
@@ -1970,16 +1944,14 @@ A chain of property names to get on the object.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{property someObject "field" 0 "toString"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="cp">{{</span><span class="nv">property</span> <span class="nv">someObject</span> <span class="s2">&quot;field&quot;</span> <span class="m">0</span> <span class="s2">&quot;toString&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  function toString() { [native code] }
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>function toString() { [native code] }
+</span></code></pre></div>
 
 </details>
 
@@ -1995,16 +1967,14 @@ Output:
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{noop}}Unchanged content{{/noop}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="cp">{{</span><span class="nv">noop</span><span class="cp">}}</span><span class="x">Unchanged content</span><span class="cp">{{</span><span class="m m-Attribute">/noop</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  Unchanged content
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Unchanged content
+</span></code></pre></div>
 
 </details>
 
@@ -2020,16 +1990,14 @@ Output:
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#if (isMoraPitchHigh 1 2)}}High pitch{{else}}Low pitch{{/if}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(isMoraPitchHigh</span> <span class="m">1</span> <span class="m">2</span><span class="nv">)</span><span class="cp">}}</span><span class="x">High pitch</span><span class="cp">{{</span><span class="nv">else</span><span class="cp">}}</span><span class="x">Low pitch</span><span class="cp">{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  High pitch
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>High pitch
+</span></code></pre></div>
 
 </details>
 
@@ -2045,16 +2013,14 @@ Output:
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#each (getKanaMorae "よみたん")}}{{{.}}}<br>{{/each}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="cp">{{</span><span class="m m-Attribute">#each</span> <span class="nv">(getKanaMorae</span> <span class="s2">&quot;よみたん&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="cs">{{{</span><span class="err">.</span><span class="cs">}}}</span><span class="x">&lt;br&gt;</span><span class="cp">{{</span><span class="m m-Attribute">/each</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  よ<br>み<br>た<br>ん<br>
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>よ<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>み<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>た<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>ん<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 Preview:
 
@@ -2076,20 +2042,18 @@ The value to check.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{typeof "よみたん"}}
-  {{typeof 1}}
-  {{#typeof}}よみたん{{/typeof}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="cp">{{</span><span class="nv">typeof</span> <span class="s2">&quot;よみたん&quot;</span><span class="cp">}}</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="cp">{{</span><span class="nv">typeof</span> <span class="m">1</span><span class="cp">}}</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="cp">{{</span><span class="m m-Attribute">#typeof</span><span class="cp">}}</span><span class="x">よみたん</span><span class="cp">{{</span><span class="m m-Attribute">/typeof</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  string
-  number
-  string
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>string
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>number
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>string
+</span></code></pre></div>
 
 </details>
 
@@ -2109,17 +2073,15 @@ An individual value to join into the resulting string
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{set "index" 32~}}
-  {{~join "_" "yomitan" (get "index") "value"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="cp">{{</span><span class="nv">set</span> <span class="s2">&quot;index&quot;</span> <span class="m">32~</span><span class="cp">}}</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="cp">{{</span><span class="m m-Attribute">~join</span> <span class="s2">&quot;_&quot;</span> <span class="s2">&quot;yomitan&quot;</span> <span class="nv">(get</span> <span class="s2">&quot;index&quot;</span><span class="nv">)</span> <span class="s2">&quot;value&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  yomitan_32_value
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>yomitan_32_value
+</span></code></pre></div>
 
 </details>
 
@@ -2137,17 +2099,15 @@ A value to join into the resulting string
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{set "index" 32~}}
-  {{~concat "yomitan_" (get "index") "_value"}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="cp">{{</span><span class="nv">set</span> <span class="s2">&quot;index&quot;</span> <span class="m">32~</span><span class="cp">}}</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="cp">{{</span><span class="m m-Attribute">~concat</span> <span class="s2">&quot;yomitan_&quot;</span> <span class="nv">(get</span> <span class="s2">&quot;index&quot;</span><span class="nv">)</span> <span class="s2">&quot;_value&quot;</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  yomitan_32_value
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>yomitan_32_value
+</span></code></pre></div>
 
 </details>
 
@@ -2165,16 +2125,14 @@ The argument passed should always be the root data object.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  [{{#each (pitchCategories @root)}}{{.}}{{#unless @last}}, {{/unless}}{{/each}}]
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="x">[</span><span class="cp">{{</span><span class="m m-Attribute">#each</span> <span class="nv">(pitchCategories</span> <span class="nv">@root)</span><span class="cp">}}{{</span><span class="err">.</span><span class="cp">}}{{</span><span class="m m-Attribute">#unless</span> <span class="nv">@last</span><span class="cp">}}</span><span class="x">, </span><span class="cp">{{</span><span class="m m-Attribute">/unless</span><span class="cp">}}{{</span><span class="m m-Attribute">/each</span><span class="cp">}}</span><span class="x">]</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  [heiban, kifuku]
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>[heiban, kifuku]
+</span></code></pre></div>
 
 </details>
 
@@ -2195,16 +2153,14 @@ The definition entry object in raw form.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#each glossary}}{{formatGlossary ../dictionary .}}{{/each}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="cp">{{</span><span class="m m-Attribute">#each</span> <span class="nv">glossary</span><span class="cp">}}{{</span><span class="nv">formatGlossary</span> <span class="nv">../dictionary</span> <span class="err">.</span><span class="cp">}}{{</span><span class="m m-Attribute">/each</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  Here is the content of a gloss, which may include formatted HTML.
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Here is the content of a gloss, which may include formatted HTML.
+</span></code></pre></div>
 
 </details>
 
@@ -2238,42 +2194,40 @@ These functions are used together in order to request media and other types of o
   <summary>Examples:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{#if (hasMedia "audio")}}The audio file name is: {{getMedia "audio"}}{{/if}}
-
-  {{#if (hasMedia "screenshot")}}The screenshot file name is: {{getMedia "screenshot"}}{{/if}}
-
-  {{#if (hasMedia "clipboardImage")}}The clipboard image file name is: {{getMedia "clipboardImage"}}{{/if}}
-
-  {{#if (hasMedia "clipboardText")}}The clipboard text is: {{getMedia "clipboardText"}}{{/if}}
-
-  {{#if (hasMedia "popupSelectionText")}}The popup selection text is: {{getMedia "popupSelectionText"}}{{/if}}
-
-  {{#if (hasMedia "textFurigana" "日本語")}}This is an example of text with generated furigana: {{getMedia "textFurigana" "日本語" escape=false}}{{/if}}
-
-  {{#if (hasMedia "dictionaryMedia" "image.png" dictionary="Example Dictionary")}}The remapped file name for image.png is: {{getMedia "dictionaryMedia" "image.png" dictionary="Example Dictionary"}}{{/if}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;audio&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The audio file name is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;audio&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;screenshot&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The screenshot file name is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;screenshot&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;clipboardImage&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The clipboard image file name is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;clipboardImage&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>
+</span><span id="__span-45-7"><a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;clipboardText&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The clipboard text is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;clipboardText&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-8"><a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>
+</span><span id="__span-45-9"><a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;popupSelectionText&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The popup selection text is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;popupSelectionText&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-10"><a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>
+</span><span id="__span-45-11"><a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;textFurigana&quot;</span> <span class="s2">&quot;日本語&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">This is an example of text with generated furigana: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;textFurigana&quot;</span> <span class="s2">&quot;日本語&quot;</span> <span class="na">escape</span><span class="o">=</span><span class="nv">false</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span><span id="__span-45-12"><a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>
+</span><span id="__span-45-13"><a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a><span class="cp">{{</span><span class="m m-Attribute">#if</span> <span class="nv">(hasMedia</span> <span class="s2">&quot;dictionaryMedia&quot;</span> <span class="s2">&quot;image.png&quot;</span> <span class="na">dictionary</span><span class="o">=</span><span class="s2">&quot;Example Dictionary&quot;</span><span class="nv">)</span><span class="cp">}}</span><span class="x">The remapped file name for image.png is: </span><span class="cp">{{</span><span class="nv">getMedia</span> <span class="s2">&quot;dictionaryMedia&quot;</span> <span class="s2">&quot;image.png&quot;</span> <span class="na">dictionary</span><span class="o">=</span><span class="s2">&quot;Example Dictionary&quot;</span><span class="cp">}}{{</span><span class="m m-Attribute">/if</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  The audio file name is: yomitan_audio_にほんご_日本語.mp3
-
-  The screenshot file name is: yomitan_browser_screenshot_にほんご_日本語.png
-
-  The clipboard image file name is: yomitan_clipboard_image_にほんご_日本語.png
-
-  The clipboard text is: This is the clipboard text
-
-  The selection text is: This is the selection text
-
-  The selection text is: This is the selection text
-
-  This is an example of text with generated furigana: <ruby>日本語<rt>にほんご</rt></ruby>
-
-  The remapped file name for image.png is: yomitan_dictionary_media_1_にほんご_日本語.png
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>The audio file name is: yomitan_audio_にほんご_日本語.mp3
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>The screenshot file name is: yomitan_browser_screenshot_にほんご_日本語.png
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>The clipboard image file name is: yomitan_clipboard_image_にほんご_日本語.png
+</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a>
+</span><span id="__span-46-7"><a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a>The clipboard text is: This is the clipboard text
+</span><span id="__span-46-8"><a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a>
+</span><span id="__span-46-9"><a id="__codelineno-46-9" name="__codelineno-46-9" href="#__codelineno-46-9"></a>The selection text is: This is the selection text
+</span><span id="__span-46-10"><a id="__codelineno-46-10" name="__codelineno-46-10" href="#__codelineno-46-10"></a>
+</span><span id="__span-46-11"><a id="__codelineno-46-11" name="__codelineno-46-11" href="#__codelineno-46-11"></a>The selection text is: This is the selection text
+</span><span id="__span-46-12"><a id="__codelineno-46-12" name="__codelineno-46-12" href="#__codelineno-46-12"></a>
+</span><span id="__span-46-13"><a id="__codelineno-46-13" name="__codelineno-46-13" href="#__codelineno-46-13"></a>This is an example of text with generated furigana: <span class="p">&lt;</span><span class="nt">ruby</span><span class="p">&gt;</span>日本語<span class="p">&lt;</span><span class="nt">rt</span><span class="p">&gt;</span>にほんご<span class="p">&lt;/</span><span class="nt">rt</span><span class="p">&gt;&lt;/</span><span class="nt">ruby</span><span class="p">&gt;</span>
+</span><span id="__span-46-14"><a id="__codelineno-46-14" name="__codelineno-46-14" href="#__codelineno-46-14"></a>
+</span><span id="__span-46-15"><a id="__codelineno-46-15" name="__codelineno-46-15" href="#__codelineno-46-15"></a>The remapped file name for image.png is: yomitan_dictionary_media_1_にほんご_日本語.png
+</span></code></pre></div>
 
 </details>
 
@@ -2303,9 +2257,8 @@ An array of indices of mora that are devoiced.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{~pronunciation format='text' reading='よむ' downstepPosition=1~}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="cp">{{</span><span class="m m-Attribute">~pronunciation</span> <span class="na">format</span><span class="o">=</span><span class="s1">&#39;text&#39;</span> <span class="na">reading</span><span class="o">=</span><span class="s1">&#39;よむ&#39;</span> <span class="na">downstepPosition</span><span class="o">=</span><span class="m">1~</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 </details>
 
@@ -2327,22 +2280,20 @@ Defaults to `false` if not specified.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{hiragana "よみたん ヨミたん ヨミタン"}}
-  {{#hiragana}}よみたん ヨミたん ヨミタン{{/hiragana}}
-  {{#hiragana}}ローマ字{{/hiragana}}
-  {{#hiragana keepProlongedSoundMarks=true}}ローマ字{{/hiragana}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="cp">{{</span><span class="nv">hiragana</span> <span class="s2">&quot;よみたん ヨミたん ヨミタン&quot;</span><span class="cp">}}</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a><span class="cp">{{</span><span class="m m-Attribute">#hiragana</span><span class="cp">}}</span><span class="x">よみたん ヨミたん ヨミタン</span><span class="cp">{{</span><span class="m m-Attribute">/hiragana</span><span class="cp">}}</span>
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="cp">{{</span><span class="m m-Attribute">#hiragana</span><span class="cp">}}</span><span class="x">ローマ字</span><span class="cp">{{</span><span class="m m-Attribute">/hiragana</span><span class="cp">}}</span>
+</span><span id="__span-48-4"><a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="cp">{{</span><span class="m m-Attribute">#hiragana</span> <span class="na">keepProlongedSoundMarks</span><span class="o">=</span><span class="nv">true</span><span class="cp">}}</span><span class="x">ローマ字</span><span class="cp">{{</span><span class="m m-Attribute">/hiragana</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  よみたん よみたん よみたん
-  よみたん よみたん よみたん
-  ろうま字
-  ろーま字
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>よみたん よみたん よみたん
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>よみたん よみたん よみたん
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>ろうま字
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>ろーま字
+</span></code></pre></div>
 
 </details>
 
@@ -2361,18 +2312,16 @@ The text to convert.
   <summary>Example:</summary>
 
 <!-- prettier-ignore -->
-  ```handlebars
-  {{katakana "よみたん ヨミたん ヨミタン"}}
-  {{#katakana}}よみたん ヨミたん ヨミタン{{/katakana}}
-  ```
+  <div class="language-handlebars highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="cp">{{</span><span class="nv">katakana</span> <span class="s2">&quot;よみたん ヨミたん ヨミタン&quot;</span><span class="cp">}}</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="cp">{{</span><span class="m m-Attribute">#katakana</span><span class="cp">}}</span><span class="x">よみたん ヨミたん ヨミタン</span><span class="cp">{{</span><span class="m m-Attribute">/katakana</span><span class="cp">}}</span>
+</span></code></pre></div>
 
 Output:
 
 <!-- prettier-ignore -->
-  ```html
-  ヨミタン ヨミタン ヨミタン
-  ヨミタン ヨミタン ヨミタン
-  ```
+  <div class="language-html highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>ヨミタン ヨミタン ヨミタン
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>ヨミタン ヨミタン ヨミタン
+</span></code></pre></div>
 
 </details>
 

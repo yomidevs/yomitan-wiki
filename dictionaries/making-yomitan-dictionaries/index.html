@@ -1222,29 +1222,29 @@
 <h2 id="schema-validation">Schema Validation</h2>
 <p>To validate schemas, configure <a href="https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings">VSCode</a> to validate schemas or use a website such as <a href="https://www.jsonschemavalidator.net/">jsonschemavalidator</a>.</p>
 <p>For VSCode validation, use the following settings JSON:</p>
-<pre><code class="language-json">  &quot;json.schemas&quot;: [
-    {
-      &quot;fileMatch&quot;: [&quot;kanji_bank_*.json&quot;],
-      &quot;url&quot;: &quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-kanji-bank-v3-schema.json&quot;
-    },
-    {
-      &quot;fileMatch&quot;: [&quot;kanji_meta_bank_*.json&quot;],
-      &quot;url&quot;: &quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-kanji-meta-bank-v3-schema.json&quot;
-    },
-    {
-      &quot;fileMatch&quot;: [&quot;tag_bank_*.json&quot;],
-      &quot;url&quot;: &quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-tag-bank-v3-schema.json&quot;
-    },
-    {
-      &quot;fileMatch&quot;: [&quot;term_bank_*.json&quot;],
-      &quot;url&quot;: &quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-term-bank-v3-schema.json&quot;
-    },
-    {
-      &quot;fileMatch&quot;: [&quot;term_meta_bank_*.json&quot;],
-      &quot;url&quot;: &quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-term-meta-bank-v3-schema.json&quot;
-    }
-  ],
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="nt">&quot;json.schemas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;kanji_bank_*.json&quot;</span><span class="p">],</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-kanji-bank-v3-schema.json&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;kanji_meta_bank_*.json&quot;</span><span class="p">],</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-kanji-meta-bank-v3-schema.json&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;tag_bank_*.json&quot;</span><span class="p">],</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-tag-bank-v3-schema.json&quot;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;term_bank_*.json&quot;</span><span class="p">],</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-term-bank-v3-schema.json&quot;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">&quot;fileMatch&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;term_meta_bank_*.json&quot;</span><span class="p">],</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/themoeway/yomitan/raw/master/ext/data/schemas/dictionary-term-meta-bank-v3-schema.json&quot;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="p">],</span>
+</span></code></pre></div>
 <h2 id="conjugation">Conjugation</h2>
 <p>For Yomitan to conjugate Japanese terms, they need the appropriate part of speech tag. The part of speech labels are documented on the <a href="http://www.edrdg.org/jmdictdb/cgi-bin/edhelp.py?svc=jmdict&amp;sid=#kw_pos">official JMDict page</a>. For other languages, find the part of speech tags in <code>ext/js/language/{language}/{language}-transforms.js</code> under the <code>conditions</code> label, for labels that aren't prefixed with "Intermediate".</p>
 <h2 id="tag-categories">Tag Categories</h2>
