@@ -1,5 +1,5 @@
 site_name: Yomitan
-site_url: https://cashewnuttynuts.github.io/
+site_url: https://cashewnuttynuts.github.io/yomitan-wiki/
 site_description: Japanese pop-up dictionary browser extension
 site_author: Yomitan Authors
 repo_url: https://github.com/themoeway/yomitan
@@ -24,7 +24,7 @@ nav:
   - Contributing:
     - Contributing: 'contributing/index.md'
     - Language Features: 'contributing/language-features.md'
-    - NPM Scripts: 'npm-scripts.md'
+    - NPM Scripts: 'contributing/npm-scripts.md'
 theme:
   name: material
   favicon: assets/yomitan-icon64.png
