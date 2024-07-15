@@ -63,6 +63,15 @@ extra:
   homepage: https://cashewnuttynuts.github.io/home/
   generator: false
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 plugins:
   - git-revision-date-localized
   - search:

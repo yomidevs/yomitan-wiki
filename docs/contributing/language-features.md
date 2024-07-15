@@ -8,8 +8,7 @@ Improving Yomitan's features for the language(s) you are interested in is pretty
 
 If your language is not already available in the Language dropdown, here is how you can add it with just a few lines. As an example, we'll use [PR #913](https://github.com/themoeway/yomitan/pull/913/files), where a first-time contributor added Dutch.
 
-```js
-// language-descriptors.js
+```js title="language-descriptors.js"
 {
     iso: 'nl',
     iso639_3: 'nld',
@@ -26,8 +25,7 @@ If your language is not already available in the Language dropdown, here is how 
 
 When in doubt, look at the other languages in the file for ideas. The same applies to `language-descriptors.d.ts`:
 
-```ts
-// language-descriptors.d.ts
+```ts title="language-descriptors.d.ts"
 nl: {
   pre: CapitalizationPreprocessors;
 }
@@ -47,8 +45,7 @@ A language descriptor in `language-descriptors.js` has several optional fields f
 
 The scanned text may not exactly match the word in the dictionary. For example, an English dictionary will likely contain the word "read", but the text may contain "Read" or "READ". To handle cases like this, we use text preprocessors.
 
-```ts
-// from language.d.ts
+```ts title="language.d.ts"
 export type TextProcessor<T = unknown> = {
   name: string;
   description: string;
@@ -97,8 +94,7 @@ Note that the order of text processors can matter. Had we put capitalizeFirstLet
 
 A letter or a group of letters may have multiple variants in a language. For example, in German, "ß" can be written as "ss" and vice versa, or in Japanese every kana has a hiragana and a katakana variant. To handle this, we use a bidirectional conversion preprocessor.
 
-```js
-// from german-text-preprocessors.js
+```js title="german-text-preprocessors.js"
 /** @type {import('language').BidirectionalConversionPreprocessor} */
 export const eszettPreprocessor = {
   name: 'Convert "ß" to "ss"',
@@ -137,8 +133,7 @@ These grammatical rules are located in files such as `english-transforms.js`.
 
 Transforms files should export a `LanguageTransformDescriptor`, which is then imported in `language-descriptors.js`.
 
-```js
-// from language-transformer.d.ts
+```js title="language-transformer.d.ts"
 export type LanguageTransformDescriptor = {
     language: string;
     conditions: ConditionMapObject;
@@ -154,8 +149,7 @@ export type LanguageTransformDescriptor = {
 
 Let's try and write a bit of deinflection for English, from scratch.
 
-```js
-// english-transforms.js
+```js title="english-transforms.js"
 import { suffixInflection } from "../language-transforms.js";
 
 export const englishTransforms = {
@@ -265,8 +259,7 @@ The `suffixInflection` is one of a few helper functions - you can write more com
 
 Now that you have added a couple deinflection rules, you might want to start writing some tests to check if the deinflections are behaving correctly. Let's say we wanted to test the behavior of our `plural` and `possessive` rules and even them combined. Our test file should look like this:
 
-```js
-// english-transforms.test.js
+```js title="english-transforms.test.js"
 import { englishTransforms } from "../../ext/js/language/en/english-transforms.js";
 import { LanguageTransformer } from "../../ext/js/language/language-transformer.js";
 import { testLanguageTransformer } from "../fixtures/language-transformer-test.js";
