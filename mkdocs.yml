@@ -1,5 +1,5 @@
 site_name: Yomitan
-site_url: https://yomitan.wiki/
+site_url: https://themoeway.github.io/yomitan-wiki/
 site_description: Japanese pop-up dictionary browser extension
 site_author: Yomitan Authors
 repo_url: https://github.com/themoeway/yomitan
@@ -69,7 +69,7 @@ extra:
       link: https://github.com/themoeway/yomitan
     - icon: fontawesome/brands/discord
       link: https://discord.gg/tmw
-  homepage: https://yomitan.wiki/
+  homepage: https://themoeway.github.io/yomitan-wiki/
   generator: false
 
 markdown_extensions:
