@@ -5,7 +5,11 @@ site_author: Yomitan Authors
 repo_url: https://github.com/themoeway/yomitan
 repo_name: Yomitan
 nav:
-  - Home: 'index.md'
+  - Home:
+    - Introduction: 'index.md'
+    - Changes: 'change-log.md'
+    - Contributing: 'contributing.md'
+  - Getting started: 'getting-started/index.md'
   - Dictionaries:
     - Using dictionaries: 'dictionaries/index.md'
     - Making yomitan dictionaries: 'dictionaries/making-yomitan-dictionaries.md'
@@ -27,8 +31,8 @@ nav:
     - NPM Scripts: 'contributing/npm-scripts.md'
 theme:
   name: material
-  favicon: assets/yomitan-icon64.png
-  logo: assets/yomitan-icon128.png
+  favicon: assets/icon/yomitan-icon64.png
+  logo: assets/icon/yomitan-icon128.png
   icon:
     repo: fontawesome/brands/github
   features:
@@ -60,17 +64,40 @@ theme:
       accent: indigo
 
 extra:
-  homepage: https://cashewnuttynuts.github.io/yomitan-wiki/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/themoeway/yomitan
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/tmw
+  homepage: https://themoeway.github.io/yomitan-wiki/
   generator: false
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - git-revision-date-localized

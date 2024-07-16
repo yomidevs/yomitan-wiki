@@ -1,5 +1,3 @@
-## Keyboard Shortcuts
-
 The following shortcuts are globally available:
 
 | Shortcut                           | Action                   |
