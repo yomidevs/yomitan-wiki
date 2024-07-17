@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <p style="text-align: center; margin-bottom: 10px; font-size: 4vw">Yomitan</p>
+# <p style="text-align: center; margin-bottom: 10px; font-size: 2vw + 4.5vh">Yomitan</p>
 ## <p style="text-align: center">Powerful, versatile and efficient pop-up dictionary for immersive language learning.</p>
 
 <div class="md-button-center" markdown>
