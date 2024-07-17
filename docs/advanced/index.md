@@ -1,4 +1,40 @@
-## Default audio sources
+---
+hide:
+  - navigation
+  - footer
+---
+
+## Keyboard Shortcuts
+
+The following shortcuts are globally available:
+
+| Shortcut                           | Action                   |
+| ---------------------------------- | ------------------------ |
+| <kbd>Alt</kbd> + <kbd>Insert</kbd> | Open search page.        |
+| <kbd>Alt</kbd> + <kbd>Delete</kbd> | Toggle extension on/off. |
+
+The following shortcuts are available on search results:
+
+| Shortcut                         | Action                                  |
+| -------------------------------- | --------------------------------------- |
+| <kbd>Esc</kbd>                   | Cancel current search.                  |
+| <kbd>Alt</kbd> + <kbd>PgUp</kbd> | Page up through results.                |
+| <kbd>Alt</kbd> + <kbd>PgDn</kbd> | Page down through results.              |
+| <kbd>Alt</kbd> + <kbd>End</kbd>  | Go to last result.                      |
+| <kbd>Alt</kbd> + <kbd>Home</kbd> | Go to first result.                     |
+| <kbd>Alt</kbd> + <kbd>Up</kbd>   | Go to previous result.                  |
+| <kbd>Alt</kbd> + <kbd>Down</kbd> | Go to next result.                      |
+| <kbd>Alt</kbd> + <kbd>B</kbd>    | Go to back to source term.              |
+| <kbd>Alt</kbd> + <kbd>E</kbd>    | Add current term as expression to Anki. |
+| <kbd>Alt</kbd> + <kbd>R</kbd>    | Add current term as reading to Anki.    |
+| <kbd>Alt</kbd> + <kbd>P</kbd>    | Play audio for current term.            |
+| <kbd>Alt</kbd> + <kbd>K</kbd>    | Add current kanji to Anki.              |
+
+---
+
+## Audio
+
+### Default audio sources
 
 After looking up a term, you can click on the <img src="../ext/images/play-audio.svg" alt="" width="16" height="16"> _speaker_ button to hear the term's pronunciation. When searching for audio, multiple audio sources are checked until the first source with audio for the term is found. If no audio is found, you will hear a short click instead. Right-clicking the <img src="../ext/images/play-audio.svg" alt="" width="16" height="16"> button allows choosing the source manually.
 
@@ -18,11 +54,11 @@ The default audio sources for other languages are from Wikimedia Commons:
 
 While Commons has audio for many languages, some of them have limited coverage, and you may want to add additional sources, as described below.
 
-## Configuration
+### Configuration
 
 Audio sources can be configured in `Settings` > `Audio` > `Configure audio playback sources` to reorder them or add new ones. Besides the four sources mentioned above, you can also use your browser's inbuilt text-to-speech (TTS) engine or add a custom URL source:
 
-### Text-to-speech (TTS)
+#### Text-to-speech (TTS)
 
 To enable this, just add a new playback source with the `Text-to-speech` type and choose your desired voice. This is the simplest way to get pronunciation audio, though there a few points to keep in mind:
 
@@ -30,10 +66,23 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 - TTS audio can be inaccurate for languages with complex pronunciation such as Japanese, where words can have multiple possible readings and pitch accents.
 - ⚠️ Note that the TTS voices cannot be sent to Anki; this is a [limitation of the browser SpeechSynthesis API](https://github.com/themoeway/yomitan/issues/864).
 
-### Custom URL
+#### Custom URL
 
 You can add a custom URL from which audio will be fetched. One use case for this is fetching audio from Forvo:
 
-#### Yomichan Forvo Server
+##### Yomichan Forvo Server
 
 [Forvo](https://forvo.com/) is currently the largest online pronunciation database, with native pronunciation audio for various languages. One way to get Forvo audio in Yomitan is via the [Yomichan Forvo Server](https://ankiweb.net/shared/info/580654285) Anki add-on. It fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
+
+---
+
+## Advanced Options
+
+Click the `Advanced` toggle switch in the bottom left corner of the Settings page to enable advanced options.
+
+### Parse sentences using MeCab
+
+[MeCab](https://taku910.github.io/mecab/) is a third-party program which uses its own dictionaries and parsing algorithm to decompose sentences into individual words. MeCab may provide more accurate parsing results than Yomitan's internal parser.
+
+In order for Yomitan to use it, both MeCab and a native messaging component must be installed.
+A setup guide can be found [here](https://github.com/themoeway/yomitan-mecab-installer/blob/master/README.md).

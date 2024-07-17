@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+  - footer
+---
+
+
 ## Anki Integration
 
 Yomitan features automatic flashcard creation for [Anki](https://apps.ankiweb.net/), a free application designed to help you

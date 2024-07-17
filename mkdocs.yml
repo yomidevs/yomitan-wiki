@@ -5,30 +5,16 @@ site_author: Yomitan Authors
 repo_url: https://github.com/themoeway/yomitan
 repo_name: Yomitan
 nav:
-  - Home:
-    - Introduction: 'index.md'
-    - Changes: 'change-log.md'
-    - Contributing: 'contributing.md'
+  - Home: 'index.md'
   - Getting started: 'getting-started/index.md'
-  - Dictionaries:
-    - Using dictionaries: 'dictionaries/index.md'
-    - Making yomitan dictionaries: 'dictionaries/making-yomitan-dictionaries.md'
-  - Anki:
-    - Anki integration: 'anki/index.md'
-    - Templates: 'anki/templates.md'
-  - Advanced Features:
-    - Keyboard shortcuts: 'advanced/keyboard-shortcuts.md'
-    - Advanced options, including MeCab: 'advanced/advanced-options.md'
-    - Adding custom audio sources: 'advanced/audio.md'
+  - Dictionaries: 'dictionaries/index.md'
+  - Anki: 'anki/index.md'
+  - Advanced Features: 'advanced/index.md'
   - Other:
     - FAQ: 'other/faq.md'
     - Browser permissions: 'other/permissions.md'
     - Supported languages: 'other/supported-languages.md'
     - Migrating from Yomichan (legacy): 'other/yomichan-migration.md'
-  - Contributing:
-    - Contributing: 'contributing/index.md'
-    - Language Features: 'contributing/language-features.md'
-    - NPM Scripts: 'contributing/npm-scripts.md'
 theme:
   name: material
   favicon: assets/icon/yomitan-icon64.png

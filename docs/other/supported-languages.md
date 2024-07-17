@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - footer
+---
+
 # Supported Languages
 
 Yomitan supports a variety of languages, although the level of support may vary depending on the extent to which deinflections and text transforms have been implemented.

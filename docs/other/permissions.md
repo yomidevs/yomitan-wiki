@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - footer
+---
+
 # Yomitan Permissions
 
 - `<all_urls>` <br>
