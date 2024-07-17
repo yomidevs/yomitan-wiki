@@ -1,6 +1,15 @@
+---
+hide:
+  - navigation
+  - footer
+---
+
+
 ## Dictionaries
 
-You must download and import the dictionaries you wish to use in order to enable Yomitan definition lookups. There are several free dictionaries available for Yomitan, some of them with glossaries available in different languages.
+You must download and import the dictionaries you wish to use in order to enable Yomitan definition lookups.
+
+There are several free dictionaries available for Yomitan, some of them with glossaries available in different languages.
 
 Be aware that non-English dictionaries generally contain fewer entries than their English counterparts. Even if your primary language is not English, you may consider also importing the English version for better coverage.
 

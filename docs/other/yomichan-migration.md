@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - footer
+---
+
 ## Migrating from Yomichan
 
 ### Exporting Data

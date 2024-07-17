@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+  - footer
 ---
 
 # <p style="text-align: center; margin-bottom: 10px; font-size: 200%">**Yomitan**</p>
@@ -45,12 +46,16 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
     [:octicons-arrow-right-24: More information](./advanced/audio.md)
     
--   :writing_hand:{ .lg .middle } &nbsp;
-    __Stroke Order__
+-   :earth_asia:{ .lg .middle } &nbsp;
+    __Multilanguage Support__
 
     ---
 
-    Kanji stroke order diagrams are just a click away.
+    Support for a variety of languages ranging from Japanese to Spanish and even Old Irish.
+
+    ---
+
+    [:octicons-arrow-right-24: More information](./other/supported-languages.md)
 
 -   :pencil:{ .lg .middle } &nbsp;
     __Flashcards__

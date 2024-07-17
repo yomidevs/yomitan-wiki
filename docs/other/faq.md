@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - footer
+---
+
 ## Frequently Asked Questions
 
 **I can't scan text in Firefox!**

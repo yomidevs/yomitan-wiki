@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+  - footer
+---
+
+
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience. 
 
 Whether you're new to Yomitan or just need a refresher, here you'll find all the essential information you need to begin your journey.
@@ -8,7 +15,7 @@ Let's dive in and get started!
 
 ## Installation
 
-##### Yomitan comes in two flavors: _stable_ and _testing_.
+<h5>Yomitan comes in two flavors: <em>stable</em> and <em>testing</em>.</h5>
 
 !!! info "Stable and Testing"
     - New changes are initially introduced into the _testing_ version, and after some time spent ensuring that they are relatively bug free, they will be promoted to the _stable_ version.
@@ -17,12 +24,12 @@ Let's dive in and get started!
 
 === "Google Chrome"
     === "Stable"
-        [:fontawesome-brands-chrome: Get Yomitan <small>Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary }
+        [:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary }
     === "Testing"
-        [:fontawesome-brands-chrome: Get Yomitan <small>Testing</small>](https://chrome.google.com/webstore/detail/yomitan-development-build/glnaenfapkkecknnmginabpmgkenenml){ .md-button .md-button--primary }
+        [:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Testing</small>](https://chrome.google.com/webstore/detail/yomitan-development-build/glnaenfapkkecknnmginabpmgkenenml){ .md-button .md-button--primary }
 === "Mozilla Firefox"
     === "Stable"
-        [:fontawesome-brands-firefox-browser: Get Yomitan <small>Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary }
+        [:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary }
     === "Testing"        
         [:fontawesome-brands-firefox-browser: Go To Github Releases](https://github.com/themoeway/yomitan/releases){ .md-button .md-button--primary }
         
@@ -47,19 +54,25 @@ Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt=
 
 ### Installing Dictionaries
 
-Import the dictionaries you wish to use for term and kanji searches; head over to the [dictionary docs](./docs/dictionaries.md) to get set up! If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
+To import the dictionaries you wish to use for term and kanji searches, head over to the [dictionary docs](./docs/dictionaries.md) to get set up!
+
+If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
 <img src="../assets/resources/settings-dictionaries-popup.png" width="300" alt="custom dictionaries list">
 
 ### Scanning Text
 
-Webpage text can be scanned by moving the cursor while holding a modifier key, which is <kbd>Shift</kbd> by default. If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
+Webpage text can be scanned by moving the cursor while holding a modifier key, which is <kbd>Shift</kbd> by default.
+
+If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
 <img src="../assets/resources/search-popup-terms.png" width="300" alt="popup with search terms">
 
 ### Audio
 
-Click on the <img src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker. If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](./docs/audio.md).
+Click on the <img src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker.
+
+If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](./docs/audio.md).
 
 ### Kanji
 
