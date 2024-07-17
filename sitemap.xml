@@ -6,27 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yomitan.wiki/change-log/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/contributing/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/advanced/advanced-options/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/advanced/audio/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/advanced/keyboard-shortcuts/</loc>
+         <loc>https://yomitan.wiki/advanced/</loc>
          <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -36,32 +16,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://yomitan.wiki/anki/templates/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/contributing/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/contributing/language-features/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/contributing/npm-scripts/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://yomitan.wiki/dictionaries/</loc>
-         <lastmod>2024-07-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/dictionaries/making-yomitan-dictionaries/</loc>
          <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
