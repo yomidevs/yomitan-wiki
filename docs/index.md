@@ -29,22 +29,70 @@ hide:
 
 Yomitan turns your web browser into a tool for building language literacy by helping you **read** texts that would otherwise be too difficult to tackle in [a variety of supported languages](./docs/supported-languages.md).
 
-???+ abstract "Yomitan Features"
-    Yomitan provides `powerful features` not available in other browser-based dictionaries:
+<div class="grid cards" markdown>
 
-    - :speech_balloon: Interactive popup definition window for displaying search results.
-  
-    - :loud_sound: Built-in native pronunciation audio with the ability to add your own [custom audio sources](./docs/audio.md).
-        
-    - :writing_hand: Kanji stroke order diagrams are just a click away.
-        
-    - :pencil: [Automatic flashcard creation](./docs/anki-integration.md#anki-integration) for the [Anki](https://apps.ankiweb.net/) flashcard program via the [AnkiConnect](https://foosoft.net/projects/anki-connect) plugin.
-        
-    - :mag: Custom search page for easily executing custom search queries.
-        
-    - :book: Support for multiple dictionary formats including [EPWING](https://ja.wikipedia.org/wiki/EPWING) via the [Yomitan Import](https://github.com/themoeway/yomitan-import) tool.
-        
-    - :sparkles: Clean, modern code makes it easy for developers to [contribute](#contributing) new features and languages.
+
+-   :speech_balloon:{ .lg .middle } &nbsp;
+    __Interactive Popup__
+
+    ---
+
+    Interactive popup definition window for displaying search results.
+
+
+-   :loud_sound:{ .lg .middle } &nbsp;
+    __Audio__
+
+    ---
+
+    Built-in native pronunciation audio with the ability to add your own custom audio sources.
+
+    ---
+
+    [:octicons-arrow-right-24: More information](./advanced/audio.md)
+    
+-   :writing_hand:{ .lg .middle } &nbsp;
+    __Stroke Order__
+
+    ---
+
+    Kanji stroke order diagrams are just a click away.
+
+-   :pencil:{ .lg .middle } &nbsp;
+    __Flashcards__
+
+    ---
+
+    Automatic flashcard creation for the [Anki](https://apps.ankiweb.net/) flashcard program via the [AnkiConnect](https://foosoft.net/projects/anki-connect) plugin.
+
+    ---
+
+    [:octicons-arrow-right-24: More information](./anki/index.md)
+
+-   :mag:{ .lg .middle } &nbsp;
+    __Custom Search__
+
+    ---
+
+    Custom search page for easily executing custom search queries.
+
+
+-   :book:{ .lg .middle } &nbsp;
+    __Dictionaries__
+
+    ---
+
+    Support for multiple dictionary formats including [EPWING](https://ja.wikipedia.org/wiki/EPWING) via the [Yomitan Import](https://github.com/themoeway/yomitan-import) tool.
+
+    ---
+
+    [:octicons-arrow-right-24: More information](./dictionaries/index.md)
+
+</div>
+
+---
+
+### Yomitan Demo
 
 === "Yomitan Popup"
     === "Term"
