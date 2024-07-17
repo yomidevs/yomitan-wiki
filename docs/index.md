@@ -4,14 +4,16 @@ hide:
   - toc
 ---
 
-# <p style="text-align: center; margin-bottom: 10px; font-size: 2vw + 4.5vh">Yomitan</p>
+# <p style="text-align: center; margin-bottom: 10px; font-size: 200%">Yomitan</p>
 ## <p style="text-align: center">Powerful, versatile and efficient pop-up dictionary for immersive language learning.</p>
 
-<div class="md-button-center" markdown>
+<div class="grid" markdown>
 
-[Get started](getting-started/index.md){ .md-button .md-button }
-[:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary }
-[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary }
+[Get started](getting-started/index.md){ .md-button .md-button--stretch }
+
+[:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary .md-button--stretch }
+
+[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
 
 </div>
 
