@@ -106,4 +106,7 @@ plugins:
         - en
         - ja
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: Copyright &copy; 2024 Yomitan Authors
