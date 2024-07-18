@@ -46,4 +46,4 @@ These are the languages currently supported by Yomitan:
 | Turkish        | tr   |
 | Vietnamese     | vi   |
 
-For more information on how to add or improve support for a language, please refer to the [language features documentation](./development/language-features.md).
+If you want to add or improve support for a language, consider looking at the [language features documentation at GitHub](https://github.com/themoeway/yomitan/blob/master/docs/development/language-features.md).

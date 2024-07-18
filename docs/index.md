@@ -22,7 +22,7 @@ hide:
 
 ## What is Yomitan?
 
-Yomitan turns your web browser into a tool for building language literacy by helping you **read** texts that would otherwise be too difficult to tackle in [a variety of supported languages](./docs/supported-languages.md).
+Yomitan turns your web browser into a tool for building language literacy by helping you **read** texts that would otherwise be too difficult to tackle in [a variety of supported languages](./other/supported-languages.md).
 
 <div class="grid cards" markdown>
 
@@ -44,7 +44,7 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
     ---
 
-    [:octicons-arrow-right-24: More information](./advanced/audio.md)
+    [:octicons-arrow-right-24: More information](./advanced/index.md#audio)
     
 -   :earth_asia:{ .lg .middle } &nbsp;
     __Multilanguage Support__
