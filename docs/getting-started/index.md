@@ -54,7 +54,7 @@ Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt=
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term and kanji searches, head over to the [dictionary docs](./docs/dictionaries.md) to get set up!
+To import the dictionaries you wish to use for term and kanji searches, head over to [Dictionary](../dictionaries/index.md) to get set up!
 
 If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
@@ -72,7 +72,7 @@ If definitions are found for the text at the cursor position, a popup window con
 
 Click on the <img src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker.
 
-If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](./docs/audio.md).
+If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](../advanced/index.md#audio).
 
 ### Kanji
 
@@ -80,4 +80,4 @@ Click on individual kanji in the term definition results to view additional info
 
 <img src="../assets/resources/search-popup-kanji.png" width="300" alt="popup with kanji details">
 
-To further enhance your Yomitan experience, it's worth [integrating with Anki](./docs/anki-integration.md), a spaced-repetition flashcard program to help solidify the words you encounter.
+To further enhance your Yomitan experience, it's worth [integrating with Anki](../anki/index.md), a spaced-repetition flashcard program to help solidify the words you encounter.
