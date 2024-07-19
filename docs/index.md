@@ -1,4 +1,6 @@
 ---
+title: Welcome to Yomitan
+description: Powerful, versatile and efficient pop-up dictionary for immersive language learning.
 hide:
   - navigation
   - toc

@@ -87,6 +87,7 @@ markdown_extensions:
 
 plugins:
   - git-revision-date-localized
+  - social
   - search:
       lang:
         - en
