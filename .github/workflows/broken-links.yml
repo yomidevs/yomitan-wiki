@@ -1,0 +1,25 @@
+name: Broken Link Checker
+
+permissions:
+  contents: read
+
+# runs on prs containing markdown or html changes, as well as every monday at 9 am
+on:
+  pull_request:
+    paths:
+      - "**.md"
+      - "**.html"
+  schedule:
+    - cron: "0 9 * * 1"
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          fail: true
+          jobSummary: false
+          args: --verbose --no-progress './**/*.md' './**/*.html'
