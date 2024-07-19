@@ -23,4 +23,3 @@ jobs:
           fail: true
           jobSummary: false
           args: --verbose --no-progress './**/*.md' './**/*.html'
-          
