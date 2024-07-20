@@ -15,25 +15,18 @@ Let's dive in and get started!
 
 ## Installation
 
-<h5>Yomitan comes in two flavors: <em>stable</em> and <em>testing</em>.</h5>
-
-!!! info "Stable and Testing"
-    - New changes are initially introduced into the _testing_ version, and after some time spent ensuring that they are relatively bug free, they will be promoted to the _stable_ version.
-
-    - If you are technically savvy and don't mind [submitting issues](https://github.com/themoeway/yomitan/issues/new/choose) on GitHub, try the _testing_ version; otherwise, the _stable_ version will be your best bet. Check [contributing](#contributing) for more information on how to help.
-
 === "Google Chrome"
     === "Stable"
         [:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary }
-    === "Testing"
-        [:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Testing</small>](https://chrome.google.com/webstore/detail/yomitan-development-build/glnaenfapkkecknnmginabpmgkenenml){ .md-button .md-button--primary }
+    === "Beta"
+        [:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Beta</small>](https://chrome.google.com/webstore/detail/yomitan-development-build/glnaenfapkkecknnmginabpmgkenenml){ .md-button .md-button--primary }
 === "Mozilla Firefox"
     === "Stable"
         [:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary }
-    === "Testing"        
+    === "Beta"        
         [:fontawesome-brands-firefox-browser: Go To Github Releases](https://github.com/themoeway/yomitan/releases){ .md-button .md-button--primary }
         
-        <small>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will to download the desired version and side-load it yourself. You only need to do this once, and you will get updautomatically.</small>
+        <small>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will to download the desired version and side-load it yourself. You only need to do this once, and you will get updates automatically.</small>
 
 ---
 
