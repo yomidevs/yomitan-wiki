@@ -23,6 +23,5 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install "mkdocs-material[imaging]"
+      - run: pip install mkdocs-git-revision-date-localized-plugin mkdocs-glightbox "mkdocs-material[imaging]"
       - run: mkdocs gh-deploy --force
