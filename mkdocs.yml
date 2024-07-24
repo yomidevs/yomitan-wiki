@@ -92,6 +92,11 @@ plugins:
       lang:
         - en
         - ja
+  - glightbox:
+      manual: true
+      width: 70%
+      effect: none
+
 
 extra_css:
   - stylesheets/extra.css

@@ -19,7 +19,6 @@ hide:
 [:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
 
 </div>
-
 ---
 
 ## What is Yomitan?
@@ -35,6 +34,7 @@ Yomitan turns your web browser into a tool for building language literacy by hel
     ---
 
     Interactive popup definition window for displaying search results.
+    ![Term definitions](assets/ss/terms.webp){ class=on-glb }
 
 
 -   :loud_sound:{ .lg .middle } &nbsp;
@@ -66,6 +66,8 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
     Automatic flashcard creation for the [Anki](https://apps.ankiweb.net/) flashcard program via the [AnkiConnect](https://foosoft.net/projects/anki-connect) plugin.
 
+    ![Anki](assets/ss/anki.webp){ class=on-glb }
+
     ---
 
     [:octicons-arrow-right-24: More information](./anki/index.md)
@@ -91,19 +93,4 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
 </div>
 
----
-
-### Yomitan Demo
-
-=== "Yomitan Popup"
-    === "Term"
-        ![Term definitions](assets/ss/terms.png)
-    === "Kanji"
-        ![Kanji information](assets/ss/kanji.png)
-=== "Yomitan Settings"
-    === "Dictionary"
-        ![Dictionary options](assets/ss/dictionaries.png)
-    === "Anki"
-        ![Anki options](assets/ss/anki.png)
-
-[Get started](getting-started/index.md){ .md-button .md-button }
+[Get started](getting-started/index.md){ .md-button .md-button--stretch }

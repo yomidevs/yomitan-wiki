@@ -38,7 +38,7 @@ Now that you have installed Yomitan, let's explore how you can utilize her featu
 
 Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> _Yomitan_ button in the browser bar to open the quick-actions popup.
 
-<img src="../assets/resources/browser-action-popup1.png" alt="yomitan main popup">
+<img src="../assets/resources/browser-action-popup1.webp" alt="yomitan main popup">
 
 - The <img src="../assets/icon/cog.svg" width="16" height="16" alt="cog"> _cog_ button will open the Settings page.
 - The <img src="../assets/icon/magnifying-glass.svg" width="16" height="16" alt="magnifying glass"> _magnifying glass_ button willopen the Search page.
@@ -51,7 +51,7 @@ To import the dictionaries you wish to use for term and kanji searches, head ove
 
 If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
-<img src="../assets/resources/settings-dictionaries-popup.png" width="300" alt="custom dictionaries list">
+<img src="../assets/resources/settings-dictionaries-popup.webp" width="300" alt="custom dictionaries list">
 
 ### Scanning Text
 
@@ -59,7 +59,7 @@ Webpage text can be scanned by moving the cursor while holding a modifier key, w
 
 If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
-<img src="../assets/resources/search-popup-terms.png" width="300" alt="popup with search terms">
+<img src="../assets/resources/search-popup-terms.webp" width="300" alt="popup with search terms">
 
 ### Audio
 
@@ -71,6 +71,6 @@ If an audio sample is not available, you will hear a short click instead. For mo
 
 Click on individual kanji in the term definition results to view additional information about those characters, including stroke order diagrams, readings, meanings, and other useful data.
 
-<img src="../assets/resources/search-popup-kanji.png" width="300" alt="popup with kanji details">
+<img src="../assets/resources/search-popup-kanji.webp" width="300" alt="popup with kanji details">
 
 To further enhance your Yomitan experience, it's worth [integrating with Anki](../anki/index.md), a spaced-repetition flashcard program to help solidify the words you encounter.
