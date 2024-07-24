@@ -14,9 +14,9 @@ hide:
 
 [Get started](getting-started/index.md){ .md-button .md-button--stretch }
 
-[:fontawesome-brands-chrome: Get Yomitan <small>Chrome/Stable</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary .md-button--stretch }
+[:fontawesome-brands-chrome: Get Yomitan <small>Chrome</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary .md-button--stretch }
 
-[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
+[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
 
 </div>
 ---
