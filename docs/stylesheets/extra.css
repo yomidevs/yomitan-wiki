@@ -2,3 +2,10 @@
     width: 100%;
     text-align: center;
 }
+
+@media not all and (min-width: 640px) {
+    .md-button--stretch-max-sm {
+        width: 100%;
+        text-align: center;
+    }
+}
