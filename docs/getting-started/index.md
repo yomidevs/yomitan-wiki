@@ -31,7 +31,7 @@ Let's dive in and get started!
 
 </div>
 
-<small>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will to download the desired version and side-load it yourself. You only need to do this once, and you will get updates automatically.</small>
+<small>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will have to download the desired version and side-load it yourself. You only need to do this once, and you will get updates automatically.</small>
 
 ---
 
