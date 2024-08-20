@@ -12,13 +12,15 @@ hide:
 
 <div class="grid" markdown>
 
-[Get started](getting-started/index.md){ .md-button .md-button--stretch }
-
 [:fontawesome-brands-chrome: Get Yomitan <small>Chrome</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary .md-button--stretch }
 
 [:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
 
+[:fontawesome-brands-edge: Get Yomitan <small>Edge</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){ .md-button .md-button--primary .md-button--stretch }
+
+[Get started](getting-started/index.md){ .md-button .md-button--stretch }
 </div>
+
 ---
 
 ## What is Yomitan?

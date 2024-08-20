@@ -33,6 +33,11 @@ Let's dive in and get started!
 
 <small>※ Unlike Chrome, Firefox does not allow extensions meant for testing to be hosted in the marketplace. You will have to download the desired version and side-load it yourself. You only need to do this once, and you will get updates automatically.</small>
 
+### Edge
+<div class="grid" markdown>
+[:fontawesome-brands-edge: Get Yomitan <small>Edge/Stable</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){ .md-button .md-button--primary .md-button--stretch }
+
+</div>
 ---
 
 ## Basic Usage
