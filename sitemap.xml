@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://yomitan.wiki/community/</loc>
+         <lastmod>2024-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://yomitan.wiki/dictionaries/</loc>
          <lastmod>2024-08-21</lastmod>
          <changefreq>daily</changefreq>
