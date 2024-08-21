@@ -32,6 +32,20 @@ The following shortcuts are available on search results:
 
 ---
 
+## Advanced Scanning Options
+
+### Scanning local files
+
+To enable Yomitan scanning on local files, go to `Settings` > `Security` > `Configure Yomitan Permissions`, and navigate to the `Allow access to file URLs` option. From there, follow the link to the browser's settings pages, and check `Allow access to file URLs` on Chrome/Edge, or `Access your data for all websites` for Firefox.
+
+Yomitan may not work on PDF files. When that happens, drag and drop your PDF file into [our PDF Viewer](../yomitan-pdf-viewer/index.html).
+
+### Scanning in private windows
+
+To enable Yomitan scanning in private/incognito web browser windows, go to `Settings` > `Security` > `Configure Yomitan Permissions`, and navigate to the `Allow in private windows` option. From there, follow the link to the browser's settings pages, and check `Allow in private windows` on Chrome/Edge, or `Run in Private Windows` for Firefox.
+
+---
+
 ## Audio
 
 ### Default audio sources
