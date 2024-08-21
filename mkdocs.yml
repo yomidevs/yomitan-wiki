@@ -10,6 +10,8 @@ nav:
   - Dictionaries: 'dictionaries/index.md'
   - Anki: 'anki/index.md'
   - Advanced Features: 'advanced/index.md'
+  - Community: 'community/index.md'
+  - PDF Viewer: 'yomitan-pdf-viewer/index.html'
   - Other:
     - FAQ: 'other/faq.md'
     - Browser permissions: 'other/permissions.md'
