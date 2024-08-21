@@ -18,8 +18,9 @@ hide:
 
 [:fontawesome-brands-edge: Get Yomitan <small>Edge</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){ .md-button .md-button--primary .md-button--stretch }
 
-[Get started](getting-started/index.md){ .md-button .md-button--stretch }
 </div>
+
+[Get started](getting-started/index.md){ .md-button .md-button--stretch }
 
 ---
 
