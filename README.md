@@ -1,2 +1,3 @@
 # yomitan-wiki
-A website for Yomitan.
+A website for [Yomitan](https://yomitan.wiki).
+
