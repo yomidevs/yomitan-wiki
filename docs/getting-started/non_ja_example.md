@@ -63,7 +63,7 @@ To import the dictionaries you wish to use for term searches. head over to [Dict
 
 If you do not have any dictionaries installed or enabled. yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
-<img src="../assets/resources/settings-dictionaries-popup-english.png" width="300" alt="custom dictionaries list">
+<img src="../assets/ss/settings-dictionaries-popup-english.webp" width="300" alt="custom dictionaries list">
 
 ### Scanning Text
 
@@ -71,7 +71,7 @@ Webpage text can be scanned by moving the cursor while holding a modifier key, w
 
 If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
-<img src="../assets/resources/search-popup-terms-english.png" width="300" alt="popup with search terms">
+<img src="../assets/ss/search-popup-terms-english.webp" width="300" alt="popup with search terms">
 
 ### Audio
 
