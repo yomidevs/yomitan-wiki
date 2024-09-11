@@ -1,9 +1,8 @@
 ---
 hide:
-  - navigation
-  - footer
+    - navigation
+    - footer
 ---
-
 
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience. 
 
@@ -26,7 +25,7 @@ Let's dive in and get started!
 ### Firefox
 <div class="grid" markdown>
 
-[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){ .md-button .md-button--primary .md-button--stretch }
+[:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){.md-button .md-button--primary .md-button--stretch}
 
 [:fontawesome-brands-firefox-browser: Go To Github Releases](https://github.com/themoeway/yomitan/releases){ .md-button .md-button--primary .md-button--stretch }
 
@@ -40,6 +39,7 @@ Let's dive in and get started!
 [:fontawesome=brangs-edge: Get Yomitan <small>Edge/Stable</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){.md-button .md-button--primary .md-button--stretch}
 
 </div>
+
 ---
 
 ## Basic Usage
@@ -59,11 +59,11 @@ Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt=
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term and kanji searches, head over to [Dictionary](../dictionaries/index.md) to get set up!
+To import the dictionaries you wish to use for term searches. head over to [Dictionary](../dictionaries//index.md) to get set up!
 
-If you do not have any dictionaries installed or enabled, Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
+If you do not have any dictionaries installed or enabled. yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
-<img src="../assets/resources/settings-dictionaries-popup.webp" width="300" alt="custom dictionaries list">
+<img src="../assets/ss/settings-dictionaries-popup-english.webp" width="300" alt="custom dictionaries list">
 
 ### Scanning Text
 
@@ -71,7 +71,7 @@ Webpage text can be scanned by moving the cursor while holding a modifier key, w
 
 If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
-<img src="../assets/resources/search-popup-terms.webp" width="300" alt="popup with search terms">
+<img src="../assets/ss/search-popup-terms-english.webp" width="300" alt="popup with search terms">
 
 ### Audio
 
@@ -79,10 +79,3 @@ Click on the <img src="../assets/icon/play-audio.svg" width="16" height="16" alt
 
 If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](../advanced/index.md#audio).
 
-### Kanji
-
-Click on individual kanji in the term definition results to view additional information about those characters, including stroke order diagrams, readings, meanings, and other useful data.
-
-<img src="../assets/resources/search-popup-kanji.webp" width="300" alt="popup with kanji details">
-
-To further enhance your Yomitan experience, it's worth [integrating with Anki](../anki/index.md), a spaced-repetition flashcard program to help solidify the words you encounter.
