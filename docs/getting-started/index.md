@@ -52,14 +52,14 @@ Now that you have installed Yomitan, let's explore how you can utilize her featu
 
 ### Quick-actions
 
-Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> _Yomitan_ button in the browser bar to open the quick-actions popup.
+Click the <img class="icon" src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> _Yomitan_ button in the browser bar to open the quick-actions popup.
 
-<img src="../assets/ss/browser-action-popup.webp" alt="yomitan main popup">
+<img class="ss" src="../assets/ss/browser-action-popup.webp" alt="yomitan main popup">
 
-- The <img src="../assets/icon/cog.svg" width="16" height="16" alt="cog"> _cog_ button will open the Settings page.
-- The <img src="../assets/icon/magnifying-glass.svg" width="16" height="16" alt="magnifying glass"> _magnifying glass_ button willopen the Search page.
-- The <img src="../assets/icon/question-mark-circle.svg" width="16" height="16" alt="question mark symbol"> _question mark_ buttonwill open the Information page.
-- The <img src="../assets/icon/profile.svg" width="16" height="16" alt="profile icon"> _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
+- The <img class="icon" src="../assets/icon/cog.svg" width="16" height="16" alt="cog"> _cog_ button will open the Settings page.
+- The <img class="icon" src="../assets/icon/magnifying-glass.svg" width="16" height="16" alt="magnifying glass"> _magnifying glass_ button willopen the Search page.
+- The <img class="icon" src="../assets/icon/question-mark-circle.svg" width="16" height="16" alt="question mark symbol"> _question mark_ buttonwill open the Information page.
+- The <img class="icon" src="../assets/icon/profile.svg" width="16" height="16" alt="profile icon"> _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
 
 ### Installing Dictionaries
 
@@ -67,7 +67,9 @@ To import the dictionaries you wish to use for term searches. head over to [Dict
 
 If you do not have any dictionaries installed or enabled. Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
-<img src="../assets/ss/settings-dictionaries-popup-english.webp" width="300" alt="custom dictionaries list">
+<figure>
+    <img class="ss" src="../assets/ss/settings-dictionaries-popup.webp" width="550" alt="custom dictionaries list">
+</figure>
 
 ### Scanning Text
 
@@ -75,11 +77,16 @@ Webpage text can be scanned by moving the cursor while holding a modifier key, w
 
 If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
-<img src="../assets/ss/search-popup-terms-english.webp" width="300" alt="popup with search terms">
+<figure>
+    <a href="https://www.wikiwand.com/en/articles/English_language#Classification">
+    <img class="ss" src="../assets/ss/search-popup-terms.webp" width="850" alt="popup with search terms">
+    </a>
+    <figcaption><small>Try it yourself!</small></figcaption>
+</figure>
 
 ### Audio
 
-Click on the <img src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker.
+Click on the <img class="icon" src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker.
 
 If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](../advanced/index.md#audio).
 
