@@ -37,7 +37,7 @@ Let's dive in and get started!
 ### Edge
 <div class="grid" markdown>
 
-[:fontawesome=brands-edge: Get Yomitan <small>Edge/Stable</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){.md-button .md-button--primary .md-button--stretch}
+[:fontawesome-brands-edge: Get Yomitan <small>Edge/Stable</small>](https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn){.md-button .md-button--primary .md-button--stretch}
 
 </div>
 ---
