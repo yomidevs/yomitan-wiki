@@ -63,7 +63,7 @@ Click the <img src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt=
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term searches. head over to [Dictionary](../dictionaries//index.md) to get set up!
+To import the dictionaries you wish to use for term searches. head over to [Dictionary](../dictionaries/index.md) to get set up!
 
 If you do not have any dictionaries installed or enabled. yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
