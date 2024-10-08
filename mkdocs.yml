@@ -2,7 +2,7 @@ site_name: Yomitan
 site_url: https://yomitan.wiki/
 site_description: Powerful and versatile pop-up dictionary for language learning
 site_author: Yomitan Authors
-repo_url: https://github.com/themoeway/yomitan
+repo_url: https://github.com/yomidevs/yomitan
 repo_name: Yomitan
 nav:
   - Home: 'index.md'
@@ -54,7 +54,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/themoeway/yomitan
+      link: https://github.com/yomidevs/yomitan
     - icon: fontawesome/brands/discord
       link: https://discord.gg/tmw
   homepage: https://yomitan.wiki/

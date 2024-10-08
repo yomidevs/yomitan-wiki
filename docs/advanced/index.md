@@ -78,7 +78,7 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 
 - TTS voices vary between browsers and so might not support all languages. For instance, [Microsoft Edge](https://www.microsoft.com/en-us/edge) offers a wide selection of free Azure natural voices for a variety of languages. Edge provides over 300 voices, compared to around 25 in Google Chrome (see [here](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=stt) for a list of supported languages).
 - TTS audio can be inaccurate for languages with complex pronunciation such as Japanese, where words can have multiple possible readings and pitch accents.
-- ⚠️ Note that the TTS voices cannot be sent to Anki; this is a [limitation of the browser SpeechSynthesis API](https://github.com/themoeway/yomitan/issues/864).
+- ⚠️ Note that the TTS voices cannot be sent to Anki; this is a [limitation of the browser SpeechSynthesis API](https://github.com/yomidevs/yomitan/issues/864).
 
 #### Custom URL
 
@@ -99,4 +99,4 @@ Click the `Advanced` toggle switch in the bottom left corner of the Settings pag
 [MeCab](https://taku910.github.io/mecab/) is a third-party program which uses its own dictionaries and parsing algorithm to decompose sentences into individual words. MeCab may provide more accurate parsing results than Yomitan's internal parser.
 
 In order for Yomitan to use it, both MeCab and a native messaging component must be installed.
-A setup guide can be found [here](https://github.com/themoeway/yomitan-mecab-installer/blob/master/README.md).
+A setup guide can be found [here](https://github.com/yomidevs/yomitan-mecab-installer/blob/master/README.md).
