@@ -30,7 +30,7 @@ Let's dive in and get started!
 
 [:fontawesome-brands-firefox-browser: Get Yomitan <small>Firefox/Stable</small>](https://addons.mozilla.org/en-US/firefox/addon/yomitan/){.md-button .md-button--primary .md-button--stretch}
 
-[:fontawesome-brands-firefox-browser: Go To Github Releases](https://github.com/themoeway/yomitan/releases){ .md-button .md-button--primary .md-button--stretch }
+[:fontawesome-brands-firefox-browser: Go To Github Releases](https://github.com/yomidevs/yomitan/releases){ .md-button .md-button--primary .md-button--stretch }
 
 </div>
 

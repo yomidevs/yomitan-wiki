@@ -93,7 +93,7 @@ Yomitan turns your web browser into a tool for building language literacy by hel
     - :book: [Support for multiple dictionaries.](./dictionaries/index.md)
     - :material-cloud-off: Works fully offline. No internet connection needed.
     - :material-wrench: [Extremely customizable. Hotkeys, custom audio, custom appearance.](advanced/index.md)
-    - :material-currency-usd-off: Completely free! We don't track your data and we're completely [open-sourced](https://github.com/themoeway/yomitan).
+    - :material-currency-usd-off: Completely free! We don't track your data and we're completely [open-sourced](https://github.com/yomidevs/yomitan).
 </div>
 
 [Get started](getting-started/index.md){ .md-button .md-button--stretch-max-sm }
