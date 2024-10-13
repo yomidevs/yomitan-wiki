@@ -9,7 +9,6 @@ hide:
 # <p style="text-align: center; margin-bottom: 10px; margin-top: 10px; font-size: 200%;">**Yomitan**</p>
 ## <p style="text-align: center">Powerful and versatile pop-up dictionary for language learning used by 40,000+ language learners.</p>
 
-
 <div class="grid" markdown>
 
 [:fontawesome-brands-chrome: Get Yomitan <small>Chrome</small>](https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn){ .md-button .md-button--primary .md-button--stretch }
