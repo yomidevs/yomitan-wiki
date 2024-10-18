@@ -1,3 +1,8 @@
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
 .md-button--stretch {
     width: 100%;
     text-align: center;
@@ -29,4 +34,16 @@
 
 .icon:hover {
     top: -1px;
+}
+
+.md-typeset h1 {
+    margin: 0 0 0.5em;
+}
+
+.md-main__inner {
+    margin-top: 0.5rem;
+}
+
+.md-typeset {
+    line-height: 1.5;
 }
