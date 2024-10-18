@@ -6,10 +6,7 @@ hide:
 
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience.
 
-Whether you're new to Yomitan or just need a refresher, here you'll find all the essential information you need to begin your journey.
-
-Let's dive in and get started!
-
+!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](../yomichan-migration.md)"
 ---
 
 ## Installation
@@ -63,7 +60,7 @@ Click the <img class="icon" src="../assets/icon/yomitan-icon.svg" width="16" hei
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term searches. head over to [Dictionary](../dictionaries/index.md) to get set up!
+To import the dictionaries you wish to use for term searches, head over to [Dictionary](../dictionaries/index.md) to get set up!
 
 If you do not have any dictionaries installed or enabled. Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
