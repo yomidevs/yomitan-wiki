@@ -6,7 +6,7 @@ hide:
 
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience.
 
-!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](../yomichan-migration.md)"
+!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](yomichan-migration.md)"
 ---
 
 ## Installation
@@ -49,23 +49,23 @@ Now that you have installed Yomitan, let's explore how you can utilize her featu
 
 ### Quick-actions
 
-Click the <img class="icon" src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> _Yomitan_ button in the browser bar to open the quick-actions popup.
+Click the ![yomitan icon](assets/icon/yomitan-icon.svg){ width="16" } _Yomitan_ button in the browser bar to open the quick-actions popup.
 
-<img class="ss" src="../assets/ss/browser-action-popup.webp" alt="yomitan main popup">
+![](assets/ss/browser-action-popup.webp){ width="120" }
 
-- The <img class="icon" src="../assets/icon/cog.svg" width="16" height="16" alt="cog"> _cog_ button will open the Settings page.
-- The <img class="icon" src="../assets/icon/magnifying-glass.svg" width="16" height="16" alt="magnifying glass"> _magnifying glass_ button willopen the Search page.
-- The <img class="icon" src="../assets/icon/question-mark-circle.svg" width="16" height="16" alt="question mark symbol"> _question mark_ buttonwill open the Information page.
-- The <img class="icon" src="../assets/icon/profile.svg" width="16" height="16" alt="profile icon"> _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
+- The ![profile icon](assets/icon/profile.svg){ width="16" } _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
+- The ![cog](assets/icon/cog.svg){ width="16" } _cog_ button will open the Settings page.
+- The ![magnifying glass](assets/icon/magnifying-glass.svg){ width="16" } _magnifying glass_ button willopen the Search page.
+- The ![question mark symbol](assets/icon/question-mark-circle.svg){ width="16" } _question mark_ buttonwill open the Information page.
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term searches, head over to [Dictionary](../dictionaries/index.md) to get set up!
+To import the dictionaries you wish to use for term searches, head over to [Dictionaries](dictionaries.md) to get set up!
 
 If you do not have any dictionaries installed or enabled. Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
-<figure>
-    <img class="ss" src="../assets/ss/settings-dictionaries-popup.webp" width="550" alt="custom dictionaries list">
+<figure markdown="span">
+    ![custom dictionaries list](assets/ss/settings-dictionaries-popup.webp){ width="550" }
 </figure>
 
 ### Scanning Text
@@ -74,19 +74,19 @@ Webpage text can be scanned by moving the cursor while holding a modifier key, w
 
 If definitions are found for the text at the cursor position, a popup window containing term definitions will open. This window can be dismissed by clicking anywhere outside of it.
 
-<figure>
-    <a href="https://www.wikiwand.com/en/articles/English_language#Classification">
-    <img class="ss" src="../assets/ss/search-popup-terms.webp" width="850" alt="popup with search terms">
+<figure markdown="span">
+    <a href="https://en.wikipedia.org/wiki/English_language#Classification">
+    ![popup with search terms](assets/ss/search-popup-terms.webp){ width="850" }
     </a>
     <figcaption><small>Try it yourself!</small></figcaption>
 </figure>
 
 ### Audio
 
-Click on the <img class="icon" src="../assets/icon/play-audio.svg" width="16" height="16" alt="loudspeaker icon"> _speaker_ button to hear the term pronounced by a native speaker.
+Click on the ![loudspeaker icon](assets/icon/play-audio.svg){ width="16" } _speaker_ button to hear the term pronounced by a native speaker.
 
-If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](../advanced/index.md#audio).
+If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](advanced.md#audio).
 
 ### Anki
 
-To further enhance your Yomitan experience, it's worth [integrating with Anki](../anki/index.md), a spaced-repetition flashcard program to help solidify the words you encounter.
+To further enhance your Yomitan experience, it's worth [integrating with Anki](anki.md), a spaced-repetition flashcard program to help solidify the words you encounter.

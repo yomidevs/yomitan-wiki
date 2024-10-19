@@ -6,13 +6,13 @@ repo_url: https://github.com/yomidevs/yomitan
 repo_name: Yomitan
 nav:
   - Home: 'index.md'
-  - Getting started: 'getting-started/index.md'
-  - Dictionaries: 'dictionaries/index.md'
-  - Anki: 'anki/index.md'
-  - Advanced Features: 'advanced/index.md'
-  - Supporting Tools: 'supporting-tools.md'
-  - Tech Support: 'support/index.md'
-  - Contributing: 'contributing/index.md'
+  - Getting started: 'getting-started.md'
+  - Dictionaries: 'dictionaries.md'
+  - Anki: 'anki.md'
+  - Advanced Features: 'advanced.md'
+  - Tools & Resources: 'tools-resources.md'
+  - Tech Support: 'support.md'
+  - Contributing: 'contributing.md'
 theme:
   name: material
   favicon: assets/icon/yomitan-icon64.png

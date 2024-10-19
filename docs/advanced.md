@@ -30,6 +30,8 @@ The following shortcuts are available on search results:
 | <kbd>Alt</kbd> + <kbd>P</kbd>    | Play audio for current term.            |
 | <kbd>Alt</kbd> + <kbd>K</kbd>    | Add current kanji to Anki.              |
 
+Shortcuts are configurable in the "Shortcuts" section of the settings page.
+
 ---
 
 ## Advanced Scanning Options
@@ -38,7 +40,7 @@ The following shortcuts are available on search results:
 
 To enable Yomitan scanning on local files, go to `Settings` > `Security` > `Configure Yomitan Permissions`, and navigate to the `Allow access to file URLs` option. From there, follow the link to the browser's settings pages, and check `Allow access to file URLs` on Chrome/Edge, or `Access your data for all websites` for Firefox.
 
-Yomitan may not work on PDF files. When that happens, drag and drop your PDF file into [our PDF Viewer](../yomitan-pdf-viewer/index.html).
+Yomitan may not work on PDF files. When that happens, drag and drop your PDF file into [our PDF Viewer](yomitan-pdf-viewer/index.html).
 
 ### Scanning in private windows
 
@@ -50,7 +52,7 @@ To enable Yomitan scanning in private/incognito web browser windows, go to `Sett
 
 ### Default audio sources
 
-After looking up a term, you can click on the <img class="icon" src="../assets/icon/play-audio.svg" alt="" width="16" height="16"> _speaker_ button to hear the term's pronunciation. When searching for audio, multiple audio sources are checked until the first source with audio for the term is found. If no audio is found, you will hear a short click instead. Right-clicking the <img class="icon" src="../assets/icon/play-audio.svg" alt="" width="16" height="16"> button allows choosing the source manually.
+After looking up a term, you can click on the ![](assets/icon/play-audio.svg){ width="16" } _speaker_ button to hear the term's pronunciation. When searching for audio, multiple audio sources are checked until the first source with audio for the term is found. If no audio is found, you will hear a short click instead. Right-clicking the ![](assets/icon/play-audio.svg){ width="16" } button allows choosing the source manually.
 
 #### Japanese
 
@@ -65,6 +67,7 @@ The default audio sources for other languages are from Wikimedia Commons:
 
 - Lingua Libre
 - Wiktionary
+- LanguagePod101
 
 While Commons has audio for many languages, some of them have limited coverage, and you may want to add additional sources, as described below.
 
@@ -84,7 +87,7 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 
 You can add a custom URL from which audio will be fetched. One use case for this is fetching audio from Forvo:
 
-##### Yomichan Forvo Server
+#### Yomichan Forvo Server
 
 [Forvo](https://forvo.com/) is currently the largest online pronunciation database, with native pronunciation audio for various languages. One way to get Forvo audio in Yomitan is via the [Yomichan Forvo Server](https://ankiweb.net/shared/info/580654285) Anki add-on. It fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
 
