@@ -4,7 +4,7 @@ hide:
   - footer
 ---
 
-## Migrating from Yomichan
+# Migrating from Yomichan
 
 ### Exporting Data
 

@@ -10,13 +10,9 @@ nav:
   - Dictionaries: 'dictionaries/index.md'
   - Anki: 'anki/index.md'
   - Advanced Features: 'advanced/index.md'
-  - Community: 'community/index.md'
-  - PDF Viewer: 'yomitan-pdf-viewer/index.html'
-  - Other:
-    - FAQ: 'other/faq.md'
-    - Browser permissions: 'other/permissions.md'
-    - Supported languages: 'other/supported-languages.md'
-    - Migrating from Yomichan (legacy): 'other/yomichan-migration.md'
+  - Supporting Tools: 'supporting-tools.md'
+  - Tech Support: 'support/index.md'
+  - Contributing: 'contributing/index.md'
 theme:
   name: material
   favicon: assets/icon/yomitan-icon64.png
@@ -103,4 +99,6 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-copyright: Copyright &copy; 2024 Yomitan Authors
+copyright: |
+  Copyright &copy; 2024 Yomitan Authors <br>
+  <a href="https://yomitan.wiki/privacy">Privacy and Permissions</a>

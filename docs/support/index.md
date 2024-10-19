@@ -1,8 +1,22 @@
 ---
 hide:
-  - toc
+  - navigation
   - footer
+  - toc
 ---
+
+Having trouble with Yomitan? If you don't find your answers here, feel free to reach out to us in the following communities.
+
+## Yomitan Discord
+
+We have an active community of users and collaborators on our discord server.
+
+[![](https://img.shields.io/discord/308323056592486420?style=for-the-badge&label=Discord%20Chat&color=bc00ff)](https://discord.gg/eCKjNuXW)
+
+
+## Github
+
+You can [file an issue in our github repository here](https://github.com/yomidevs/yomitan/issues/new/choose) and provide any context that could help us help you resolve your issue.
 
 ## Frequently Asked Questions
 

@@ -4,23 +4,22 @@ hide:
   - footer
 ---
 
-## Community
+A compiled list of software that improves your Yomitan experience.
 
-This section will be a compiled list of software that works well with, or community tooling made for Yomitan. 
-
-### Compatible Software
-
-#### [Anki](https://apps.ankiweb.net/)
-
-See the dedicated [Anki](../anki/index.md) section.
+### Media players
 
 #### [Asbplayer](https://github.com/killergerbah/asbplayer?tab=readme-ov-file#getting-started)
 
 A browser-based media player and Chrome extension that can add text-selectable and Yomitan-scannable subtitles onto video sources (e.g. Netflix and Youtube).
 
+### Readers
+
 #### [Ttsu Reader](https://reader.ttsu.app/)
 
 An online e-book reader that works flawlessly with Yomitan.
+
+#### [PDF Reader](yomitan-pdf-viewer/index.html)
+Reading PDF's in your browser that is Yomitan-scannable
 
 ### Community Tooling
 

@@ -1,0 +1,1 @@
+Looking to contribute back to the Yomitan community? Read [this document](https://github.com/yomidevs/yomitan?tab=readme-ov-file#contributing) to see how you can help improve Yomitan for thousands of users.
