@@ -30,7 +30,9 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - announce.dismiss
   language: en
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
