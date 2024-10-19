@@ -90,10 +90,10 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
     ---
 
-    - :book: [Support for multiple dictionaries.](./dictionaries)
+    - :book: [Support for multiple dictionaries.](./dictionaries.md)
     - :material-cloud-off: Works fully offline. No internet connection needed.
-    - :material-wrench: [Extremely customizable. Hotkeys, custom audio, custom appearance.](advanced)
+    - :material-wrench: [Extremely customizable. Hotkeys, custom audio, custom appearance.](advanced.md)
     - :material-currency-usd-off: Completely free! We don't track your data and we're completely [open-sourced](https://github.com/yomidevs/yomitan).
 </div>
 
-[Get started](getting-started){ .md-button .md-button--stretch-max-sm }
+[Get started](getting-started.md){ .md-button .md-button--stretch-max-sm }

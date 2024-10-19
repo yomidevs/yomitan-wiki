@@ -6,7 +6,7 @@ hide:
 
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience.
 
-!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](../yomichan-migration.md)"
+!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](yomichan-migration.md)"
 ---
 
 ## Installation
@@ -49,9 +49,9 @@ Now that you have installed Yomitan, let's explore how you can utilize her featu
 
 ### Quick-actions
 
-Click the <img class="icon" src="../assets/icon/yomitan-icon.svg" width="16" height="16" alt="yomitan icon"> _Yomitan_ button in the browser bar to open the quick-actions popup.
+Click the ![yomitan icon](assets/icon/yomitan-icon.svg){ width="16" } _Yomitan_ button in the browser bar to open the quick-actions popup.
 
-![](../../assets/ss/browser-action-popup.webp){ width="120" }
+![](assets/ss/browser-action-popup.webp){ width="120" }
 
 - The <img class="icon" src="../assets/icon/profile.svg" width="16" height="16" alt="profile icon"> _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
 - The <img class="icon" src="../assets/icon/cog.svg" width="16" height="16" alt="cog"> _cog_ button will open the Settings page.
