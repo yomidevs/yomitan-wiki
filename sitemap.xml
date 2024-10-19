@@ -5,22 +5,6 @@
          <lastmod>2024-10-19</lastmod>
     </url>
     <url>
-         <loc>https://yomitan.wiki/privacy/</loc>
-         <lastmod>2024-10-19</lastmod>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/supported-languages/</loc>
-         <lastmod>2024-10-19</lastmod>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/supporting-tools/</loc>
-         <lastmod>2024-10-19</lastmod>
-    </url>
-    <url>
-         <loc>https://yomitan.wiki/yomichan-migration/</loc>
-         <lastmod>2024-10-19</lastmod>
-    </url>
-    <url>
          <loc>https://yomitan.wiki/advanced/</loc>
          <lastmod>2024-10-19</lastmod>
     </url>
@@ -41,7 +25,23 @@
          <lastmod>2024-10-19</lastmod>
     </url>
     <url>
+         <loc>https://yomitan.wiki/privacy/</loc>
+         <lastmod>2024-10-19</lastmod>
+    </url>
+    <url>
          <loc>https://yomitan.wiki/support/</loc>
+         <lastmod>2024-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://yomitan.wiki/supported-languages/</loc>
+         <lastmod>2024-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://yomitan.wiki/tools-resources/</loc>
+         <lastmod>2024-10-19</lastmod>
+    </url>
+    <url>
+         <loc>https://yomitan.wiki/yomichan-migration/</loc>
          <lastmod>2024-10-19</lastmod>
     </url>
 </urlset>
