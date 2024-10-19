@@ -60,7 +60,7 @@ Click the ![yomitan icon](assets/icon/yomitan-icon.svg){ width="16" } _Yomitan_ 
 
 ### Installing Dictionaries
 
-To import the dictionaries you wish to use for term searches, head over to [Dictionaries](../dictionaries) to get set up!
+To import the dictionaries you wish to use for term searches, head over to [Dictionaries](dictionaries.md) to get set up!
 
 If you do not have any dictionaries installed or enabled. Yomitan will warn you that it is not ready for use by displaying an orange exclamation mark over its icon. This exclamation mark will disappear once you have installed and enabled at least one dictionary.
 
@@ -85,8 +85,8 @@ If definitions are found for the text at the cursor position, a popup window con
 
 Click on the ![loudspeaker icon](assets/icon/play-audio.svg){ width="16" } _speaker_ button to hear the term pronounced by a native speaker.
 
-If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](../advanced#audio).
+If an audio sample is not available, you will hear a short click instead. For more options, see [Audio Configuration](advanced.md#audio).
 
 ### Anki
 
-To further enhance your Yomitan experience, it's worth [integrating with Anki](../anki), a spaced-repetition flashcard program to help solidify the words you encounter.
+To further enhance your Yomitan experience, it's worth [integrating with Anki](anki.md), a spaced-repetition flashcard program to help solidify the words you encounter.

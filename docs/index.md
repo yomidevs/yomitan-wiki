@@ -59,7 +59,7 @@ Yomitan turns your web browser into a tool for building language literacy by hel
 
     ---
 
-    [:octicons-arrow-right-24: More information](./advanced#audio)
+    [:octicons-arrow-right-24: More information](./advanced.md#audio)
     
 -   :earth_asia:{ .lg .middle } &nbsp;
     __Multilanguage Support__
