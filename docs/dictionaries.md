@@ -24,23 +24,31 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 - [BCCWJ Frequency Dictionary](https://github.com/Kuuuube/yomitan-dictionaries?tab=readme-ov-file#bccwj-suw-luw-combined) - A frequency dictionary based on the Balanced Corpus of Contemporary Written Japanese.
 - [JPDB Frequency Dictionary](https://github.com/Kuuuube/yomitan-dictionaries?tab=readme-ov-file#jpdb-v21-frequency) - A frequency dictionary based on the corpus from the online Japanese dictionary and SRS system at [jpdb.io](https://jpdb.io).
 
+??? note "EPWING Dictionaries"
+
+    Yomitan supports dictionaries in the esoteric but popular [EPWING](https://ja.wikipedia.org/wiki/EPWING) format. They were often utilized in portable electronic dictionaries. These dictionaries are often sought after by language learners for their correctness and excellent coverage of the Japanese language.
+
+    Unfortunately, as most of the dictionaries released in this format are proprietary, you will need to procure these dictionaries yourself and import them using [Yomitan Import](https://github.com/yomidevs/yomitan-import). Check the project page for additional details.
+
+
 #### Other Languages
 
-- **Multilingual**
-  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan) - Wiktionaries in various languages converted to Yomitan format.
+!!! note
+
+    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members
+
+**Multilingual**
+
+  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
   - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
-- **Korean**
+
+**Korean**
+
   - [KRDICT/STDICT](https://github.com/Lyroxide/yomitan-ko-dic/releases) - Korean dictionaries for Yomitan.
-- **Cantonese**
+**Cantonese**
   - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
-- **Mandarin**
+**Mandarin**
   - [CC-CEDICT for Yomitan](https://github.com/MarvNC/cc-cedict-yomitan) - A free Chinese-English dictionary for Yomitan.
-
-#### EPWING Dictionaries
-
-Yomitan supports dictionaries in the esoteric but popular [EPWING](https://ja.wikipedia.org/wiki/EPWING) format. They were often utilized in portable electronic dictionaries. These dictionaries are often sought after by language learners for their correctness and excellent coverage of the Japanese language.
-
-Unfortunately, as most of the dictionaries released in this format are proprietary, you will need to procure these dictionaries yourself and import them using [Yomitan Import](https://github.com/yomidevs/yomitan-import). Check the project page for additional details.
 
 ### Bulk Importing Dictionaries
 

@@ -30,6 +30,8 @@ The following shortcuts are available on search results:
 | <kbd>Alt</kbd> + <kbd>P</kbd>    | Play audio for current term.            |
 | <kbd>Alt</kbd> + <kbd>K</kbd>    | Add current kanji to Anki.              |
 
+Shortcuts are configurable in the "Shortcuts" section of the settings page.
+
 ---
 
 ## Advanced Scanning Options
@@ -65,6 +67,7 @@ The default audio sources for other languages are from Wikimedia Commons:
 
 - Lingua Libre
 - Wiktionary
+- LanguagePod101
 
 While Commons has audio for many languages, some of them have limited coverage, and you may want to add additional sources, as described below.
 
@@ -84,7 +87,7 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 
 You can add a custom URL from which audio will be fetched. One use case for this is fetching audio from Forvo:
 
-##### Yomichan Forvo Server
+#### Yomichan Forvo Server
 
 [Forvo](https://forvo.com/) is currently the largest online pronunciation database, with native pronunciation audio for various languages. One way to get Forvo audio in Yomitan is via the [Yomichan Forvo Server](https://ankiweb.net/shared/info/580654285) Anki add-on. It fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
 

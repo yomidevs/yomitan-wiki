@@ -4,24 +4,36 @@ hide:
   - footer
 ---
 
-A compiled list of software that improves your Yomitan experience.
+A compiled list of tools and resources that improve your Yomitan experience.
 
 ### Media players
 
+Media players load and play media and enable Yomitan lookups.
+
 #### [Asbplayer](https://github.com/killergerbah/asbplayer?tab=readme-ov-file#getting-started)
 
-A browser-based media player and Chrome extension that can add text-selectable and Yomitan-scannable subtitles onto video sources (e.g. Netflix and Youtube).
+A browser-based media player and Chrome extension that can add text-selectable and Yomitan-scannable subtitles onto video sources (e.g. Netflix, Youtube, and video files).
+
+#### [AnimeCards Guide for MPV](https://animecards.site/minefromanime/)
+
+A guide for adding text-selectable subtitles and mining from the [MPV video player](https://mpv.io/)
 
 ### Readers
 
+Readers allow reading books and text on your browser which makes the text you read Yomitan-compatible.
+
 #### [Ttsu Reader](https://reader.ttsu.app/)
 
-An online e-book reader that works flawlessly with Yomitan.
+A minimal e-book reader that loads HTMLZ, Plain Text and EPUB files. Supports offline mode that makes this ideal for mobile and e-readers. This is the recommendation for Japanese learners.
+
+### [Koodo Reader](https://web.koodoreader.com/)
+
+An ebook manager and reader with wider support of file formats. No support on mobile.
 
 #### [PDF Reader](yomitan-pdf-viewer/index.html)
 Reading PDF's in your browser that is Yomitan-scannable
 
-### Community Tooling
+### Tooling
 
 !!! warning "These are not made nor maintained by Yomitan developers, and it may break Yomitan's functionalities."
 

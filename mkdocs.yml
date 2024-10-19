@@ -8,9 +8,9 @@ nav:
   - Home: 'index.md'
   - Getting started: 'getting-started.md'
   - Dictionaries: 'dictionaries.md'
-  - Anki: 'anki/index.md'
+  - Anki: 'anki.md'
   - Advanced Features: 'advanced.md'
-  - Supporting Tools: 'supporting-tools.md'
+  - Tools & Resources: 'tools-resources.md'
   - Tech Support: 'support.md'
   - Contributing: 'contributing.md'
 theme:
