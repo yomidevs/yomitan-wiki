@@ -11,7 +11,7 @@ Having trouble with Yomitan? If you don't find your answers here, feel free to r
 
 We have an active community of users and collaborators on our discord server.
 
-[![](https://img.shields.io/discord/308323056592486420?style=for-the-badge&label=Discord%20Chat&color=bc00ff)](https://discord.gg/eCKjNuXW)
+[![](https://img.shields.io/discord/308323056592486420?style=for-the-badge&label=Discord%20Chat&color=bc00ff)](https://discord.gg/YkQrXW6TXF)
 
 
 ## Github
