@@ -6,7 +6,7 @@ hide:
   - toc
   - footer
 ---
-# <p style="text-align: center; margin-bottom: 10px; margin-top: 10px; font-size: 200%;">**Yomitan**</p>
+# <p id="homepage-title">**Yomitan**</p>
 ## <p style="text-align: center">Powerful and versatile pop-up dictionary for language learning used by 50,000+ language learners.</p>
 
 <div class="grid" markdown>
