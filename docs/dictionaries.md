@@ -45,9 +45,13 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 **Korean**
 
   - [KRDICT/STDICT](https://github.com/Lyroxide/yomitan-ko-dic/releases) - Korean dictionaries for Yomitan.
+
 **Cantonese**
+
   - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
+
 **Mandarin**
+
   - [CC-CEDICT for Yomitan](https://github.com/MarvNC/cc-cedict-yomitan) - A free Chinese-English dictionary for Yomitan.
 
 ### Bulk Importing Dictionaries
