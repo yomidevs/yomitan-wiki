@@ -134,8 +134,7 @@ Below are some troubleshooting tips you can try if you are unable to create new 
 
 Using the `Generate Anki Notes (Experimental)...` feature in the settings page it is possible to easily generate and export large amounts of Anki cards.
 
-> [!WARNING]
-> This feature is experimental!
+!!! warning This feature is experimental!
 
 First, get a newline separated list of terms. For example:
 
