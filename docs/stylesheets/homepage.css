@@ -1,11 +1,11 @@
-#homepage-title {
+#homepage-title-wrapper {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 200%;
 }
 
-#homepage-title-wrapper {
+#homepage-title {
     background: linear-gradient(to right, #bc00ff, #00eeff);
     background-clip: text;
     width: fit-content;
@@ -14,7 +14,7 @@
 }
 
 [data-md-color-scheme="slate"] {
-    #homepage-title-wrapper {
+    #homepage-title {
         background: linear-gradient(to right, #c013ff, #00eeff);
         background-clip: text;
         color: transparent;
