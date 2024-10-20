@@ -39,15 +39,13 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-      primary: purple
-      accent: pink
+      primary: custom
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/white-balance-sunny
         name: Switch to light mode    
-      primary: deep purple
-      accent: indigo
+      primary: custom
 
 extra:
   social:
@@ -100,6 +98,7 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/homepage.css
 
 copyright: |
   Copyright &copy; 2024 Yomitan Authors <br>

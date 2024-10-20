@@ -1,0 +1,9 @@
+#homepage-title {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 200%;
+    background: linear-gradient(45deg, #BC00FF, #00B9FE);
+    background-clip: text;
+    color: transparent;
+}
