@@ -15,6 +15,10 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
 ### Recommended Dictionaries
 
+!!! note
+
+    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members.
+
 #### Japanese
 
 - [Jitendex](https://github.com/stephenmk/Jitendex) - An improved version of JMdict for Yomitan. It features better formatting and some other improvements, and is actively being improved by its author.
@@ -30,29 +34,22 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
     Unfortunately, as most of the dictionaries released in this format are proprietary, you will need to procure these dictionaries yourself and import them using [Yomitan Import](https://github.com/yomidevs/yomitan-import). Check the project page for additional details.
 
-
-#### Other Languages
-
-!!! note
-
-    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members
-
-**Multilingual**
+#### Multilingual
 
   - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
   - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
 
-**Korean**
+#### Korean
 
   - [KRDICT/STDICT](https://github.com/Lyroxide/yomitan-ko-dic/releases) - Korean dictionaries for Yomitan.
 
-**Cantonese**
-
-  - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
-
-**Mandarin**
+#### Mandarin
 
   - [CC-CEDICT for Yomitan](https://github.com/MarvNC/cc-cedict-yomitan) - A free Chinese-English dictionary for Yomitan.
+
+#### Cantonese
+
+  - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
 
 ### Bulk Importing Dictionaries
 
