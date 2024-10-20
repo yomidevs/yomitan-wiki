@@ -26,7 +26,7 @@ Readers allow reading books and text on your browser which makes the text you re
 
 A minimal e-book reader that loads HTMLZ, Plain Text and EPUB files. Supports offline mode that makes this ideal for mobile and e-readers. This is the recommendation for Japanese learners.
 
-### [Koodo Reader](https://web.koodoreader.com/)
+#### [Koodo Reader](https://web.koodoreader.com/)
 
 An ebook manager and reader with wider support of file formats. No support on mobile.
 
