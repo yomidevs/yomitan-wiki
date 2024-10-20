@@ -31,7 +31,7 @@ A minimal e-book reader that loads HTMLZ, Plain Text and EPUB files. Supports of
 An ebook manager and reader with wider support of file formats. No support on mobile.
 
 #### [PDF Reader](yomitan-pdf-viewer/index.html)
-Reading PDF's in your browser that is Yomitan-scannable
+A tool to read and scan PDFs in your browser with Yomitan.
 
 ### Tooling
 
