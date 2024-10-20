@@ -16,7 +16,7 @@ We have an active community of users and collaborators on our discord server.
 
 ## Github
 
-You can [file an issue in our github repository here](https://github.com/yomidevs/yomitan/issues/new/choose) and provide any context that could help us help you resolve your issue.
+You can [file an issue on our GitHub repository](https://github.com/yomidevs/yomitan/issues/new/choose) and provide any context that could help us assist with your issue.
 
 ## Frequently Asked Questions
 
