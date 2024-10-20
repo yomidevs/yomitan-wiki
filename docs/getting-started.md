@@ -6,7 +6,7 @@ hide:
 
 This introduction will help you quickly familiarize yourself with the basics and set you up for a smooth language learning experience.
 
-!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](yomichan-migration.md)"
+!!! note "Migrating from Yomichan? Learn how to migrate to Yomitan [here](yomichan-migration.md)."
 ---
 
 ## Installation
