@@ -19,6 +19,11 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
     If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members.
 
+#### Multilingual
+
+  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
+  - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
+
 #### Japanese
 
 - [Jitendex](https://github.com/stephenmk/Jitendex) - An improved version of JMdict for Yomitan. It features better formatting and some other improvements, and is actively being improved by its author.
@@ -33,11 +38,6 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
     Yomitan supports dictionaries in the esoteric but popular [EPWING](https://ja.wikipedia.org/wiki/EPWING) format. They were often utilized in portable electronic dictionaries. These dictionaries are often sought after by language learners for their correctness and excellent coverage of the Japanese language.
 
     Unfortunately, as most of the dictionaries released in this format are proprietary, you will need to procure these dictionaries yourself and import them using [Yomitan Import](https://github.com/yomidevs/yomitan-import). Check the project page for additional details.
-
-#### Multilingual
-
-  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
-  - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
 
 #### Korean
 
