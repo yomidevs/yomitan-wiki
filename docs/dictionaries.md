@@ -5,8 +5,6 @@ hide:
 ---
 
 
-## Dictionaries
-
 You must download and import the dictionaries you wish to use in order to enable Yomitan definition lookups.
 
 There are several free dictionaries available for Yomitan, some of them with glossaries available in different languages.
@@ -14,6 +12,15 @@ There are several free dictionaries available for Yomitan, some of them with glo
 Be aware that non-English dictionaries generally contain fewer entries than their English counterparts. Even if your primary language is not English, you may consider also importing the English version for better coverage.
 
 ### Recommended Dictionaries
+
+!!! note
+
+    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members.
+
+#### Multilingual
+
+  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
+  - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
 
 #### Japanese
 
@@ -30,29 +37,17 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
     Unfortunately, as most of the dictionaries released in this format are proprietary, you will need to procure these dictionaries yourself and import them using [Yomitan Import](https://github.com/yomidevs/yomitan-import). Check the project page for additional details.
 
-
-#### Other Languages
-
-!!! note
-
-    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members
-
-**Multilingual**
-
-  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
-  - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
-
-**Korean**
+#### Korean
 
   - [KRDICT/STDICT](https://github.com/Lyroxide/yomitan-ko-dic/releases) - Korean dictionaries for Yomitan.
 
-**Cantonese**
-
-  - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
-
-**Mandarin**
+#### Mandarin
 
   - [CC-CEDICT for Yomitan](https://github.com/MarvNC/cc-cedict-yomitan) - A free Chinese-English dictionary for Yomitan.
+
+#### Cantonese
+
+  - [words.hk for Yomitan](https://github.com/MarvNC/wordshk-yomitan) - A free Cantonese-English and Cantonese-Cantonese dictionary for Yomitan.
 
 ### Bulk Importing Dictionaries
 

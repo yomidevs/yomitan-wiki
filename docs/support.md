@@ -11,12 +11,12 @@ Having trouble with Yomitan? If you don't find your answers here, feel free to r
 
 We have an active community of users and collaborators on our discord server.
 
-[![](https://img.shields.io/discord/308323056592486420?style=for-the-badge&label=Discord%20Chat&color=bc00ff)](https://discord.gg/eCKjNuXW)
+[![](https://img.shields.io/discord/308323056592486420?style=for-the-badge&label=Discord%20Chat&color=bc00ff)](https://discord.gg/YkQrXW6TXF)
 
 
 ## Github
 
-You can [file an issue in our github repository here](https://github.com/yomidevs/yomitan/issues/new/choose) and provide any context that could help us help you resolve your issue.
+You can [file an issue on our GitHub repository](https://github.com/yomidevs/yomitan/issues/new/choose) and provide any context that could help us assist with your issue.
 
 ## Frequently Asked Questions
 
@@ -55,8 +55,7 @@ experience.
 **Is it possible to use Yomitan with files saved locally on my computer with Chrome?**
 
 In order to use Yomitan with local files in Chrome, you must first tick the _Allow access to file URLs_ checkbox
-for Yomitan on the extensions page. Due to the restrictions placed on browser addons in the WebExtensions model, it
-will likely never be possible to use Yomitan with PDF files.
+for Yomitan on the extensions page. In addition, you may use the [Yomitan PDF Viewer](https://yomitan.wiki/yomitan-pdf-viewer/web/) to view and scan PDF files that are on your local machine.
 
 **Is it possible to delete individual dictionaries without purging the database?**
 
