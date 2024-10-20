@@ -3,7 +3,15 @@
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 200%;
-    background: linear-gradient(45deg, #BC00FF, #00B9FE);
+    background: linear-gradient(to right, #bc00ff, #00eeff);
     background-clip: text;
     color: transparent;
+}
+
+[data-md-color-scheme="slate"] {
+    #homepage-title {
+        background: linear-gradient(to right, #bb00ff, #00d0ff);
+        background-clip: text;
+        color: transparent;
+    }
 }
