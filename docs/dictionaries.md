@@ -15,7 +15,7 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
 !!! note
 
-    If you can't find suitable Yomitan dictionaries, feel free to Google for dictionaries in your specific language or ask your fellow community members.
+    If you can't find suitable Yomitan dictionaries, feel free to search the web for dictionaries in your specific language or ask your fellow community members.
 
 #### Multilingual
 
