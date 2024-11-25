@@ -53,9 +53,9 @@ Click the ![yomitan icon](assets/icon/yomitan-icon.svg){ width="16" } _Yomitan_ 
 
 ![](assets/ss/browser-action-popup.webp){ width="120" }
 
-- The ![profile icon](assets/icon/profile.svg){ width="16" } _profile_ button will appear when multipleprofiles exist, allowing the current profile to be quickly changed.
+- The ![profile icon](assets/icon/profile.svg){ width="16" } _profile_ button will appear when multiple profiles exist, allowing the current profile to be quickly changed.
 - The ![cog](assets/icon/cog.svg){ width="16" } _cog_ button will open the Settings page.
-- The ![magnifying glass](assets/icon/magnifying-glass.svg){ width="16" } _magnifying glass_ button willopen the Search page.
+- The ![magnifying glass](assets/icon/magnifying-glass.svg){ width="16" } _magnifying glass_ button will open the Search page.
 - The ![question mark symbol](assets/icon/question-mark-circle.svg){ width="16" } _question mark_ buttonwill open the Information page.
 
 ### Installing Dictionaries
