@@ -63,13 +63,13 @@ The default audio sources for Japanese are:
 
 #### Other languages
 
-The default audio sources for other languages are from Wikimedia Commons:
+The default audio sources for other languages are:
 
 - Lingua Libre
 - Wiktionary
 - LanguagePod101
 
-While Commons has audio for many languages, some of them have limited coverage, and you may want to add additional sources, as described below.
+Depending on the language you need, audio coverage with the default sources may be limited, and you may want to add additional sources, as described below.
 
 ### Configuration
 
@@ -85,11 +85,13 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 
 #### Custom URL
 
-You can add a custom URL from which audio will be fetched. One use case for this is fetching audio from Forvo:
+You can add a custom URL from which audio will be fetched. One use case for this is getting audio from [Forvo](https://forvo.com/), currently the largest online pronunciation database.
 
-#### Yomichan Forvo Server
+* **Local Audio Server for Yomichan**: This is the most reliable way to get Forvo audio in Yomitan. To read the pros and cons and set it up, see the [instructions](https://github.com/yomidevs/local-audio-yomichan).
 
-[Forvo](https://forvo.com/) is currently the largest online pronunciation database, with native pronunciation audio for various languages. One way to get Forvo audio in Yomitan is via the [Yomichan Forvo Server](https://ankiweb.net/shared/info/580654285) Anki add-on. It fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
+* **Yomichan Forvo Server**: 
+  - 🚨 Not working currently 
+  - Fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
 
 ---
 
