@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/icon/yomitan-icon64.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -749,15 +749,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#yomichan-forvo-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yomichan Forvo Server
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -999,15 +990,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#yomichan-forvo-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yomichan Forvo Server
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1160,13 +1142,13 @@
 <li>Jisho.org</li>
 </ul>
 <h4 id="other-languages">Other languages</h4>
-<p>The default audio sources for other languages are from Wikimedia Commons:</p>
+<p>The default audio sources for other languages are:</p>
 <ul>
 <li>Lingua Libre</li>
 <li>Wiktionary</li>
 <li>LanguagePod101</li>
 </ul>
-<p>While Commons has audio for many languages, some of them have limited coverage, and you may want to add additional sources, as described below.</p>
+<p>Depending on the language you need, audio coverage with the default sources may be limited, and you may want to add additional sources, as described below.</p>
 <h3 id="configuration">Configuration</h3>
 <p>Audio sources can be configured in <code>Settings</code> &gt; <code>Audio</code> &gt; <code>Configure audio playback sources</code> to reorder them or add new ones. Besides the four sources mentioned above, you can also use your browser's inbuilt text-to-speech (TTS) engine or add a custom URL source:</p>
 <h4 id="text-to-speech-tts">Text-to-speech (TTS)</h4>
@@ -1177,9 +1159,17 @@
 <li>⚠️ Note that the TTS voices cannot be sent to Anki; this is a <a href="https://github.com/yomidevs/yomitan/issues/864">limitation of the browser SpeechSynthesis API</a>.</li>
 </ul>
 <h4 id="custom-url">Custom URL</h4>
-<p>You can add a custom URL from which audio will be fetched. One use case for this is fetching audio from Forvo:</p>
-<h4 id="yomichan-forvo-server">Yomichan Forvo Server</h4>
-<p><a href="https://forvo.com/">Forvo</a> is currently the largest online pronunciation database, with native pronunciation audio for various languages. One way to get Forvo audio in Yomitan is via the <a href="https://ankiweb.net/shared/info/580654285">Yomichan Forvo Server</a> Anki add-on. It fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a <code>Custom URL (JSON)</code> audio source with the URL <code>http://localhost:8770?term={term}&amp;reading={reading}&amp;language=en</code> (replacing <code>en</code> with the desired language's ISO code).</p>
+<p>You can add a custom URL from which audio will be fetched. One use case for this is getting audio from <a href="https://forvo.com/">Forvo</a>, currently the largest online pronunciation database.</p>
+<ul>
+<li>
+<p><strong>Local Audio Server for Yomichan</strong>: This is the most reliable way to get Forvo audio in Yomitan. To read the pros and cons and set it up, see the <a href="https://github.com/yomidevs/local-audio-yomichan">instructions</a>.</p>
+</li>
+<li>
+<p><strong>Yomichan Forvo Server</strong>: </p>
+</li>
+<li>🚨 Not working currently </li>
+<li>Fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a <code>Custom URL (JSON)</code> audio source with the URL <code>http://localhost:8770?term={term}&amp;reading={reading}&amp;language=en</code> (replacing <code>en</code> with the desired language's ISO code).</li>
+</ul>
 <hr />
 <h2 id="advanced-options">Advanced Options</h2>
 <p>Click the <code>Advanced</code> toggle switch in the bottom left corner of the Settings page to enable advanced options.</p>
@@ -1207,7 +1197,7 @@ A setup guide can be found <a href="https://github.com/yomidevs/yomitan-mecab-in
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2024</span>
   </span>
 
     
@@ -1335,7 +1325,7 @@ A setup guide can be found <a href="https://github.com/yomidevs/yomitan-mecab-in
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "content.tabs.link", "announce.dismiss"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "none", "closeEffect": "none", "slideEffect": "slide"});
