@@ -71,6 +71,7 @@ Flashcard fields can be configured with the following steps:
     | `{popup-selection-text}`                    | The selected text on the search page or popup.                                                                                                                         |
     | `{sentence}`                                | Sentence, quote, or phrase that the term appears in from the source content.                                                                                           |
     | `{sentence-furigana}`                       | Sentence, quote, or phrase that the term appears in from the source content, with furigana added.                                                                      |
+    | `{sentence-furigana-plain}`                 | Sentence, quote, or phrase that the term appears in from the source content, with furigana added in brackets.                                                          |
     | `{single-glossary-DICT-NAME}`               | Same as `{glossary}`, but with entries from only a single dictionary. The dictionary name will likely be modified, use the options from the ▼ dropdown.                |
     | `{single-glossary-DICT-NAME-brief}`         | See `{single-glossary-DICT-NAME}` and `{glossary-brief}`.                                                                                                              |
     | `{single-glossary-DICT-NAME-no-dictionary}` | See `{single-glossary-DICT-NAME}` and `{glossary-no-dictionary}`.                                                                                                      |
@@ -104,6 +105,7 @@ Flashcard fields can be configured with the following steps:
     | `{popup-selection-text}`          | The selected text on the search page or popup.                                                                                                                           |
     | `{sentence}`                      | Sentence, quote, or phrase that the character appears in from the source content.                                                                                        |
     | `{sentence-furigana}`             | Sentence, quote, or phrase that the character appears in from the source content, with furigana added.                                                                   |
+    | `{sentence-furigana-plain}`       | Sentence, quote, or phrase that the term appears in from the source content, with furigana added in brackets.                                                  |
     | `{stroke-count}`                  | Number of strokes that the kanji character has.                                                                                                                          |
     | `{url}`                           | Address of the web page in which the kanji appeared in.                                                                                                                  |
 
