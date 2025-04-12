@@ -1,13 +1,13 @@
 ---
 title: Welcome to Yomitan
-description: Powerful and versatile pop-up dictionary for language learning used by 75,000+ language learners.
+description: Powerful and versatile pop-up dictionary for language learning used by 90,000+ language learners.
 hide:
   - navigation
   - toc
   - footer
 ---
 # <div id="homepage-title-wrapper"><span id="homepage-title">Yomitan</span></div>
-## <p style="text-align: center">Powerful and versatile pop-up dictionary for language learning used by 75,000+ language learners.</p>
+## <p style="text-align: center">Powerful and versatile pop-up dictionary for language learning used by 90,000+ language learners.</p>
 
 <div class="grid" markdown>
 
