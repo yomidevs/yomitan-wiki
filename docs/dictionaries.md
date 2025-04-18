@@ -19,7 +19,7 @@ Be aware that non-English dictionaries generally contain fewer entries than thei
 
 #### Multilingual
 
-  - [KTY](https://github.com/yomidevs/kaikki-to-yomitan/blob/master/downloads.md) - Wiktionaries in various languages converted to Yomitan format.
+  - [KTY](https://yomidevs.github.io/kaikki-to-yomitan/) - Wiktionaries in various languages converted to Yomitan format.
   - [Wikipedia for Yomitan](https://github.com/MarvNC/wikipedia-yomitan) - All of Wikipedia in Yomitan for various languages.
 
 #### Japanese
