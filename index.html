@@ -128,8 +128,10 @@
     }
 
     .hero {
+        display: flex;
         text-align: center;
-        padding: 6rem 4rem;
+        justify-content: center;
+        padding: clamp(2rem, 10vmax, 10rem) 1rem;
     }
 
     .hero h1 {
@@ -145,16 +147,19 @@
     }
 
     .cta-buttons {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        align-content: center;
         gap: 0.75rem;
-        flex-wrap: wrap;
     }
 
     .cta-buttons button {
         background-color: #8560f5;
         color: white;
         border: none;
+        width: 100%;
+        justify-content: center;
         padding: 0.5rem 1rem;
         font-size: 1rem;
         border-radius: 4px;
@@ -170,14 +175,19 @@
     .cta-buttons-2 {
         display: flex;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0.75rem;
         flex-wrap: wrap;
     }
 
+    .cta-buttons-2 a {
+        width: 100%;
+    }
+
     .cta-buttons-2 button {
+        width: 100%;
         color: #8560f5;
         border: solid;
-        padding: 0.6rem 1.8rem;
+        padding: 0.6rem 2rem;
         font-size: 0.8rem;
         border-radius: 4px;
         cursor: pointer;
@@ -187,6 +197,7 @@
     .cta-buttons-2 button:hover {
         color: #fff;
         background-color: #526cfe;
+        border: none;
     }
 
     .gradient-text {
@@ -256,9 +267,18 @@
 
     }
 
-    .feature .feature-image {
+    .feature .feature-image-container {
         transform: translateY(1.5rem);
         transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
+    }
+
+    .feature-image-container .feature-image {
+        transition: transform .15s ease-out;
+    }
+
+    .feature-image-container .feature-image:hover {
+        cursor: pointer;
+        transform: scale(1.015);
     }
 
     .feature.right {
@@ -277,7 +297,7 @@
         transform: translateX(0);
     }
 
-    .feature.visible .feature-image {
+    .feature.visible .feature-image-container {
         transform: translateY(0);
     }
 
@@ -286,13 +306,13 @@
         padding: 20px;
     }
 
-    .feature-image {
+    .feature-image-container {
         align-content: center;
         flex: 2 1 400px;
         padding: 20px;
     }
 
-    .left .feature-image img {
+    .left .feature-image-container .feature-image {
         float: right;
         max-width: 100%;
         border-radius: 8px;
@@ -300,12 +320,21 @@
             8px 6px 12px #e2e4e98f;
     }
 
-    .right .feature-image img {
+    .right .feature-image-container .feature-image {
         float: left;
         max-width: 100%;
         border-radius: 8px;
         box-shadow: -8px 6px 12px #e2e4e98f,
             8px 6px 12px #e2e4e98f;
+    }
+
+    .theme-image {
+        transition: transform .15s ease-out;
+    }
+
+    .theme-image:hover {
+        transform: scale(1.02);
+        cursor: pointer;
     }
 
     .theme-image.dark {
@@ -346,8 +375,11 @@
         margin: auto;
     }
 
-    /* Hide the images by default */
     .mySlides {
+        position: relative;
+        /* The slides should be above other elements (for hover) */
+        z-index: 1;
+        /* Hide the images by default */
         display: none;
     }
 
@@ -428,6 +460,57 @@
         animation-duration: 0.5s;
     }
 
+    .demo {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .ext-link-icon {
+        align-content: center;
+        margin-left: 3px;
+        color: #8560f5;
+    }
+
+    .ext-link-icon:hover {
+        color: #526cfe;
+    }
+
+    .bounce-icon {
+        animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    .tooltip {
+        position: absolute;
+        top: -32px;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: fit-content;
+        opacity: 0;
+
+        transition: visibility .2s, opacity .2s;
+        visibility: hidden;
+
+        background: #eff1f5e7;
+        box-shadow: 0 0 5px 2px #e2e4e98f;
+        border-radius: 2px;
+        padding: 4px 6px;
+
+        font-size: 10px;
+        color: #000000de;
+    }
+
+    .tooltip-container {
+        position: relative;
+    }
+
+    .tooltip-container:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
     @keyframes fade {
         from {
             opacity: .4
@@ -438,9 +521,24 @@
         }
     }
 
-    .demo {
-        padding: 1rem;
-        text-align: center;
+    @keyframes bounce {
+        from {
+            transform: translateY(0.5px);
+        }
+
+        to {
+            transform: translateY(-1px);
+        }
+    }
+
+    @media screen and (min-width: 64rem) {
+        .cta-buttons {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .cta-buttons-2 a {
+            width: auto;
+        }
     }
 </style>
 
@@ -1090,38 +1188,43 @@
 <!-- Landing Page Only -->
 
 <section class="hero">
-    <h1 class="gradient-text">Yomitan</h1>
-    <p>
-        Powerful and versatile pop-up dictionary for language learning used by
-        90,000+ language learners.
-    </p>
-    <div class="cta-buttons">
-        <a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">
-            <button style="display: flex">
-                <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/chrome.svg">
-                <div>Get Yomitan <small>Chrome</small></div>
-            </button>
-        </a>
-        <a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">
-            <button style="display: flex">
-                <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/firefox.svg">
-                <div>Get Yomitan <small>Firefox</small></div>
-            </button>
-        </a>
-        <a href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn">
-            <button style="display: flex">
-                <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/edge.svg">
-                <div>Get Yomitan <small>Edge</small></div>
-            </button>
-        </a>
-    </div>
-    <div style="margin-top: 1rem" class="cta-buttons-2">
-        <a href="getting-started">
-            <button style="display: flex">
-                <div>Go to our Getting Started guide →</div>
-                <!-- <img style="margin-left: 5px" width="18" height="18" src="assets/icons/arrowRight.svg"> -->
-            </button>
-        </a>
+    <div style="max-width: 60rem;">
+        <h1 class="gradient-text">Yomitan</h1>
+        <p>
+            Powerful and versatile pop-up dictionary for language learning used by
+            90,000+ language learners.
+        </p>
+        <div>
+            <div class="cta-buttons">
+                <a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">
+                    <button style="display: flex">
+                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/chrome.svg">
+                        <div>Get Yomitan <small>Chrome</small></div>
+                    </button>
+                </a>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">
+                    <button style="display: flex">
+                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/firefox.svg">
+                        <div>Get Yomitan <small>Firefox</small></div>
+                    </button>
+                </a>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn">
+                    <button style="display: flex">
+                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/edge.svg">
+                        <div>Get Yomitan <small>Edge</small></div>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div style="margin-top: 1rem" class="cta-buttons-2">
+            <div></div>
+            <a href="getting-started">
+                <button>
+                    <div>Go to our Getting Started guide →</div>
+                </button>
+            </a>
+            <div></div>
+        </div>
     </div>
 </section>
 
@@ -1151,8 +1254,16 @@
 
             </p>
         </div>
-        <div class="feature-image" style="margin-left: auto;">
-            <img width="96%" height="96%" src="./assets/scanning-popup.webp" alt="Dynamic Popup" />
+        <div class="feature-image-container" style="margin-left: auto;">
+            <div class="tooltip-container">
+                <div class="tooltip">
+                    <strong>Dynamic Popup</strong>
+                </div>
+                <a href="getting-started">
+                    <img class="feature-image" width="96%" height="96%" src="./assets/scanning-popup.webp"
+                        alt="Dynamic Popup" />
+                </a>
+            </div>
         </div>
     </section>
 
@@ -1180,8 +1291,15 @@
                 </a>
             </p>
         </div>
-        <div class="feature-image">
-            <img width="90%" height="90%" src="./assets/audio.webp" alt="Audio" />
+        <div class="feature-image-container">
+            <div class="tooltip-container">
+                <div class="tooltip">
+                    <strong>Native Audio</strong>
+                </div>
+                <a href="advanced#audio">
+                    <img class="feature-image" width="90%" height="90%" src="./assets/audio.webp" alt="Audio" />
+                </a>
+            </div>
         </div>
     </section>
 
@@ -1208,35 +1326,69 @@
             </button>
         </div>
 
-        <div class="feature-image">
+        <div class="feature-image-container">
 
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
-                <small>xAfflict's <a href="https://github.com/JNiena/yomitan-styling">Yomitan CSS</a></small>
+                <div style="display: flex; position: absolute; top: -24px;">
+                    <small>xAfflict's Yomitan CSS
+                        <a class="ext-link-icon" href="https://github.com/JNiena/yomitan-styling">
+                            <!-- external link icon -->
+                            <svg style="width: 11px; height: 11px;" class="bounce-icon"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--!Font
+                            Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License -
+                            https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="currentcolor"
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                        </a>
+                    </small>
+                </div>
 
                 <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img class="theme-image" src="assets/themes/light/sanseido.png" style="width:100%">
-                    <img class="theme-image dark" src="assets/themes/dark/sanseido.png" style="width:100%">
-                </div>
+                <div class="tooltip-container">
+                    <div class="tooltip">
+                        <strong>Themes</strong>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/sanseido.png"
+                                style="width:100%">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/sanseido.png"
+                                style="width:100%">
+                        </a>
+                    </div>
 
-                <div class="mySlides fade">
-                    <img class="theme-image" src="assets/themes/light/shinmeikyou.png" style="width:100%">
-                    <img class="theme-image dark" src="assets/themes/dark/shinmeikyou.png" style="width:100%">
-                </div>
+                    <div class="mySlides fade">
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/shinmeikyou.png"
+                                style="width:100%">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/shinmeikyou.png"
+                                style="width:100%">
+                        </a>
+                    </div>
 
-                <div class="mySlides fade">
-                    <img class="theme-image" src="assets/themes/light/oubunsha.png" style="width:100%">
-                    <img class="theme-image dark" src="assets/themes/dark/oubunsha.png" style="width:100%">
-                </div>
+                    <div class="mySlides fade">
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/oubunsha.png"
+                                style="width:100%">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/oubunsha.png"
+                                style="width:100%">
+                        </a>
+                    </div>
 
-                <div class="mySlides fade">
-                    <img class="theme-image" src="assets/themes/light/meikyou.png" style="width:100%">
-                    <img class="theme-image dark" src="assets/themes/dark/meikyou.png" style="width:100%">
+                    <div class="mySlides fade">
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/meikyou.png"
+                                style="width:100%">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/meikyou.png"
+                                style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
-
             <!-- The dots/circles -->
             <div style="text-align:center; transform: translateY(20px);">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -1271,7 +1423,19 @@
 
                 <br><br>
 
-                <small>BrenoAqua's <a href="https://brenoaqua.github.io/Senren/">Senren Note Type</a></small>
+                <small>BrenoAqua's Senren Note Type
+                    <a class="ext-link-icon" href="https://brenoaqua.github.io/Senren/">
+                        <!-- external link icon -->
+                        <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <!--!Font
+                        Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License -
+                        https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="currentcolor"
+                                d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                        </svg>
+                    </a>
+                </small>
 
                 <br><br>
 
@@ -1298,7 +1462,7 @@
 
         <div style="margin-top: 4px" class="cta-buttons-2">
             <a href="getting-started">
-                <button style="display: flex">
+                <button style="display: flex; justify-content: center;">
                     <div>Get Started →</div>
                     <!-- <img style="margin-left: 5px" width="18" height="18" src="assets/icons/arrowRight.svg"> -->
                 </button>
@@ -1506,16 +1670,9 @@
       <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy", "content.tabs.link", "announce.dismiss"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
-<script>
-    // not sure why but it randomly jumps to end of page when toggling theme
-    var palette = document.querySelector("[data-md-component=palette]")
-    palette.style.display = "none" // hide palette switcher
-</script>
-
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "none", "closeEffect": "none", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
