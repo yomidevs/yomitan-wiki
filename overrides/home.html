@@ -1,5 +1,14 @@
 {% extends "main.html" %}
 
+{% block scripts %}
+{{ super() }}
+<script>
+    // not sure why but it randomly jumps to end of page when toggling theme
+    var palette = document.querySelector("[data-md-component=palette]")
+    palette.style.display = "none" // hide palette switcher
+</script>
+{% endblock %}
+
 {% block extrahead %} {{ super() }}
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Yomitan Wiki</title>
