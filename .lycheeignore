@@ -1,3 +1,5 @@
 ^https://forvo\.com/$
 ^https://discord.gg/YkQrXW6TXF$
 ^.*%7B%7B.*%7D%7D$
+^https://www.reddit.com/r/yomidevs/$
+^https://foosoft.net/projects/anki-connect$
