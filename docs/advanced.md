@@ -109,6 +109,8 @@ Some things you may want to do:
 * Audio only cards
 * Sentence only cards
 
+---
+
 ## Advanced Options
 
 Click the `Advanced` toggle switch in the bottom left corner of the Settings page to enable advanced options.
