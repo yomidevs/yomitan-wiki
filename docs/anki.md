@@ -96,6 +96,8 @@ Flashcard fields can be configured with the following steps:
     | `{frequency-harmonic-occurrence}` | The harmonic mean of frequency data for the current kanji. Defaults to 0 occurrences when frequency data is not found, the lowest possible occurrence-based kanji usage. |
     | `{frequency-average-rank}`        | The average of frequency data for the current kanji. Defaults to rank 9999999 when frequency data is not found, indicating extremely low rank-based kanji usage.         |
     | `{frequency-average-occurrence}`  | The average of frequency data for the current kanji. Defaults to 0 occurrences when frequency data is not found, the lowest possible occurrence-based kanji usage.       |
+    | `{single-frequency-DICT-NAME}`    | All frequencies from the selected dictionary put in a list.                                                                                                              |
+    | `{single-frequency-number-DICT-NAME}` | A single frequency number from the selected dictionary with no formatting data.                                                                                      |
     | `{glossary}`                      | List of definitions for the kanji.                                                                                                                                       |
     | `{kunyomi}`                       | Kunyomi (Japanese reading) for the kanji expressed as hiragana.                                                                                                          |
     | `{onyomi}`                        | Onyomi (Chinese reading) for the kanji expressed as katakana.                                                                                                            |
