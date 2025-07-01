@@ -91,7 +91,7 @@ You can add a custom URL from which audio will be fetched. One use case for this
 
 * **Yomichan Forvo Server**: 
   - 🚨 Not working currently 
-  - Fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language=en` (replacing `en` with the desired language's ISO code).
+  - Fetches from Forvo, at the cost of a slight delay. After installing it in Anki, add a `Custom URL (JSON)` audio source with the URL `http://localhost:8770?term={term}&reading={reading}&language={language}`.
 
 ---
 
