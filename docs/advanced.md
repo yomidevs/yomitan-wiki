@@ -87,6 +87,16 @@ To enable this, just add a new playback source with the `Text-to-speech` type an
 
 You can add a custom URL from which audio will be fetched. One use case for this is getting audio from [Forvo](https://forvo.com/), currently the largest online pronunciation database.
 
+Custom URL supports the following replacement patterns:
+
+- `{term}`: The current entry's headword.
+
+- `{reading}`: The reading for the headword.
+
+- `{language}`: The iso code of the current language setting.
+
+Recommended audio sources:
+
 * **Local Audio Server for Yomichan**: This is the most reliable way to get Forvo audio in Yomitan. To read the pros and cons and set it up, see the [instructions](https://github.com/yomidevs/local-audio-yomichan).
 
 * **Yomichan Forvo Server**: 
