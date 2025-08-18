@@ -105,6 +105,22 @@ Recommended audio sources:
 
 ---
 
+## Advanced Anki Options
+### Custom "Send to Anki" button
+
+If you want a custom "send to Anki" button for example to send audio only cards or sentence cards:
+1. In the bottom right hand corner of Yomitan settings, click the "Advanced" toggle
+2. Go to Anki section in settings
+3. Click "Configure Anki Flashcards..."
+4. At the top of the screen click "➕" to add a new send to Anki card format.
+5. Customise this however you like.
+
+Some things you may want to do:
+* Audio only cards
+* Sentence only cards
+
+---
+
 ## Advanced Options
 
 Click the `Advanced` toggle switch in the bottom left corner of the Settings page to enable advanced options.
