@@ -54,7 +54,10 @@ Animecards Anki note type which doesn't require any editing of Yomitan templates
 
 Anki Addon which allows for additional custom audio sources from Forvo.
 
-
 #### [Generate Batch Audio](https://ankiweb.net/shared/info/1156270186)
 
 Anki Addon which allows for generating audio in bulk from a list of URLs.
+
+#### [Backfill Anki Yomitan](https://ankiweb.net/shared/info/1184164376)
+
+An Anki add-on to backfill fields including media and audio using Yomitan's API.
