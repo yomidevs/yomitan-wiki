@@ -59,460 +59,12 @@
       
 
     
-     
+    
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yomitan Wiki</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<style>
-    /* Reset header position for the homepage */
-    .md-header {
-        position: initial;
-    }
-
-    /* Hide navigation bars on large screens for hero layout */
-    @media screen and (min-width: 60em) {
-        .md-sidebar--secondary {
-            display: none;
-        }
-    }
-
-    @media screen and (min-width: 76.25em) {
-        .md-sidebar--primary {
-            display: none;
-        }
-    }
-
-    .md-content__inner {
-        margin: 0;
-    }
-
-    .md-main__inner.md-grid {
-        max-width: initial;
-    }
-
-    .md-grid {
-        max-width: initial;
-    }
-
-    body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
-    }
-
-    .hero {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        padding: clamp(2rem, 10vmax, 10rem) 1rem;
-    }
-
-    .hero h1 {
-        font-weight: 600;
-        font-size: 4rem;
-        margin-bottom: 1rem;
-    }
-
-    .hero p {
-        font-size: 1.15rem;
-        max-width: 600px;
-        margin: 0 auto 1.5rem;
-    }
-
-    .cta-buttons {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-content: center;
-        gap: 0.75rem;
-    }
-
-    .cta-buttons button {
-        background-color: #8560f5;
-        color: white;
-        border: none;
-        width: 100%;
-        justify-content: center;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: 400;
-    }
-
-    .cta-buttons button:hover {
-        background-color: #526cfe;
-        border: none;
-    }
-
-    .cta-buttons-2 {
-        display: flex;
-        justify-content: center;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-    }
-
-    .cta-buttons-2 a {
-        width: 100%;
-    }
-
-    .cta-buttons-2 button {
-        width: 100%;
-        color: #8560f5;
-        border: solid;
-        padding: 0.6rem 2rem;
-        font-size: 0.8rem;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: 400;
-    }
-
-    .cta-buttons-2 button:hover {
-        color: #fff;
-        background-color: #526cfe;
-        border: none;
-    }
-
-    .gradient-text {
-        background: linear-gradient(to right, #bc00ff, #00eeff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    h1.feature-label {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #e2e4e98f;
-    }
-
-    h1.feature-label.light {
-        color: #0000008a;
-    }
-
-    .anki-feature {
-        opacity: 0;
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .anki-feature .feature-label {
-        transform: translateY(-0.75rem);
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .anki-feature .anki-feature-text {
-        transform: translateY(1.5rem);
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .anki-feature .anki-feature-video {
-        transform: translateY(1.5rem);
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .anki-feature.visible {
-        opacity: 1;
-    }
-
-    .anki-feature.visible .feature-label {
-        transform: translateY(0);
-    }
-
-    .anki-feature.visible .anki-feature-text {
-        transform: translateY(0);
-    }
-
-    .anki-feture.visible .anki-feature-video {
-        transform: translateY(0);
-    }
-
-    .feature {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        opacity: 0;
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .feature .feature-text {
-        transform: translateX(1.5rem);
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-
-    }
-
-    .feature .feature-image-container {
-        transform: translateY(1.5rem);
-        transition: transform .75s cubic-bezier(.075, .85, .175, 1) 125ms, opacity .75s 125ms;
-    }
-
-    .feature-image-container .feature-image {
-        transition: transform .15s ease-out;
-    }
-
-    .feature-image-container .feature-image:hover {
-        cursor: pointer;
-        transform: scale(1.015);
-    }
-
-    .feature.right {
-        flex-direction: row-reverse;
-    }
-
-    .feature.right .feature-text {
-        transform: translateX(-1.5rem);
-    }
-
-    .feature.visible {
-        opacity: 1;
-    }
-
-    .feature.visible .feature-text {
-        transform: translateX(0);
-    }
-
-    .feature.visible .feature-image-container {
-        transform: translateY(0);
-    }
-
-    .feature-text {
-        flex: 5 1 400px;
-        padding: 20px;
-    }
-
-    .feature-image-container {
-        align-content: center;
-        flex: 2 1 400px;
-        padding: 20px;
-    }
-
-    .left .feature-image-container .feature-image {
-        float: right;
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: -8px 6px 12px #e2e4e98f,
-            8px 6px 12px #e2e4e98f;
-    }
-
-    .right .feature-image-container .feature-image {
-        float: left;
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: -8px 6px 12px #e2e4e98f,
-            8px 6px 12px #e2e4e98f;
-    }
-
-    .theme-image {
-        transition: transform .15s ease-out;
-    }
-
-    .theme-image:hover {
-        transform: scale(1.02);
-        cursor: pointer;
-    }
-
-    .theme-image.dark {
-        box-shadow: -8px 6px 12px #504c4c,
-            8px 6px 12px #504c4c !important;
-        display: none;
-    }
-
-    .feature-section {
-        background-color: #1e2129;
-        color: #e2e4e9d1;
-        padding: 5rem 10vw;
-    }
-
-    .feature-section.light {
-        background-color: #fff;
-        color: #000000de;
-        padding: 2rem 10vw 3rem;
-    }
-
-    .inline-icon {
-        margin-left: 5px;
-        width: 16px;
-        height: 16px;
-    }
-
-    .screenshot {
-        max-width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 12px;
-        margin-top: 2rem;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    .mySlides {
-        position: relative;
-        /* The slides should be above other elements (for hover) */
-        z-index: 1;
-        /* Hide the images by default */
-        display: none;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -36px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .prev {
-        transform: translateX(-50px);
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: -30px;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: #060708;
-        opacity: 60%;
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 0.5s;
-    }
-
-    .demo {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .ext-link-icon {
-        align-content: center;
-        margin-left: 3px;
-        color: #8560f5;
-    }
-
-    .ext-link-icon:hover {
-        color: #526cfe;
-    }
-
-    .bounce-icon {
-        animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5);
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-    }
-
-    .tooltip {
-        position: absolute;
-        top: -32px;
-        left: 0;
-        right: 0;
-        margin-inline: auto;
-        width: fit-content;
-        opacity: 0;
-
-        transition: visibility .2s, opacity .2s;
-        visibility: hidden;
-
-        background: #eff1f5e7;
-        box-shadow: 0 0 5px 2px #e2e4e98f;
-        border-radius: 2px;
-        padding: 4px 6px;
-
-        font-size: 10px;
-        color: #000000de;
-    }
-
-    .tooltip-container {
-        position: relative;
-    }
-
-    .tooltip-container:hover .tooltip {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes bounce {
-        from {
-            transform: translateY(0.5px);
-        }
-
-        to {
-            transform: translateY(-1px);
-        }
-    }
-
-    @media screen and (min-width: 64rem) {
-        .cta-buttons {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .cta-buttons-2 a {
-            width: auto;
-        }
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 
   
 <meta property="og:type" content="website">
@@ -1219,8 +771,8 @@
             <div class="md-content" data-md-component="content">
               
               <article class="md-content__inner md-typeset">
-                 
-<!-- Landing Page Only -->
+                
+
 
 <section class="hero">
     <div style="max-width: 60rem;">
@@ -1229,34 +781,30 @@
             Powerful and versatile pop-up dictionary for language learning used by
             100,000+ language learners.
         </p>
-        <div>
-            <div class="cta-buttons">
-                <a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">
-                    <button style="display: flex">
-                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/chrome.svg">
-                        <div>Get Yomitan <small>Chrome</small></div>
-                    </button>
-                </a>
-                <a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">
-                    <button style="display: flex">
-                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/firefox.svg">
-                        <div>Get Yomitan <small>Firefox</small></div>
-                    </button>
-                </a>
-                <a href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn">
-                    <button style="display: flex">
-                        <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/edge.svg">
-                        <div>Get Yomitan <small>Edge</small></div>
-                    </button>
-                </a>
-            </div>
+        <div class="cta-buttons">
+            <a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn" aria-label="Get Yomitan for Chrome">
+                <button>
+                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/chrome.svg" alt="Chrome icon">
+                    <span>Get Yomitan <small>Chrome</small></span>
+                </button>
+            </a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/" aria-label="Get Yomitan for Firefox">
+                <button>
+                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/firefox.svg" alt="Firefox icon">
+                    <span>Get Yomitan <small>Firefox</small></span>
+                </button>
+            </a>
+            <a href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn" aria-label="Get Yomitan for Edge">
+                <button>
+                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/edge.svg" alt="Edge icon">
+                    <span>Get Yomitan <small>Edge</small></span>
+                </button>
+            </a>
         </div>
         <div style="margin-top: 1rem" class="cta-buttons-2">
             <div></div>
             <a href="getting-started">
-                <button>
-                    <div>Go to our Getting Started guide →</div>
-                </button>
+                <button>Go to our Getting Started guide →</button>
             </a>
             <div></div>
         </div>
@@ -1266,7 +814,7 @@
 <section class="feature-section">
     <h1 class="feature-label">More than just a dictionary</h1>
 
-    <section class="feature left">
+    <div class="feature left">
         <div class="feature-text">
             <h2>Dynamic Popup</h2>
             <p>
@@ -1275,228 +823,203 @@
                 opening external apps: just <strong>hover and press a key</strong> to instantly see
                 detailed definitions, word frequencies, native audio, example sentences,
                 and more—right where you are.
-                <br><br>
-
+            </p>
+            <p>
                 Designed to keep you in the flow, Yomitan helps
                 you <strong>stay immersed</strong>, whether you're deep into a novel or
                 casually scrolling online.
-
-                <br><br>
-
-                <a href="getting-started">
-                    Learn more →
-                </a>
-
             </p>
+            <p><a href="getting-started">Learn more →</a></p>
         </div>
         <div class="feature-image-container" style="margin-left: auto;">
             <div class="tooltip-container">
-                <div class="tooltip">
-                    <strong>Dynamic Popup</strong>
-                </div>
+                <div class="tooltip"><strong>Dynamic Popup</strong></div>
                 <a href="getting-started">
                     <img class="feature-image" width="96%" height="96%" src="./assets/scanning-popup.webp" alt="Dynamic Popup">
                 </a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="feature right">
+    <div class="feature right">
         <div class="feature-text">
             <h2>Native Audio</h2>
             <p>
                 Stumped by the pronunciation of a word? Just hover and listen. Yomitan provides <strong>high quality
-                    audio</strong> for
-                almost every word—voiced clearly by real native speakers.
-
-                <br><br>
-
-                If the default sources don't meet your needs, Yomitan lets you add your <strong>custom audio
-                    sources</strong>:
-                You can pull audio from massive pronunciation libraries such as Forvo, or enable text-to-speech
-                with a variety of different voices. Yomitan can even export audio directly to your <strong>Anki
-                    flashcards</strong>, so you can always hear
-                it when you review.
-
-                <br><br>
-
-                <a href="advanced#audio">
-                    Learn more →
-                </a>
+                    audio</strong> for almost every word—voiced clearly by real native speakers.
             </p>
+            <p>
+                If the default sources don't meet your needs, Yomitan lets you add your <strong>custom audio
+                    sources</strong>: You can pull audio from massive pronunciation libraries such as Forvo, or enable text-to-speech
+                with a variety of different voices. Yomitan can even export audio directly to your <strong>Anki
+                    flashcards</strong>, so you can always hear it when you review.
+            </p>
+            <p><a href="advanced#audio">Learn more →</a></p>
         </div>
         <div class="feature-image-container">
             <div class="tooltip-container">
-                <div class="tooltip">
-                    <strong>Native Audio</strong>
-                </div>
+                <div class="tooltip"><strong>Native Audio</strong></div>
                 <a href="advanced#audio">
                     <img class="feature-image" width="90%" height="90%" src="./assets/audio.webp" alt="Audio">
                 </a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="feature left">
+        <div class="feature-text">
+            <h2>Personalize Your Experience</h2>
+            <p>
+                Want to go for bold and colorful or prefer a clean, minimalist look? Yomitan gives you full control over
+                how your popup appears, so you feel right at home when you do lookups.
+            </p>
+            <p>Create your own theme, or choose one from the various community themes.</p>
+            <p><a href="tools-resources">Learn more →</a></p>
+            <button onclick="toggleDarkLight()" aria-label="Toggle theme preview">
+                <img id="dark-light-toggle" width="36" height="36" src="assets/icons/toggleInactive.svg" alt="Theme toggle">
+            </button>
+        </div>
+
+        <div class="feature-image-container">
+            <div class="slideshow-container">
+                <div class="tooltip-container">
+                    <div class="tooltip"><strong>Themes</strong></div>
+                    
+                    <div class="mySlides">
+                        <div style="display: flex; position: absolute; top: -24px;">
+                            <small>Bint's Yomitan CSS
+                                <a class="ext-link-icon" href="./assets/themes/bint-css.css" aria-label="View Bint's CSS">
+                                    <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
+                                    </svg>
+                                </a>
+                            </small>
+                        </div>
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/bint-css.png" style="width:100%" alt="Bint's theme light mode">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/bint-css.png" style="width:100%" alt="Bint's theme dark mode">
+                        </a>
+                    </div>
+
+                    <div class="mySlides">
+                        <div style="display: flex; position: absolute; top: -24px;">
+                            <small>Yomitan Colored CSS
+                                <a class="ext-link-icon" href="https://github.com/yomidevs/yomichan-dict-css" aria-label="View Colored CSS">
+                                    <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
+                                    </svg>
+                                </a>
+                            </small>
+                        </div>
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/colored-css.png" style="width:100%" alt="Colored theme light mode">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/colored-css.png" style="width:100%" alt="Colored theme dark mode">
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="text-align:center; transform: translateY(20px);">
+                    <span class="dot" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
+                    <span class="dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">❮</a>
+                <a class="next" onclick="plusSlides(1)" aria-label="Next slide">❯</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="feature-section" style="padding-top: 0;">
     <div class="anki-feature">
         <h1 class="feature-label" style="text-align: center;">Powerful Anki flashcards integration</h1>
 
-        <!-- Video or Image Demo -->
         <div style="display: flex; flex-direction: row; justify-content: center;">
-            <section class="demo" style="max-width: 850px;">
+            <div class="demo" style="max-width: 850px;">
                 <p class="anki-feature-text" style="text-align: center;">
-                    Learning doesn’t stop at the lookup. Turn your lookups into
+                    Learning doesn't stop at the lookup. Turn your lookups into
                     <strong>rich and beautifully formatted Anki flashcards</strong>
                     and send them straight to your deck with a single keypress. See what our users have created:
                 </p>
-                <video class="anki-feature-video" width="800" height="450" autoplay controls frameborder="0" muted src="https://github.com/user-attachments/assets/e3210e84-be5f-48ba-a335-ab8bbd103750" style="max-width: 100%; border-radius: 0.75rem"></video>
+                <video class="anki-feature-video" width="800" height="450" autoplay controls muted src="https://github.com/user-attachments/assets/e3210e84-be5f-48ba-a335-ab8bbd103750" style="max-width: 100%; border-radius: 0.75rem"></video>
 
-                <br><br>
+                <p style="margin-top: 1.5rem;">
+                    <small>BrenoAqua's Senren Note Type
+                        <a class="ext-link-icon" href="https://brenoaqua.github.io/Senren/" aria-label="View Senren Note Type">
+                            <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
+                            </svg>
+                        </a>
+                    </small>
+                </p>
 
-                <small>BrenoAqua's Senren Note Type
-                    <a class="ext-link-icon" href="https://brenoaqua.github.io/Senren/">
-                        <!-- external link icon -->
-                        <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <!--!Font
-                        Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License -
-                        https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
-                        </svg>
-                    </a>
-                </small>
-
-                <br><br>
-
-                <a href="anki">
-                    Learn more →
-                </a>
-            </section>
+                <p><a href="anki">Learn more →</a></p>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="feature-section light">
-    <!-- <h1 class="feature-label light">Powerful flashcard integration</h1> -->
-
-    <!-- Video or Image Demo -->
-    <section class="demo">
+    <div class="demo">
         <h2>🚀 See Yomitan in Action</h2>
-        <p>
-            Watch how quickly Yomitan simplifies your reading and vocabulary building.
-        </p>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/9DLsA94N1ZE" style="margin-top: 1.5rem; max-width: 100%; border-radius: 0.75rem" frameborder="0" allowfullscreen></iframe>
+        <p>Watch how quickly Yomitan simplifies your reading and vocabulary building.</p>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/9DLsA94N1ZE" style="margin-top: 1.5rem; max-width: 100%; border-radius: 0.75rem" frameborder="0" allowfullscreen title="Yomitan demo video"></iframe>
 
-        <div style="margin-top: 4px" class="cta-buttons-2">
+        <div style="margin-top: 1rem" class="cta-buttons-2">
             <a href="getting-started">
-                <button style="display: flex; justify-content: center;">
-                    <div>Get Started →</div>
-                    <!-- <img style="margin-left: 5px" width="18" height="18" src="assets/icons/arrowRight.svg"> -->
-                </button>
+                <button>Get Started →</button>
             </a>
         </div>
-    </section>
+    </div>
 </section>
 
 <script>
-    /* slide animations */
+    // ===== SLIDESHOW =====
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    // let slideIndex = 1;
-    // showSlides(slideIndex);
-
-    // // Next/previous controls
-    // function plusSlides(n) {
-    //     showSlides(slideIndex += n);
-    // }
-
-    // // Thumbnail image controls
-    // function currentSlide(n) {
-    //     showSlides(slideIndex = n);
-    // }
-
-    // function showSlides(n) {
-
-    //     // todo! let it run automatically
-
-    //     let i;
-    //     let slides = document.getElementsByClassName("mySlides");
-    //     let dots = document.getElementsByClassName("dot");
-    //     if (n > slides.length) { slideIndex = 1 }
-    //     if (n < 1) { slideIndex = slides.length }
-    //     for (i = 0; i < slides.length; i++) {
-    //         slides[i].style.display = "none";
-    //     }
-    //     for (i = 0; i < dots.length; i++) {
-    //         dots[i].className = dots[i].className.replace(" active", "");
-    //     }
-    //     slides[slideIndex - 1].style.display = "block";
-    //     dots[slideIndex - 1].className += " active";
-    // }
-
-
-    /* text animations */
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                }
-            });
-        },
-        { threshold: 0.1 }
-    );
-
-    console.log(observer);
-
-    document.querySelectorAll(".feature").forEach((section) => {
-        observer.observe(section);
-    });
-
-    document.querySelectorAll(".anki-feature").forEach((section) => {
-        observer.observe(section);
-    });
-
-    let lightMode = true;
-
-    function toggleDarkLight() {
-        lightMode = !lightMode;
-        const toggle = document.querySelector("#dark-light-toggle");
-
-        if (lightMode) {
-            toggle.src = toggle.src.replace("toggleActive", "toggleInactive");
-        } else {
-            toggle.src = toggle.src.replace("toggleInactive", "toggleActive");
-        }
-
-        // } else {
-        //     element.src = element.src.replace("light", "dark");
-        //     element.style.boxShadow = "-8px 6px 12px #504c4c, 10px 8px 15px #504c4c";
-        // }
-
-        if (lightMode) {
-            document.querySelectorAll(".theme-image").forEach((element) => {
-                element.style.display = "block";
-                // element.style.boxShadow = "-8px 6px 12px #e2e4e98f, 10px 8px 15px #e2e4e98f";
-            })
-            document.querySelectorAll(".theme-image.dark").forEach((element) => {
-                element.style.display = "none";
-                // element.style.boxShadow = "-8px 6px 12px #e2e4e98f, 10px 8px 15px #e2e4e98f";
-            })
-        } else {
-            document.querySelectorAll(".theme-image").forEach((element) => {
-                element.style.display = "none";
-                // element.style.boxShadow = "-8px 6px 12px #e2e4e98f, 10px 8px 15px #e2e4e98f";
-            })
-            document.querySelectorAll(".theme-image.dark").forEach((element) => {
-                element.style.display = "block";
-                // element.style.boxShadow = "-8px 6px 12px #e2e4e98f, 10px 8px 15px #e2e4e98f";
-            })
-        }
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
 
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
+        
+        Array.from(slides).forEach(slide => slide.style.display = "none");
+        Array.from(dots).forEach(dot => dot.classList.remove("active"));
+        
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+    }
+
+    // ===== INTERSECTION OBSERVER FOR ANIMATIONS =====
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, observerOptions);
+
+    // Observe all animated elements
+    document.querySelectorAll(".feature, .anki-feature").forEach(el => observer.observe(el));
 </script>
 
- 
+
+
               </article>
             </div>
           
@@ -1601,11 +1124,6 @@
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
-<script>
-    // not sure why but it randomly jumps to end of page when toggling theme
-    var palette = document.querySelector("[data-md-component=palette]")
-    palette.style.display = "none" // hide palette switcher
-</script>
 
   
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "none", "closeEffect": "none", "slideEffect": "slide"});
