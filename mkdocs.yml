@@ -100,6 +100,9 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/homepage.css
 
+extra_javascript:
+  - javascripts/browser-detect.js
+
 copyright: |
   Copyright &copy; 2024 Yomitan Authors <br>
   <a href="https://yomitan.wiki/privacy">Privacy and Permissions</a>

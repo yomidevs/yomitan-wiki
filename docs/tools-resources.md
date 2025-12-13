@@ -61,3 +61,22 @@ Anki Addon which allows for generating audio in bulk from a list of URLs.
 #### [Backfill Anki Yomitan](https://ankiweb.net/shared/info/1184164376)
 
 An Anki add-on to backfill fields including media and audio using Yomitan's API.
+
+### Themes
+
+To use these themes, follow the steps below:
+
+1. Navigate to `Settings`.
+2. Enable `Advanced` on the left toolbar.
+3. Go to `Appearance` → `Configure Custom CSS...` and paste the contents into the `Popup CSS` field.
+
+!!! warning "In some cases the CSS might contain proprietary fonts or dictionary names. In that case, please obtain them through legal means, or simply change them to the ones you have."
+
+#### [Yomitan Colored CSS](https://github.com/yomidevs/yomichan-dict-css)
+
+Yomichan custom CSS to color dictionaries by name. This currently supports most significant Japanese as well as Chinese/Cantonese dictionaries that are available for Yomichan.
+
+#### [Bint's Yomitan CSS](/overrides/assets/themes/bint-css.css)
+
+Beautiful custom CSS for Japanese kindly shared by Bint (`caoimhe.00` on Discord). 
+
