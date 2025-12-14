@@ -884,8 +884,8 @@
                     
                     <div class="mySlides">
                         <div style="display: flex; position: absolute; top: -24px;">
-                            <small>Bint's Yomitan CSS
-                                <a class="ext-link-icon" href="./assets/themes/bint-css.css" aria-label="View Bint's CSS">
+                            <small>Bint's Japanese CSS
+                                <a class="ext-link-icon" href="https://github.com/yomidevs/yomitan-featured-css/tree/main/bint's%20yomitan%20css" aria-label="View Bint's CSS">
                                     <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
                                     </svg>
@@ -913,11 +913,28 @@
                             <img class="feature-image theme-image dark" src="assets/themes/dark/colored-css.png" style="width:100%" alt="Colored theme dark mode">
                         </a>
                     </div>
+                    
+                    <div class="mySlides">
+                        <div style="display: flex; position: absolute; top: -24px;">
+                            <small>Nelan's Glassy CSS
+                                <a class="ext-link-icon" href="https://github.com/yomidevs/yomitan-featured-css/tree/main/nelan's%20yomitan%20css" aria-label="View Nelan's CSS">
+                                    <svg style="width: 11px; height: 11px;" class="bounce-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentcolor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path>
+                                    </svg>
+                                </a>
+                            </small>
+                        </div>
+                        <a href="tools-resources">
+                            <img class="feature-image theme-image" src="assets/themes/light/nelan-css.png" style="width:100%" alt="Colored theme light mode">
+                            <img class="feature-image theme-image dark" src="assets/themes/dark/nelan-css.png" style="width:100%" alt="Colored theme dark mode">
+                        </a>
+                    </div>
                 </div>
                 
                 <div style="text-align:center; transform: translateY(20px);">
                     <span class="dot" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
                     <span class="dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
+                    <span class="dot" onclick="currentSlide(3)" aria-label="Go to slide 3"></span>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">❮</a>
@@ -1123,6 +1140,69 @@
         <script src="javascripts/browser-detect.js"></script>
       
     
+<script>
+    // Sync custom theme toggle with MkDocs Material palette
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggle = document.getElementById('dark-light-toggle');
+        
+        if (!toggle) return;
+        
+        // Get current theme from MkDocs Material
+        function getCurrentTheme() {
+            const scheme = document.body.getAttribute('data-md-color-scheme');
+            return scheme === 'slate' ? 'dark' : 'light';
+        }
+        
+        // Update theme images based on current theme
+        function updateThemeImages(theme) {
+            const lightImages = document.querySelectorAll(".theme-image:not(.dark)");
+            const darkImages = document.querySelectorAll(".theme-image.dark");
+            
+            if (theme === 'light') {
+                lightImages.forEach(img => img.style.display = "block");
+                darkImages.forEach(img => img.style.display = "none");
+                toggle.src = toggle.src.replace("toggleActive", "toggleInactive");
+            } else {
+                lightImages.forEach(img => img.style.display = "none");
+                darkImages.forEach(img => img.style.display = "block");
+                toggle.src = toggle.src.replace("toggleInactive", "toggleActive");
+            }
+        }
+        
+        // Initialize on page load
+        updateThemeImages(getCurrentTheme());
+        
+        // Watch for theme changes from MkDocs palette switcher
+        const observer = new MutationObserver(function() {
+            updateThemeImages(getCurrentTheme());
+        });
+        
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ['data-md-color-scheme']
+        });
+        
+        // Make custom toggle button trigger MkDocs palette switcher
+        window.toggleDarkLight = function() {
+            const currentTheme = getCurrentTheme();
+            const palette = document.querySelector("[data-md-component=palette]");
+            
+            if (palette) {
+                // Find the palette input for the opposite theme
+                const targetScheme = currentTheme === 'light' ? 'slate' : 'default';
+                const input = palette.querySelector(`input[data-md-color-scheme="${targetScheme}"]`);
+                
+                if (input) {
+                    input.click();
+                } else {
+                    // Fallback: click any palette input
+                    const anyInput = palette.querySelector('input[data-md-color-scheme]');
+                    if (anyInput) anyInput.click();
+                }
+            }
+        };
+    });
+</script>
 
   
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "none", "closeEffect": "none", "slideEffect": "slide"});
