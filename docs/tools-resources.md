@@ -76,7 +76,11 @@ To use these themes, follow the steps below:
 
 Yomichan custom CSS to color dictionaries by name. This currently supports most significant Japanese as well as Chinese/Cantonese dictionaries that are available for Yomichan.
 
-#### [Bint's Yomitan CSS](/assets/themes/bint-css.css)
+#### [Bint's Yomitan CSS](https://github.com/yomidevs/yomitan-featured-css/tree/main/bint's%20yomitan%20css)
 
 Beautiful custom CSS for Japanese kindly shared by Bint (`caoimhe.00` on Discord). 
+
+#### [Nelan's Yomitan CSS](https://github.com/yomidevs/yomitan-featured-css/tree/main/nelan's%20yomitan%20css)
+
+A glassy look for Yomitan (Japanese) kindly shared by Nelan (`nelan.hyu` on Discord). 
 
