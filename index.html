@@ -850,7 +850,8 @@
             </p>
             <p>
                 If the default sources don't meet your needs, Yomitan lets you add your <strong>custom audio
-                    sources</strong>: You can pull audio from massive pronunciation libraries such as Forvo, or enable text-to-speech
+                    sources</strong>: You can pull audio from massive pronunciation libraries such as Forvo, or enable
+                text-to-speech
                 with a variety of different voices. Yomitan can even export audio directly to your <strong>Anki
                     flashcards</strong>, so you can always hear it when you review.
             </p>
@@ -881,7 +882,7 @@
             <div class="slideshow-container">
                 <div class="tooltip-container">
                     <div class="tooltip"><strong>Themes</strong></div>
-                    
+
                     <div class="mySlides">
                         <div style="display: flex; position: absolute; top: -24px;">
                             <small>Bint's Japanese CSS
@@ -913,7 +914,7 @@
                             <img class="feature-image theme-image dark" src="assets/themes/dark/colored-css.png" style="width:100%" alt="Colored theme dark mode">
                         </a>
                     </div>
-                    
+
                     <div class="mySlides">
                         <div style="display: flex; position: absolute; top: -24px;">
                             <small>Nelan's Glassy CSS
@@ -930,7 +931,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div style="text-align:center; transform: translateY(20px);">
                     <span class="dot" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
                     <span class="dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
@@ -1003,13 +1004,13 @@
     function showSlides(n) {
         const slides = document.getElementsByClassName("mySlides");
         const dots = document.getElementsByClassName("dot");
-        
+
         if (n > slides.length) slideIndex = 1;
         if (n < 1) slideIndex = slides.length;
-        
+
         Array.from(slides).forEach(slide => slide.style.display = "none");
         Array.from(dots).forEach(dot => dot.classList.remove("active"));
-        
+
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].classList.add("active");
     }
@@ -1140,69 +1141,6 @@
         <script src="javascripts/browser-detect.js"></script>
       
     
-<script>
-    // Sync custom theme toggle with MkDocs Material palette
-    document.addEventListener('DOMContentLoaded', function() {
-        const toggle = document.getElementById('dark-light-toggle');
-        
-        if (!toggle) return;
-        
-        // Get current theme from MkDocs Material
-        function getCurrentTheme() {
-            const scheme = document.body.getAttribute('data-md-color-scheme');
-            return scheme === 'slate' ? 'dark' : 'light';
-        }
-        
-        // Update theme images based on current theme
-        function updateThemeImages(theme) {
-            const lightImages = document.querySelectorAll(".theme-image:not(.dark)");
-            const darkImages = document.querySelectorAll(".theme-image.dark");
-            
-            if (theme === 'light') {
-                lightImages.forEach(img => img.style.display = "block");
-                darkImages.forEach(img => img.style.display = "none");
-                toggle.src = toggle.src.replace("toggleActive", "toggleInactive");
-            } else {
-                lightImages.forEach(img => img.style.display = "none");
-                darkImages.forEach(img => img.style.display = "block");
-                toggle.src = toggle.src.replace("toggleInactive", "toggleActive");
-            }
-        }
-        
-        // Initialize on page load
-        updateThemeImages(getCurrentTheme());
-        
-        // Watch for theme changes from MkDocs palette switcher
-        const observer = new MutationObserver(function() {
-            updateThemeImages(getCurrentTheme());
-        });
-        
-        observer.observe(document.body, {
-            attributes: true,
-            attributeFilter: ['data-md-color-scheme']
-        });
-        
-        // Make custom toggle button trigger MkDocs palette switcher
-        window.toggleDarkLight = function() {
-            const currentTheme = getCurrentTheme();
-            const palette = document.querySelector("[data-md-component=palette]");
-            
-            if (palette) {
-                // Find the palette input for the opposite theme
-                const targetScheme = currentTheme === 'light' ? 'slate' : 'default';
-                const input = palette.querySelector(`input[data-md-color-scheme="${targetScheme}"]`);
-                
-                if (input) {
-                    input.click();
-                } else {
-                    // Fallback: click any palette input
-                    const anyInput = palette.querySelector('input[data-md-color-scheme]');
-                    if (anyInput) anyInput.click();
-                }
-            }
-        };
-    });
-</script>
 
   
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "none", "closeEffect": "none", "slideEffect": "slide"});
