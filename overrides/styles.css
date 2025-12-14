@@ -390,8 +390,22 @@ h1.feature-label.light {
     box-shadow: 0 8px 30px var(--shadow-hover-light), 0 4px 12px var(--shadow-hover-medium);
 }
 
+/* Default: light mode - hide dark images */
 .theme-image.dark {
-    display: none;
+    display: none !important;
+}
+
+.theme-image:not(.dark) {
+    display: block !important;
+}
+
+/* Dark mode: hide light images, show dark images */
+[data-md-color-scheme="slate"] .theme-image.dark {
+    display: block !important;
+}
+
+[data-md-color-scheme="slate"] .theme-image:not(.dark) {
+    display: none !important;
 }
 
 /* ===== TOOLTIP ===== */
