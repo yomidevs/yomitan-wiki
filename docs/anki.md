@@ -8,7 +8,7 @@ hide:
 ## Anki Integration
 
 Yomitan features automatic flashcard creation for [Anki](https://apps.ankiweb.net/), a free application designed to help you
-retain knowledge. This feature requires the prior installation of an Anki plugin called [AnkiConnect](https://foosoft.net/projects/anki-connect).
+retain knowledge. This feature requires the prior installation of an Anki plugin called [AnkiConnect](https://git.sr.ht/~foosoft/anki-connect) ([Add-on Page](https://ankiweb.net/shared/info/2055492159)).
 Check the respective project page for more information about how to set up this software.
 
 ### Flashcard Configuration
@@ -21,7 +21,7 @@ flashcards that Yomitan creates through AnkiConnect.
 Flashcard fields can be configured with the following steps:
 
 1.  Open the Yomitan options page and scroll down to the section labeled _Anki Options_.
-2.  Tick the checkbox labeled _Enable Anki integration_ (Anki must be running with [AnkiConnect](https://foosoft.net/projects/anki-connect) installed).
+2.  Tick the checkbox labeled _Enable Anki integration_ (Anki must be running with [AnkiConnect](https://git.sr.ht/~foosoft/anki-connect) ([Add-on Page](https://ankiweb.net/shared/info/2055492159)) installed).
 3.  Select the type of template to configure by clicking on either the _Terms_ or _Kanji_ tabs.
 4.  Select the Anki deck and model to use for new creating new flashcards of this type.
 5.  Fill the model fields with markers corresponding to the information you wish to include (several can be used at
@@ -138,7 +138,7 @@ If _When a duplicate is detected_ is set to `Prevent adding`, the icons will app
 Below are some troubleshooting tips you can try if you are unable to create new flashcards:
 
 - If all of the buttons appear grayed out, then you should double-check your deck and model configuration settings.
-- If no icons appear at all, make sure that Anki is running in the background and that [AnkiConnect](https://foosoft.net/projects/anki-connect) has been installed.
+- If no icons appear at all, make sure that Anki is running in the background and that [AnkiConnect](https://git.sr.ht/~foosoft/anki-connect) ([Add-on Page](https://ankiweb.net/shared/info/2055492159)) has been installed.
 
 ### Anki Note Generation
 
