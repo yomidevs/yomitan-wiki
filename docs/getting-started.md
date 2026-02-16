@@ -110,7 +110,7 @@ To get started, get Yomitan for your browser:
 
 ---
 
-:fontawesome-solid-mobile-screen-button:{ .lg .middle } ___Mobile users___: You can use Yomitan on Android with Firefox or Edge only. Chrome for mobile and iOS aren't supported.
+:fontawesome-solid-mobile-screen-button:{ .lg .middle } ___Mobile platform note___: You can use Yomitan on Android with Firefox or Edge only. Chrome for mobile and iOS aren't supported.
 
 ## Yomitan Setup
 
