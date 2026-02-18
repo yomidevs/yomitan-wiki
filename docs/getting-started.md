@@ -237,7 +237,10 @@ If a definition is found, a popup window will appear.
 </figure>
 
 !!! tip "Tip"
-    You can customize the modifier key in Settings to suit your preferences (e.g., <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, or `No Modifier` to have the popup open on every word).
+    You can customize the modifier key in Settings to suit your preferences (e.g., <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, or `No Key` to have the popup open on every word).  
+
+    :fontawesome-solid-mobile-screen-button:{ .md .middle }  ___Mobile platform note___: On mobile platforms simply select `No Key` as the modifier key. Directly touching the word brings up the popup on mobile.
+
 
 #### Listen to Audio
 
