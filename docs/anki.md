@@ -11,6 +11,8 @@ Yomitan features automatic flashcard creation for [Anki](https://apps.ankiweb.ne
 retain knowledge. This feature requires the prior installation of an Anki plugin called [AnkiConnect](https://git.sr.ht/~foosoft/anki-connect) ([Add-on Page](https://ankiweb.net/shared/info/2055492159)).
 Check the respective project page for more information about how to set up this software.
 
+:fontawesome-solid-mobile-screen-button:{ .md .middle }  ___Mobile platform note___: On Android, use AnkiDroid (available on [Google Play](https://play.google.com/store/apps/details?id=com.ichi2.anki) or [F-Droid](https://f-droid.org/en/packages/com.ichi2.anki/)). To connect Yomitan with AnkiDroid, you'll need [AnkiconnectAndroid](https://github.com/KamWithK/AnkiconnectAndroid), an unofficial tool that requires manual installation. Install and use it at your own risk.
+
 ### Flashcard Configuration
 
 Before flashcards can be automatically created, you must configure the templates used to create term and/or kanji notes.
