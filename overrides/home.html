@@ -1,329 +1,274 @@
 {% extends "main.html" %}
 
-{% block scripts %}
-{{ super() }}
-{% endblock %}
+{% block scripts %}{{ super() }}{% endblock %}
 
 {% block extrahead %}
 {{ super() }}
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Yomitan Wiki</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 {% endblock %}
 
 {% block content %}
 {% if page.url == "" %}
 
+<!-- ========== HERO ========== -->
 <section class="hero">
-    <div style="max-width: 60rem;">
-        <h1 class="gradient-text">Yomitan</h1>
-        <p>
-            Powerful and versatile pop-up dictionary for language learning used by
-            100,000+ language learners.
+    <div class="hero__bg"></div>
+
+    <div class="hero__inner">
+        <div class="hero__content">
+            <h1 class="hero__title">
+                Yomitan, a smarter way to <span class="typewriter" id="typewriter"></span>
+            </h1>
+            <p class="hero__subtitle">
+                Yomitan is a powerful, free browser extension used by 100,000+ learners.
+                Get instant dictionary lookups, native audio, and Anki integration
+                &mdash; right where you read.
+            </p>
+            <div class="hero__buttons">
+                <a class="btn btn--primary" href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">
+                    <img src="assets/icons/chrome.svg" width="20" height="20" alt="">Chrome
+                </a>
+                <a class="btn btn--primary" href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">
+                    <img src="assets/icons/firefox.svg" width="20" height="20" alt="">Firefox
+                </a>
+                <a class="btn btn--primary" href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn">
+                    <img src="assets/icons/edge.svg" width="20" height="20" alt="">Edge
+                </a>
+            </div>
+            <a class="btn btn--ghost" href="getting-started">Getting Started Guide &rarr;</a>
+        </div>
+
+        <div class="hero__preview">
+            <img src="assets/scanning-popup.webp" alt="Yomitan popup in action">
+        </div>
+    </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section class="features">
+    <div class="features__grid">
+        <div class="features__header-title">
+            <span class="section-label">Features</span>
+            <h2 class="section-title">More than just<br>a dictionary.</h2>
+        </div>
+        <!-- Dynamic Popup -->
+        <article class="fcard fcard--featured reveal">
+            <div class="fcard__header">
+                <div class="fcard__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <h3 class="fcard__title">Dynamic Popup</h3>
+            </div>
+            <div class="fcard__content">
+                <p class="fcard__text">Just <strong>hover and press a key</strong> to instantly see definitions, word frequencies, native audio, and example sentences &mdash; right where you are.</p>
+                <p class="fcard__text">Stay in the flow whether you're deep in a novel or casually scrolling.</p>
+                <a href="getting-started" class="fcard__link">Learn more <span>&rarr;</span></a>
+            </div>
+            <div class="fcard__visual">
+                <img src="assets/scanning-popup.webp" alt="Dynamic popup" loading="lazy">
+            </div>
+        </article>
+
+        <!-- Native Audio -->
+        <article class="fcard fcard--rev reveal">
+            <div class="fcard__content">
+                <h3 class="fcard__title">Native Audio</h3>
+                <p class="fcard__text">Hear every word by <strong>real native speakers</strong>. Add custom sources like Forvo, or enable text-to-speech.</p>
+                <p class="fcard__text">Export audio straight to your <strong>Anki flashcards</strong>.</p>
+                <a href="advanced#audio" class="fcard__link">Learn more <span>&rarr;</span></a>
+            </div>
+            <div class="fcard__visual">
+                <img src="assets/audio.webp" alt="Native audio" loading="lazy">
+            </div>
+        </article>
+
+        <!-- Mobile Support -->
+        <article class="fcard fcard--rev fcard--portrait reveal">
+            <div class="fcard__content">
+                <h3 class="fcard__title">Mobile Support</h3>
+                <p class="fcard__text">Take your learning <strong>anywhere</strong>. Yomitan works on <strong>Android devices</strong>, bringing powerful lookups to your phone or tablet.</p>
+                <p class="fcard__text">Simply <strong>select any text</strong> to get instant definitions, audio, and word info &mdash; without leaving what you're reading.</p>
+                <a href="getting-started" class="fcard__link">Learn more <span>&rarr;</span></a>
+            </div>
+            <div class="fcard__visual">
+                <img src="assets/android-dict-action.webp" alt="Android mobile support" loading="lazy">
+            </div>
+        </article>
+
+        <!-- Themes -->
+        <article class="fcard reveal">
+            <div class="fcard__content">
+                <h3 class="fcard__title">Make It Yours</h3>
+                <p class="fcard__text"><strong>Full control</strong> over how your popup looks. Bold and colorful or clean and minimal.</p>
+                <p class="fcard__text">Create your own theme or pick from beautiful <strong>community themes</strong>.</p>
+                <a href="tools-resources" class="fcard__link">Learn more <span>&rarr;</span></a>
+            </div>
+            <div class="fcard__visual">
+                <div class="slideshow">
+                    <div class="slideshow__track">
+                        <div class="slide active">
+                            <div class="slide__credit">
+                                Bint's Japanese CSS
+                                <a class="ext-link" aria-label="View source" href="https://github.com/yomidevs/yomitan-featured-css/tree/main/bint's%20yomitan%20css">
+                                    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
+                                </a>
+                            </div>
+                            <a href="tools-resources">
+                                <img class="theme-img" src="assets/themes/light/bint-css.png" alt="Bint's theme">
+                                <img class="theme-img dark" src="assets/themes/dark/bint-css.png" alt="Bint's theme dark">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__credit">
+                                Colored CSS
+                                <a class="ext-link" aria-label="View source" href="https://github.com/yomidevs/yomichan-dict-css">
+                                    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
+                                </a>
+                            </div>
+                            <a href="tools-resources">
+                                <img class="theme-img" src="assets/themes/light/colored-css.png" alt="Colored theme">
+                                <img class="theme-img dark" src="assets/themes/dark/colored-css.png" alt="Colored theme dark">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__credit">
+                                Nelan's Glassy CSS
+                                <a class="ext-link" aria-label="View source" href="https://github.com/yomidevs/yomitan-featured-css/tree/main/nelan's%20yomitan%20css">
+                                    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
+                                </a>
+                            </div>
+                            <a href="tools-resources">
+                                <img class="theme-img" src="assets/themes/light/nelan-css.png" alt="Nelan's theme">
+                                <img class="theme-img dark" src="assets/themes/dark/nelan-css.png" alt="Nelan's theme dark">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slideshow__nav">
+                        <button type="button" class="slideshow__dot active" onclick="goSlide(1)" aria-label="Slide 1"></button>
+                        <button type="button" class="slideshow__dot" onclick="goSlide(2)" aria-label="Slide 2"></button>
+                        <button type="button" class="slideshow__dot" onclick="goSlide(3)" aria-label="Slide 3"></button>
+                    </div>
+                    <button type="button" class="slideshow__arrow slideshow__arrow--prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button type="button" class="slideshow__arrow slideshow__arrow--next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ========== ANKI ========== -->
+<section class="anki-section">
+    <div class="anki-section__bg"></div>
+    <div class="anki-section__inner reveal">
+        <span class="section-label">Integration</span>
+        <h2 class="section-title">Powerful Anki Integration</h2>
+        <p class="section-subtitle">Turn lookups into <strong>rich Anki flashcards</strong> and send them to your deck with a single keypress.</p>
+
+        <div class="anki-section__video">
+            <video autoplay controls muted src="https://github.com/user-attachments/assets/e3210e84-be5f-48ba-a335-ab8bbd103750"></video>
+        </div>
+
+        <p class="anki-section__credit">
+            BrenoAqua's Senren Note Type
+            <a class="ext-link" aria-label="View Senren" href="https://brenoaqua.github.io/Senren/">
+                <svg viewBox="0 0 512 512"><path fill="currentColor" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
+            </a>
         </p>
-        <div class="cta-buttons">
-            <a href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn"
-                aria-label="Get Yomitan for Chrome">
-                <button>
-                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/chrome.svg"
-                        alt="Chrome icon">
-                    <span>Get Yomitan <small>Chrome</small></span>
-                </button>
-            </a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/" aria-label="Get Yomitan for Firefox">
-                <button>
-                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/firefox.svg"
-                        alt="Firefox icon">
-                    <span>Get Yomitan <small>Firefox</small></span>
-                </button>
-            </a>
-            <a href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn"
-                aria-label="Get Yomitan for Edge">
-                <button>
-                    <img style="margin-right: 0.5rem" width="18" height="18" src="assets/icons/edge.svg"
-                        alt="Edge icon">
-                    <span>Get Yomitan <small>Edge</small></span>
-                </button>
-            </a>
-        </div>
-        <div style="margin-top: 1rem" class="cta-buttons-2">
-            <div></div>
-            <a href="getting-started">
-                <button>Go to our Getting Started guide →</button>
-            </a>
-            <div></div>
+        <a href="anki" class="fcard__link">Learn more about Anki <span>&rarr;</span></a>
+    </div>
+</section>
+
+<!-- ========== DEMO ========== -->
+<section class="demo-section">
+    <div class="demo-section__inner reveal">
+        <span class="section-label">Demo</span>
+        <h2 class="section-title">See Yomitan in Action</h2>
+        <p class="section-subtitle">Watch how quickly Yomitan simplifies your reading.</p>
+        <div class="demo-section__frame">
+            <iframe src="https://www.youtube.com/embed/9DLsA94N1ZE" allowfullscreen title="Yomitan demo"></iframe>
         </div>
     </div>
 </section>
 
-<section class="feature-section">
-    <h1 class="feature-label">More than just a dictionary</h1>
-
-    <div class="feature left">
-        <div class="feature-text">
-            <h2>Dynamic Popup</h2>
-            <p>
-                Yomitan makes looking up words <strong>effortless</strong>—whether you're reading a book,
-                browsing the web, or watching movies. Say goodbye to switching tabs or
-                opening external apps: just <strong>hover and press a key</strong> to instantly see
-                detailed definitions, word frequencies, native audio, example sentences,
-                and more—right where you are.
-            </p>
-            <p>
-                Designed to keep you in the flow, Yomitan helps
-                you <strong>stay immersed</strong>, whether you're deep into a novel or
-                casually scrolling online.
-            </p>
-            <p><a href="getting-started">Learn more →</a></p>
-        </div>
-        <div class="feature-image-container" style="margin-left: auto;">
-            <div class="tooltip-container">
-                <div class="tooltip"><strong>Dynamic Popup</strong></div>
-                <a href="getting-started">
-                    <img class="feature-image" width="96%" height="96%" src="./assets/scanning-popup.webp"
-                        alt="Dynamic Popup" />
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="feature right">
-        <div class="feature-text">
-            <h2>Native Audio</h2>
-            <p>
-                Stumped by the pronunciation of a word? Just hover and listen. Yomitan provides <strong>high quality
-                    audio</strong> for almost every word—voiced clearly by real native speakers.
-            </p>
-            <p>
-                If the default sources don't meet your needs, Yomitan lets you add your <strong>custom audio
-                    sources</strong>: You can pull audio from massive pronunciation libraries such as Forvo, or enable
-                text-to-speech
-                with a variety of different voices. Yomitan can even export audio directly to your <strong>Anki
-                    flashcards</strong>, so you can always hear it when you review.
-            </p>
-            <p><a href="advanced#audio">Learn more →</a></p>
-        </div>
-        <div class="feature-image-container">
-            <div class="tooltip-container">
-                <div class="tooltip"><strong>Native Audio</strong></div>
-                <a href="advanced#audio">
-                    <img class="feature-image" width="90%" height="90%" src="./assets/audio.webp" alt="Audio" />
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="feature left">
-        <div class="feature-text">
-            <h2>Personalize Your Experience</h2>
-            <p>
-                Want to go for bold and colorful or prefer a clean, minimalist look? Yomitan gives you full control over
-                how your popup appears, so you feel right at home when you do lookups.
-            </p>
-            <p>Create your own theme, or choose one from the various community themes.</p>
-            <p><a href="tools-resources">Learn more →</a></p>
-        </div>
-
-        <div class="feature-image-container">
-            <div class="slideshow-container">
-                <div class="tooltip-container">
-                    <div class="tooltip"><strong>Themes</strong></div>
-
-                    <div class="mySlides">
-                        <div style="display: flex; position: absolute; top: -24px;">
-                            <small>Bint's Japanese CSS
-                                <a class="ext-link-icon"
-                                    href="https://github.com/yomidevs/yomitan-featured-css/tree/main/bint's%20yomitan%20css"
-                                    aria-label="View Bint's CSS">
-                                    <svg style="width: 11px; height: 11px;" class="bounce-icon"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentcolor"
-                                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
-                                    </svg>
-                                </a>
-                            </small>
-                        </div>
-                        <a href="tools-resources">
-                            <img class="feature-image theme-image" src="assets/themes/light/bint-css.png"
-                                style="width:100%" alt="Bint's theme light mode">
-                            <img class="feature-image theme-image dark" src="assets/themes/dark/bint-css.png"
-                                style="width:100%" alt="Bint's theme dark mode">
-                        </a>
-                    </div>
-
-                    <div class="mySlides">
-                        <div style="display: flex; position: absolute; top: -24px;">
-                            <small>Yomitan Colored CSS
-                                <a class="ext-link-icon" href="https://github.com/yomidevs/yomichan-dict-css"
-                                    aria-label="View Colored CSS">
-                                    <svg style="width: 11px; height: 11px;" class="bounce-icon"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentcolor"
-                                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
-                                    </svg>
-                                </a>
-                            </small>
-                        </div>
-                        <a href="tools-resources">
-                            <img class="feature-image theme-image" src="assets/themes/light/colored-css.png"
-                                style="width:100%" alt="Colored theme light mode">
-                            <img class="feature-image theme-image dark" src="assets/themes/dark/colored-css.png"
-                                style="width:100%" alt="Colored theme dark mode">
-                        </a>
-                    </div>
-
-                    <div class="mySlides">
-                        <div style="display: flex; position: absolute; top: -24px;">
-                            <small>Nelan's Glassy CSS
-                                <a class="ext-link-icon"
-                                    href="https://github.com/yomidevs/yomitan-featured-css/tree/main/nelan's%20yomitan%20css"
-                                    aria-label="View Nelan's CSS">
-                                    <svg style="width: 11px; height: 11px;" class="bounce-icon"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentcolor"
-                                            d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
-                                    </svg>
-                                </a>
-                            </small>
-                        </div>
-                        <a href="tools-resources">
-                            <img class="feature-image theme-image" src="assets/themes/light/nelan-css.png"
-                                style="width:100%" alt="Colored theme light mode">
-                            <img class="feature-image theme-image dark" src="assets/themes/dark/nelan-css.png"
-                                style="width:100%" alt="Colored theme dark mode">
-                        </a>
-                    </div>
-                </div>
-
-                <div style="text-align:center; transform: translateY(20px);">
-                    <span class="dot" onclick="currentSlide(1)" aria-label="Go to slide 1"></span>
-                    <span class="dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></span>
-                    <span class="dot" onclick="currentSlide(3)" aria-label="Go to slide 3"></span>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="feature right">
-        <div class="feature-text">
-            <h2>Mobile Support</h2>
-            <p>
-                Take your language learning <strong>anywhere</strong>. Yomitan now works seamlessly on <strong>Android devices</strong>, bringing the same powerful dictionary lookups to your phone or tablet.
-            </p>
-            <p>
-                When reading your favorite foreign language website on the go, simply <strong>select any text</strong> and access instant definitions, audio pronunciations, and detailed word information—all without leaving what you're reading.
-            </p>
-            <p>Your <strong>learning never stops</strong>, even when you're away from your desk. Perfect for commutes, travel, or whenever inspiration strikes.</p>
-                <a href="getting-started">Learn more →</a></p>
-        </div>
-        <div class="feature-image-container" style="display: flex; justify-content: center;">
-            <div class="tooltip-container">
-                <div class="tooltip"><strong>Android Mobile Support</strong></div>
-                <a href="getting-started">
-                    <img class="feature-image" style="width: 100%; max-width: 300px; height: auto; aspect-ratio: 1/2;" src="./assets/android-dict-action.webp" alt="Android Dictionary Screenshot" />
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="feature-section" style="padding-top: 0;">
-    <div class="anki-feature">
-        <h1 class="feature-label" style="text-align: center;">Powerful Anki flashcards integration</h1>
-
-        <div style="display: flex; flex-direction: row; justify-content: center;">
-            <div class="demo" style="max-width: 850px;">
-                <p class="anki-feature-text" style="text-align: center;">
-                    Learning doesn't stop at the lookup. Turn your lookups into
-                    <strong>rich and beautifully formatted Anki flashcards</strong>
-                    and send them straight to your deck with a single keypress. See what our users have created:
-                </p>
-                <video class="anki-feature-video" width="800" height="450" autoplay controls muted
-                    src="https://github.com/user-attachments/assets/e3210e84-be5f-48ba-a335-ab8bbd103750"
-                    style="max-width: 100%; border-radius: 0.75rem"></video>
-
-                <p style="margin-top: 1.5rem;">
-                    <small>BrenoAqua's Senren Note Type
-                        <a class="ext-link-icon" href="https://brenoaqua.github.io/Senren/"
-                            aria-label="View Senren Note Type">
-                            <svg style="width: 11px; height: 11px;" class="bounce-icon"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentcolor"
-                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
-                            </svg>
-                        </a>
-                    </small>
-                </p>
-
-                <p><a href="anki">Learn more →</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="feature-section light">
-    <div class="demo">
-        <h2>🚀 See Yomitan in Action</h2>
-        <p>Watch how quickly Yomitan simplifies your reading and vocabulary building.</p>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/9DLsA94N1ZE"
-            style="margin-top: 1.5rem; max-width: 100%; border-radius: 0.75rem" frameborder="0" allowfullscreen
-            title="Yomitan demo video"></iframe>
-
-        <div style="margin-top: 1rem" class="cta-buttons-2">
-            <a href="getting-started">
-                <button>Get Started →</button>
+<!-- ========== FINAL CTA ========== -->
+<section class="final-cta">
+    <div class="final-cta__bg"></div>
+    <div class="final-cta__inner reveal">
+        <h2 class="section-title">Ready to transform your reading?</h2>
+        <p class="section-subtitle">Join 100,000+ learners who use Yomitan every day.</p>
+        <div class="hero__buttons">
+            <a class="btn btn--primary" href="https://chrome.google.com/webstore/detail/yomitan/likgccmbimhjbgkjambclfkhldnlhbnn">
+                <img src="assets/icons/chrome.svg" width="20" height="20" alt="">Chrome
+            </a>
+            <a class="btn btn--primary" href="https://addons.mozilla.org/en-US/firefox/addon/yomitan/">
+                <img src="assets/icons/firefox.svg" width="20" height="20" alt="">Firefox
+            </a>
+            <a class="btn btn--primary" href="https://microsoftedge.microsoft.com/addons/detail/yomitan/idelnfbbmikgfiejhgmddlbkfgiifnnn">
+                <img src="assets/icons/edge.svg" width="20" height="20" alt="">Edge
             </a>
         </div>
+        <a class="btn btn--ghost" href="getting-started">Getting Started Guide &rarr;</a>
     </div>
 </section>
 
 <script>
-    // ===== SLIDESHOW =====
-    let slideIndex = 1;
-    showSlides(slideIndex);
+// Slideshow
+let idx = 1;
+function moveSlide(n) { showSlide(idx += n); }
+function goSlide(n)   { showSlide(idx = n); }
+function showSlide(n) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slideshow__dot');
+    if (n > slides.length) idx = 1;
+    if (n < 1) idx = slides.length;
+    slides.forEach(s => s.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    slides[idx - 1].classList.add('active');
+    dots[idx - 1].classList.add('active');
+}
+setInterval(() => moveSlide(1), 5000);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+// Typewriter
+(function() {
+    const words = ['read。', '読む。', 'lesen。', 'lire。', '읽다。', 'leer。', '閱讀。'];
+    const el = document.getElementById('typewriter');
+    let wordIdx = 0, charIdx = 0, deleting = false;
+    const typeSpeed = 200, deleteSpeed = 120, pauseEnd = 5000, pauseEmpty = 600;
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-
-        if (n > slides.length) slideIndex = 1;
-        if (n < 1) slideIndex = slides.length;
-
-        Array.from(slides).forEach(slide => slide.style.display = "none");
-        Array.from(dots).forEach(dot => dot.classList.remove("active"));
-
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add("active");
-    }
-
-    // ===== INTERSECTION OBSERVER FOR ANIMATIONS =====
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
+    function tick() {
+        const word = words[wordIdx];
+        if (!deleting) {
+            el.textContent = word.slice(0, ++charIdx);
+            if (charIdx === word.length) {
+                deleting = true;
+                setTimeout(tick, pauseEnd);
+            } else {
+                setTimeout(tick, typeSpeed);
             }
-        });
-    }, observerOptions);
+        } else {
+            el.textContent = word.slice(0, --charIdx);
+            if (charIdx === 0) {
+                deleting = false;
+                wordIdx = (wordIdx + 1) % words.length;
+                setTimeout(tick, pauseEmpty);
+            } else {
+                setTimeout(tick, deleteSpeed);
+            }
+        }
+    }
+    tick();
+})();
 
-    // Observe all animated elements
-    document.querySelectorAll(".feature, .anki-feature").forEach(el => observer.observe(el));
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
 
 {% else %}
