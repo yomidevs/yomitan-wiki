@@ -14,7 +14,7 @@ These are the languages currently supported by Yomitan:
 |----------------------|------|
 | Albanian             | sq   |
 | Ancient Greek        | grc  |
-| Arabic (Egyptian     | arz  |
+| Arabic (Egyptian)    | arz  |
 | Arabic (MSA)         | ar   |
 | Assyrian Neo-Aramaic | aii  |
 | Belarusian           | be   |
